@@ -1,0 +1,25 @@
+body {margin:0px;font-size:12px;}
+* {transition: all 1.5s;margin:0px;box-sizing: border-box;background-color:white;background-repeat:no-repeat;background-position:center;background-size:cover;}
+.center {transform:translate(-50%,-50%);left:50%;top:48%;}
+.pa {position:absolute;}
+.pf {position:fixed;}
+.pr {position:relative;}
+.db {display:block;}
+.dib {display:inline-block;}
+.dib {display:inline-flex;}
+.dib {display:block;}
+.di {display:inline;}
+.mm {margin:16px;}
+.sm {margin:24px;}
+.el {margin:0px;height:8px;width:100%;padding:0px;}
+.nl {margin:0px;height:0px;width:100%;padding:0px;}
+.mbg {background-color:#1f2840;color:white;}
+.nbg {background-color:white;color:#1f2840;}
+div, section {display:block;}
+
+
+
+
+
+.band {width:100%;height:5em;}
+.band:before {background-image:url(favicon.png);height:100%;width:5em;content:" ";display:block;background-size:cover;}
