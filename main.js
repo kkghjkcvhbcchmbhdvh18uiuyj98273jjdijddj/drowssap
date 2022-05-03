@@ -16,7 +16,9 @@ function sys(ee) {
 
 window.addEventListener("load", function() { 
 window.setTimeout(function() {
-		//document.querySelector('#loader').style.top="-100%";
 		document.querySelector('#loader').style.opacity="0";
+		window.setTimeout(function() {
+		document.querySelector('#loader').outerHTML="";
+		}, 2000);
 		}, 2000);
  });

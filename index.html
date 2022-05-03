@@ -12,22 +12,53 @@
    <link rel="apple-touch-icon" href="icon.png" sizes="96x96,128x128,256x256"/>
     <link rel="icon" href="favicon.png" type="image/png"/>
 	<script type="text/javascript" src="main.js"></script>
-	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {font-family:mainfont;} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}	</style>
+	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}	</style>
 </head>
 <body>
 <section id="header">
 <div class="band mbg">
 <div class="dmenu">
-<button class="mcol">Store</button>
-<button class="mcol">Pocket</button>
-<button class="mcol">Car</button>
-<button class="mcol">Home</button>
-<button class="mcol">Business</button>
-<button class="mcol">Support</button>
-<button class="mcol shopping-bag">&nbsp;</button>
+<button class="mcol" id="mpowertank">Power Tank</button>
+<button class="mcol" id="mbelcharge">BELCharge</button>
+<button class="mcol" id="mbelmore">BELMore</button>
+<button class="mcol" id="mbelchargepro">BELCharge Pro</button>
+<button class="mcol" id="mbelplant">BELPlant</button>
+<button class="mcol" id="mbatteries">Batteries</button>
+<button class="mcol" id="melectronics">Electronics</button>
+<button class="mcol" id="msupport">Support</button>
+<button class="mcol shopping-bag" id="mstore">&nbsp;</button>
+<button class="mcol shopping-cart" id="mcart">&nbsp;</button>
+</div>
+<div class="tmenu">
+<button class="mcol" id="mproducts">BEL Products</button>
+<button class="mcol" id="tbatteries">Batteries</button>
+<button class="mcol" id="telectronics">Electronics</button>
+<button class="mcol" id="tsupport">Support</button>
+<button class="mcol shopping-bag" id="tstore">&nbsp;</button>
+<button class="mcol shopping-cart" id="tmcart">&nbsp;</button>
+<button class="mcol shopping-menu" id="ttmenu">&nbsp;</button>
+</div>
+<div class="mmenu">
+<button class="mcol shopping-bag" id="mmstore">&nbsp;</button>
+<button class="mcol shopping-cart" id="mmcart">&nbsp;</button>
+<button class="mcol shopping-menu" id="mmmenu">&nbsp;</button>
 </div>
 </div>
 </section>
+<section id="body">
+
+</section>
+<section id="footer">
+
+
+</section>
+
+
+
+
+
+
+
 <div id="loader">
 <div id="loading">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -228,9 +259,8 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 9 10 9 6 0 10 -7 10 -16z"/>
 </g>
 </svg>
-<br class="nl"/>
-<br class="el"/>
-<div>&nbsp;Just Making Progress...</div>
+<br class="el"/>&nbsp;
+<div>&nbsp;Just Making Progress...&nbsp;</div>
 </div>
 </div>
 </body>

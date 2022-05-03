@@ -13,9 +13,10 @@
   .mmenu {display:none;}
 
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   /* For desktop: */
   .dmenu {display:block;}
   .mmenu {display:none;}
+  .tmenu {display:none;}
 
 }
