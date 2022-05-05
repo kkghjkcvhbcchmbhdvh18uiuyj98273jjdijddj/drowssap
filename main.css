@@ -34,8 +34,8 @@ div {display:block;margin:0px;}
 .mcol {height:100%;font-family:mainfont;color:white;font-size:13px;border:1px solid transparent;text-shadow:0px 0px 1px black;}
 .mcol:hover, .mcol:active {border-bottom:1px solid rgba(255,186,66,1);background-color:rgba(255,255,255,0.3);}
 [class*="shopping-"] {width:2.5em;}
-.shopping-bag {background-image:url(delivery.png);background-size:auto 43%;background-position:50% 53.5%;}
-.shopping-cart {background-image:url(cart.png);background-size:auto 45%;}
+.shopping-bag {background-image:url(icons/time.png);background-size:auto 50%;}
+.shopping-cart {background-image:url(icons/cart.png);background-size:auto 50%;}
 .shopping-menu {background-image:url(menu.png);background-size:auto 65%;}
 .shopping-menu + .omenu {background-color:#1f2840;height:100%;width:0px;position:fixed;right:-1.5em;transition:all 0.1s;}
 .shopping-menu:focus + .omenu {border:1px solid #123;box-shadow:0px 0px 3px rgba(0,0,0,0.3);}
