@@ -1,7 +1,7 @@
 @font-face {font-family:mainfont; src:url(robotomedium.ttf);}
 @font-face {font-family:regular; src:url(roboto/Roboto-Regular.ttf);}
 body {margin:0px;font-size:12px;background-color:#ffffff;}
-* {transition: all 1.5s;margin:0px;box-sizing: border-box;background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:cover;outline-color:rgba(255,186,66,1);text-decoration:none;}
+* {word-wrap: break-word;transition: all 1.5s;margin:0px;box-sizing: border-box;background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:cover;outline-color:rgba(255,186,66,1);text-decoration:none;}
 .center {transform:translate(-50%,-50%);left:50%;top:48%;}
 .pa {position:absolute;}
 .pf {position:fixed;}
@@ -34,7 +34,7 @@ div {display:block;margin:0px;}
 .mcol {height:100%;font-family:mainfont;color:white;font-size:13px;border:1px solid transparent;text-shadow:0px 0px 1px black;}
 .mcol:hover, .mcol:active {border-bottom:1px solid rgba(255,186,66,1);background-color:rgba(255,255,255,0.3);}
 [class*="shopping-"] {width:2.5em;}
-.shopping-bag {background-image:url(delivery.png);background-size:auto 40%;}
+.shopping-bag {background-image:url(delivery.png);background-size:auto 43%;background-position:50% 53.5%;}
 .shopping-cart {background-image:url(cart.png);background-size:auto 45%;}
 .shopping-menu {background-image:url(menu.png);background-size:auto 65%;}
 .shopping-menu + .omenu {background-color:#1f2840;height:100%;width:0px;position:fixed;right:-1.5em;transition:all 0.1s;}
