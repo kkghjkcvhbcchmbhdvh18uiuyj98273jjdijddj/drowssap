@@ -9,47 +9,101 @@
     <link href="main.css" type="text/css" rel="stylesheet">
     <link href="responsive.css" type="text/css" rel="stylesheet">
     <link rel="shortcut icon" href="icon.png" sizes="64x64, 128x128, 192x192, 240x240, 360x360, 480x480, 640x640, 720x720, 800x800, 1080x1080" type="image/png">
-   <link rel="apple-touch-icon" href="icon.png" sizes="96x96,128x128,256x256"/>
-    <link rel="icon" href="favicon.png" type="image/png"/>
-	<script type="text/javascript" src="main.js"></script>
-	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}	</style>
+   <link rel="apple-touch-icon" href="icon.png" sizes="64x64,96x96,128x128,256x256" type="image/png"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png" sizes="16x16,24x24,32x32,64x64"/>
+	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;z-index:9;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}	</style>
 </head>
 <body>
 <section id="header">
 <div class="band mbg">
-<div class="dmenu">
+<div class="dmenu ame">
 <button class="mcol" id="mpowertank">Power Tank</button>
 <button class="mcol" id="mbelcharge">BELCharge</button>
 <button class="mcol" id="mbelmore">BELMore</button>
 <button class="mcol" id="mbelchargepro">BELCharge Pro</button>
-<button class="mcol" id="mbelplant">BELPlant</button>
+<button class="mcol" id="mpowertankpro">Power Tank Pro</button>
 <button class="mcol" id="mbatteries">Batteries</button>
 <button class="mcol" id="melectronics">Electronics</button>
+<button class="mcol" id="mlogin">Login</button>
 <button class="mcol" id="msupport">Support</button>
 <button class="mcol shopping-bag" id="mstore">&nbsp;</button>
 <button class="mcol shopping-cart" id="mcart">&nbsp;</button>
 </div>
-<div class="tmenu">
-<button class="mcol" id="mproducts">BEL Products</button>
-<button class="mcol" id="tbatteries">Batteries</button>
-<button class="mcol" id="telectronics">Electronics</button>
-<button class="mcol" id="tsupport">Support</button>
+<div class="tmenu ame">
+
+<button class="mcol" id="tpowertank">Power Tank</button>
+<button class="mcol" id="telcharge">BELCharge</button>
+<button class="mcol" id="tbelmore">BELMore</button>
+<button class="mcol" id="tbelchargepro">BELCharge Pro</button>
+<button class="mcol" id="tpowertankpro">Power Tank Pro</button>
 <button class="mcol shopping-bag" id="tstore">&nbsp;</button>
 <button class="mcol shopping-cart" id="tmcart">&nbsp;</button>
 <button class="mcol shopping-menu" id="ttmenu">&nbsp;</button>
+<div class="omenu" id="tom">
+<button class="mitem bck" id=""></button>
+<button class="mitem" id="tibatteries">Batteries</button>
+<button class="mitem" id="tielectronics">Electronics</button>
+<button class="mitem" id="tilogin">Login</button>
+<button class="mitem" id="tisupport">Support</button>
+<button class="mitem" id="tiabout">About</button>
+<button class="mitem" id="tilegal">Legal</button>
+
 </div>
-<div class="mmenu">
+</div>
+<div class="mmenu ame">
 <button class="mcol shopping-bag" id="mmstore">&nbsp;</button>
 <button class="mcol shopping-cart" id="mmcart">&nbsp;</button>
 <button class="mcol shopping-menu" id="mmmenu">&nbsp;</button>
+<div class="omenu" id="mom">
+<button class="mitem bck" id=""></button>
+<button class="mitem" id="mipowertank">Power Tank</button>
+<button class="mitem" id="mibelcharge">BELCharge</button>
+<button class="mitem" id="mibelmore">BELMore</button>
+<button class="mitem" id="mibelchargepro">BELCharge Pro</button>
+<button class="mitem" id="mipowertankpro">Power Tank Pro</button>
+<button class="mitem" id="mibatteries">Batteries</button>
+<button class="mitem" id="mielectronics">Electronics</button>
+<button class="mitem" id="milogin">Login</button>
+<button class="mitem" id="misupport">Support</button>
+
+</div>
 </div>
 </div>
 </section>
-<section id="body">
-
+<div class="center" id="cart"><div class="center box">
+<div class="" id="cartlist"></div>
+<button class="nbg brn" id="closecartB">Hide Cart</button>
+<button class="mbg brm" id="checkoutB">Checkout</button>
+</div></div>
+<section id="content">
+<div class="mimg"><img src="rocket.jpg"></div>
 </section>
-<section id="footer">
-
+<section id="footer"><p class="boarder">&nbsp;</p>
+<br/>
+<br/>
+<a href="/">Home</a><span>&bull;</span>
+<a href="power_tank">Power Tank</a><span>&bull;</span>
+<a href="belcharge">BELCharge</a><span>&bull;</span>
+<a href="belmore">BELMore</a><span>&bull;</span>
+<a href="belcharge_pro">BELCharge Pro</a><span>&bull;</span>
+<a href="power_tank_pro">Power Tank Pro</a><span>&bull;</span>
+<a href="electronics">Electronics</a><span>&bull;</span>
+<a href="batteries">Batteries</a><span>&bull;</span>
+<a href="account">Account</a><span>&bull;</span>
+<a href="tracking">Track Delivery</a><span>&bull;</span>
+<a href="payments">Payments</a><span>&bull;</span>
+<a href="Developers" title="Earn as a Developer">Developers</a><span>&bull;</span>
+<a href="jobs" title="Earn with Bleeding Edge Lab">Jobs</a><span>&bull;</span>
+<a href="campaigns">Campaigns</a><span>&bull;</span>
+<a href="faq">FAQ</a><span>&bull;</span>
+<a href="support">Support</a><span>&bull;</span>
+<a href="report">Report Problem</a><span>&bull;</span>
+<a href="about">About</a><span>&bull;</span>
+<a href="legal">Legal</a><span>&bull;</span>
+<a href="sitemap">Sitemap</a>
+<p>&nbsp;</p>
+<div class="lali">&copy; 2022 Bleeding Edge Lab (PTY) Ltd. All rights reserved.</div>
+<p>&nbsp;</p>
 
 </section>
 
@@ -264,4 +318,5 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 </div>
 </div>
 </body>
+<script type="text/javascript" src="main.js"></script>
 </html>

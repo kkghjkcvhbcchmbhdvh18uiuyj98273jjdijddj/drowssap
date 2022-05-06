@@ -4,6 +4,9 @@
   .mmenu {display:block;}
   .dmenu {display:none;}
   .tmenu {display:none;}
+  #cart .box {height:60%;width:calc(100% - 3em);}
+  .shopping-menu:focus + .omenu {width:calc(100% + 4.5em);}
+  .shopping-menu:focus + .omenu:before {opacity:1;background-color:rgba(0,0,0,0.4);height:inherit;width:100%;content:" ";position:fixed;left:calc(-100% - 3em);top:-4px;}
 
 
 @media only screen and (min-width: 600px) {
@@ -11,12 +14,17 @@
   .tmenu {display:block;}
   .dmenu {display:none;}
   .mmenu {display:none;}
+  #cart .box {height:65%;width:75%;}
+  .shopping-menu:focus + .omenu {width:calc(50% + 4.5em);}
+  .shopping-menu:focus + .omenu:before {opacity:1;background-color:rgba(0,0,0,0.4);height:inherit;width:100%;content:" ";position:fixed;left:calc(-50% - 3em);top:-4px;}
 
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 880px) {
   /* For desktop: */
   .dmenu {display:block;}
   .mmenu {display:none;}
   .tmenu {display:none;}
+  #cart .box {height:40%;width:50%;}
+  .omenu {display:none;}
 
 }
