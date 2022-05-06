@@ -6,6 +6,8 @@
   .tmenu {display:none;}
   #cart .box {height:60%;width:calc(100% - 3em);}
   .shopping-menu:focus + .omenu {width:calc(100% + 4.5em);}
+  .shopping-menu + .omenu .mitem {display:none;}
+  .shopping-menu:focus + .omenu .mitem {display:inline-block;}
   .shopping-menu:focus + .omenu:before {opacity:1;background-color:rgba(0,0,0,0.4);height:inherit;width:100%;content:" ";position:fixed;left:calc(-100% - 3em);top:-4px;}
 
 
@@ -17,6 +19,7 @@
   #cart .box {height:65%;width:75%;}
   .shopping-menu:focus + .omenu {width:calc(50% + 4.5em);}
   .shopping-menu:focus + .omenu:before {opacity:1;background-color:rgba(0,0,0,0.4);height:inherit;width:100%;content:" ";position:fixed;left:calc(-50% - 3em);top:-4px;}
+  .shopping-menu:blur + .omenu .mitem {display:none;}
 
 }
 @media only screen and (min-width: 880px) {

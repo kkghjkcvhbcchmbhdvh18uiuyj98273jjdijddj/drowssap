@@ -53,14 +53,15 @@ button + .shopping-bag {margin-left:4px;}
 .mimg {height:100%;width:100%;border:1px solid red;opacity:0;}
 
 .omenu:before {opacity:0;transition:all 1s;}
+.omenu {tex-align:right;overflow:hidden;}
 
-.mitem {background-color:#1f2840;height:3em;color:white;width:100%;outline-color:transparent;font-size:20px;font-family:regular;border:1px solid transparent;text-align:right;padding-right:1.5em;border-top:1px dotted rgba(10,30,50,0.3);outline-color:transparent;}
-.bck {background-image:url(icons/multiply-3-xl.png);background-size:auto 40%;background-position:16px 50%;margin-top:8px;outline-color:transparent;border-top:1px solid transparent;}
+.mitem {background-color:#1f2840;height:3em;color:white;width:calc(100% - 1em);outline-color:transparent;font-size:20px;font-family:regular;border:1px solid transparent;text-align:right;padding-right:2em;border-top:1px dotted rgba(10,30,50,0.3);outline-color:transparent;margin-left:1em;}
+.bck {background-image:url(icons/multiply-3-xl.png);background-size:auto 40%;background-position:0px 50%;margin-top:8px;outline-color:transparent;}
 
 
 
 
-#footer {position:relative;width:100%;font-size:11px;display:block;bottom:0px;text-align:center;overflow:hidden;min-height:4em;background-color:#101320;padding:1.5em;padding-top:1em;padding-bottom:7px;border-top:1px solid #1f2840;}
+#footer {position:relative;width:100%;font-size:11px;display:block;bottom:0px;text-align:center;overflow:hidden;min-height:4em;background-color:#101320;padding:1.5em;padding-right:1em;padding-top:1em;padding-bottom:7px;border-top:1px solid #1f2840;}
 .boarder {border-bottom:1px solid #000;display:inline-block;width:calc(100% - 3em);opacity:0.1;}
 #footer a {line-height:24px;font-size:11px;font-family:mainfont;color:#bbb;}
 #footer span {line-height:24px;display:inline;margin-left:12px;margin-right:10px;color:transparent;font-size:8px;}
