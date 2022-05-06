@@ -4,9 +4,6 @@
   .mmenu {display:block;}
   .dmenu {display:none;}
   .tmenu {display:none;}
-  #cart .box {height:60%;width:calc(100% - 3em);}
-  .shopping-menu:focus + .omenu {width:calc(100% + 1.5em);}
-  
 
 
 @media only screen and (min-width: 600px) {
@@ -14,16 +11,12 @@
   .tmenu {display:block;}
   .dmenu {display:none;}
   .mmenu {display:none;}
-  #cart .box {height:65%;width:75%;}
-  .shopping-menu:focus + .omenu {width:40%;}
 
 }
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 800px) {
   /* For desktop: */
   .dmenu {display:block;}
   .mmenu {display:none;}
   .tmenu {display:none;}
-  #cart .box {height:40%;width:50%;}
-  .omenu {display:none;}
 
 }
