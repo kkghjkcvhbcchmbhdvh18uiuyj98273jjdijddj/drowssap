@@ -1,7 +1,8 @@
 @font-face {font-family:black; src:url(roboto/Roboto-Black.ttf);}
 @font-face {font-family:mainfont; src:url(robotomedium.ttf);}
 @font-face {font-family:regular; src:url(roboto/Roboto-Regular.ttf);}
-body {margin:0px;font-size:12px;background-color:#ffffff;}
+html {width:100%;max-width:100%;overflow-x:hidden;}
+body {margin:0px;font-size:12px;background-color:#ffffff;overflow-x:hidden;width:100%;max-width:100%;overflow-x:hidden;}
 * {word-wrap: break-word;transition: all 1.5s;margin:0px;box-sizing: border-box;background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:cover;outline-color:rgba(255,186,66,1);text-decoration:none;}
 .center {transform:translate(-50%,-50%);left:50%;top:48%;}
 .pa {position:absolute;}
@@ -18,7 +19,7 @@ body {margin:0px;font-size:12px;background-color:#ffffff;}
 .nl {margin:0px;height:0px;width:100%;padding:0px;}
 .mbg {background-color:#1f2840;color:white;}
 .nbg {background-color:white;color:#1f2840;}
-section {display:inline;margin:0px;}
+section {display:block;margin:0px;}
 div {display:block;margin:0px;}
 .brm {border:1px solid #101224;border-radius:3px;}
 .brn {border:1px solid #1f2840;border-radius:3px;}
@@ -27,7 +28,7 @@ div {display:block;margin:0px;}
 #header {opacity:0.95;position:fixed;top:0px;left:0px;width:100%;z-index:2;}
 
 
-.band {width:100%;height:4em;border-bottom:1px solid rgba(20,60,100,1);box-shadow:0px 1px 1px rgba(10,30,50,0.9);}
+.band {width:inherit;height:4em;border-bottom:1px solid rgba(20,60,100,1);box-shadow:0px 1px 1px rgba(10,30,50,0.9);overflow:none;}
 .band:before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:16px;float:left;margin-top:0.5em;}
 .ame {width:calc(100% - 6em);}
 .dmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
@@ -71,7 +72,7 @@ button + .shopping-bag {margin-left:4px;}
 #services .h1 {margin-left:1.5em;color:#123;}
 .exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:1.5em;line-height:24px;height:24px;margin-bottom:4px;outline-color:transparent;border:1px solid transparent;}
 .exp + div {height:0px;width:calc(100% - 3em);overflow:hidden;padding-left:1.5em;}
-.exp + div select, .exp + div input, .exp + div button, .exp + div span {margin-left:1.5em;border-radius:3px;padding:4px;border:1px solid #123;color:#123;}
+.exp + div select, .exp + div input, .exp + div button, .exp + div span {margin-left:1.5em;border-radius:3px;padding:4px;border:1px solid #123;color:#123;margin:1em;}
 
 
 

@@ -29,9 +29,9 @@ window.addEventListener("load", function() {
  window.addEventListener("pageshow",function() { getE('#mom').setAttribute("style","height:"+ screen.height + "px;");  });
 
 //body height for fixed 100% height
- window.addEventListener("pageshow",function() { document.body.setAttribute("style","height:"+ screen.height + "px;","width:"+ screen.width + "px;");  });
- window.addEventListener("resize",function() { document.body.setAttribute("style","height:"+ screen.height + "px;","width:"+ screen.width + "px;");  });
- window.addEventListener("orientationchange",function() { document.body.setAttribute("style","height:"+ screen.height + "px;","width:"+ screen.width + "px;");  });
+ window.addEventListener("pageshow",function() { document.body.setAttribute("style","height:"+ screen.height + "px;width:"+ screen.width + ";");  });
+ window.addEventListener("resize",function() { document.body.setAttribute("style","height:"+ screen.height + "px;width:"+ screen.width + ";");  });
+ window.addEventListener("orientationchange",function() { document.body.setAttribute("style","height:"+ screen.height + "px;width:"+ screen.width + ";");  });
 
 
 

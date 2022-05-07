@@ -97,7 +97,7 @@
 <div id="services">
 <div class="h1">Looking for something specific?</div>
 <button class="exp" onclick="expand(this)">&plus; Define Custom Battery</button><div>
-<select id="volsel" onchange="if(this.value=='3.7v'){ this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'milli-Ampere hours (mAh)\'><option value=\'2200mAh\'>2200mAh</option><option value=\'2600mah\'>2600mAh</option><option value=\'2800mah\'>2800mAh</option><option value=\'3000mah\'>3000mAh</option><option value=\'3200mah\'>3200mAh</option></optgroup>';} else { this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'Ampere hours (Ah)\'><option value=\'50ah\'>50Ah</option><option value=\'100ah\'>100Ah</option><option value=\'200ah\'>200Ah</option><option value=\'500ah\'>500Ah</option><option value=\'1000ah\'>1000Ah</option></optgroup>';}">
+<select id="volsel" onchange="if(this.value=='3.7v'){ this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Current Output</option><optgroup label=\'milli-Amperes (mA)\'><option value=\'5000mA\'>5000mA</option><option value=\'8000ma\'>8000mA</option><option value=\'10000ma\'>10000mA</option><option value=\'15000ma\'>15000mA</option><option value=\'20000ma\'>20000mA</option></optgroup>';this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'milli-Ampere hours (mAh)\'><option value=\'2200mAh\'>2200mAh</option><option value=\'2600mah\'>2600mAh</option><option value=\'2800mah\'>2800mAh</option><option value=\'3000mah\'>3000mAh</option><option value=\'3200mah\'>3200mAh</option></optgroup>';} else { this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Output Current</option><optgroup label=\'Amperes (A)\'><option value=\'50a\'>50A</option><option value=\'100a\'>100A</option><option value=\'200a\'>200A</option><option value=\'500a\'>500A</option><option value=\'1000a\'>1000A</option></optgroup>'; this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'Ampere hours (Ah)\'><option value=\'50ah\'>50Ah</option><option value=\'100ah\'>100Ah</option><option value=\'200ah\'>200Ah</option><option value=\'500ah\'>500Ah</option><option value=\'1000ah\'>1000Ah</option></optgroup>';}">
 <option selected disabled>Nominal Voltage</option>
 <optgroup label="Volts (V)">
 <option value="3.7v">3.7V</option>
@@ -107,6 +107,14 @@
 </optgroup>
 </select><select>
 <option selected disabled>Capacity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+</select><select>
+<option selected disabled>Max Current Output </option>
+<optgroup label="Amperes (A)">
+<option value="3.7v">3.7V</option>
+<option value="12v">12V</option>
+<option value="24v">24V</option>
+<option value="48v">48V</option>
+</optgroup>
 </select>
 </div>
 <button class="exp" onclick="expand(this)">&plus; Define Custom Power Bank</button><div></div>
