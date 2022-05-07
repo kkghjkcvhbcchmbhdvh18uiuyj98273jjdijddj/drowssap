@@ -1,8 +1,8 @@
 @font-face {font-family:black; src:url(roboto/Roboto-Black.ttf);}
 @font-face {font-family:mainfont; src:url(robotomedium.ttf);}
 @font-face {font-family:regular; src:url(roboto/Roboto-Regular.ttf);}
-html {width:100%;max-width:100%;overflow-x:hidden;overflow-y:unset;}
-body {margin:0px;font-size:12px;background-color:#ffffff;overflow-x:hidden;width:100%;max-width:100%;overflow-x:hidden;}
+html {width:100%;max-width:100%;min-height:100%;overflow-x:hidden;}
+body {margin:0px;font-size:12px;background-color:#ffffff;overflow-y:unset;width:100%;max-width:100%;overflow-x:hidden;height:100%;}
 * {word-wrap: break-word;transition: all 1.5s;margin:0px;box-sizing: border-box;background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:cover;outline-color:rgba(255,186,66,1);text-decoration:none;}
 .center {transform:translate(-50%,-50%);left:50%;top:48%;}
 .pa {position:absolute;}
@@ -53,7 +53,7 @@ button + .shopping-bag {margin-left:4px;}
 #cartlist {height:70%;width:calc(100% - 16px);position:relative;margin:8px;border:1px solid #eee;border-radius:3px;}
 
 
-#content {margin:0px;padding:1em;padding-top:0px;display:block;background-color:white;max-width:100%;height:100%;overflow-x:hidden;overflow-y:unset;float:left;}
+#content {margin:0px;padding:1em;padding-top:0px;display:block;background-color:white;width:100%;overflow:unset;}
 
 .omenu:before {opacity:0;transition:all 1s;}
 .omenu {tex-align:right;overflow:hidden;}
@@ -61,7 +61,7 @@ button + .shopping-bag {margin-left:4px;}
 .mitem {background-color:#1f2840;height:3em;color:white;width:calc(100% - 1em);outline-color:transparent;font-size:20px;font-family:regular;border:1px solid transparent;text-align:right;padding-right:2em;border-top:1px dotted rgba(10,30,50,0.3);outline-color:transparent;margin-left:1em;}
 .bck {background-image:url(icons/multiply-3-xl.png);background-size:auto 40%;background-position:0px 50%;margin-top:8px;outline-color:transparent;}
 
-button a {text-decoration:none;color:inherit;font-size:inherit;font-family:inherit;}
+button a {text-decoration:none;color:inherit;font-size:inherit;font-family:inherit;width:inherit;height:inherit;}
 
 .banner {margin:0.75em;margin-top:0px;background-color:red;float:left;}
 .bantwo {margin:0.75em;margin-top:0px;background-color:blue;float:left;}
