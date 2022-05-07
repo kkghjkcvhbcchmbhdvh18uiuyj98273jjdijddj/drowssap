@@ -9,7 +9,12 @@ function timed() {
  function getV(ee) { return document.querySelector(ee).value; }
 
 
-function sys(ee) {
+function linker() {
+	ah = document.querySelectorAll('button a');
+	for(let i = 0; i< ah.length; i++) {
+		ah[i].addEventListener("mousedown", function() { event.preventDefault(); window.location = ah[i].getAttribute('href'); })
+		ah[i].addEventListener("touchstart", function() { event.preventDefault(); window.location = ah[i].getAttribute('href'); })
+	}
 	
 }
 
@@ -33,7 +38,7 @@ window.addEventListener("load", function() {
  window.addEventListener("resize",function() { getE('#content').setAttribute("style","height:"+ screen.height + "px;");  });
  window.addEventListener("orientationchange",function() { getE('#content').setAttribute("style","height:"+ screen.height + "px;");  });
 
-
+linker()
 
 	
 window.setTimeout(function() {

@@ -17,7 +17,7 @@ body {margin:0px;font-size:12px;background-color:#ffffff;overflow-y:unset;width:
 .sm {margin:24px;}
 .el {margin:0px;height:8px;width:100%;padding:0px;}
 .nl {margin:0px;height:0px;width:100%;padding:0px;}
-.mbg {background-color:#1f2840;color:white;}
+.mbg {background-color:rgba(31,40,64,1);color:white;}
 .nbg {background-color:white;color:#1f2840;}
 section {display:block;margin:0px;}
 div {display:block;margin:0px;}
@@ -63,17 +63,24 @@ button + .shopping-bag {margin-left:4px;}
 
 button a {text-decoration:none;color:inherit;font-size:inherit;font-family:inherit;width:inherit;height:inherit;}
 
-.banner {margin:0.75em;margin-top:0px;background-color:red;float:left;}
-.bantwo {margin:0.75em;margin-top:0px;background-color:blue;float:left;}
-.banthree {margin:0.75em;margin-top:0px;background-color:green;float:left;}
-.banquad {margin:0.75em;margin-top:0px;background-color:orange;float:left;}
+button.mbg {color:white;}
+
+.banner {margin:0.75em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
+.bantwo {margin:0.75em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
+.banthree {margin:0.75em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
+.banquad {margin:0.75em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
+
+#content [class*="ban"] img {opacity:0.5;}
+
+
+
 
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);}
 #services .h1 {margin-left:1.5em;color:#123;}
 .exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:1.5em;line-height:24px;height:24px;margin-bottom:4px;outline-color:transparent;border:1px solid transparent;}
 .exp + div {height:0px;width:calc(100% - 3em);overflow:hidden;padding-left:1.5em;}
-.exp + div select, .exp + div input, .exp + div button, .exp + div span {margin-left:1.5em;border-radius:3px;padding:4px;border:1px solid #123;color:#123;margin:1em;}
-
+.exp + div select, .exp + div input, .exp + div button, .exp + div span {margin-left:1.5em;border-radius:3px;padding:4px;border:1px solid #123;color:#123;margin:1em;height:32px;}
+.exp + div button, button.mbg {color:white;font-size:14px;padding-left:8px;padding-right:8px;font-family:mainfont;}
 
 
 
