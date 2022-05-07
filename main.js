@@ -29,9 +29,9 @@ window.addEventListener("load", function() {
  window.addEventListener("pageshow",function() { getE('#mom').setAttribute("style","height:"+ screen.height + "px;");  });
 
 //body height for fixed 100% height
- window.addEventListener("pageshow",function() { document.body.setAttribute("style","height:"+ screen.height + "px;width:"+ screen.width + ";");  });
- window.addEventListener("resize",function() { document.body.setAttribute("style","height:"+ screen.height + "px;width:"+ screen.width + ";");  });
- window.addEventListener("orientationchange",function() { document.body.setAttribute("style","height:"+ screen.height + "px;width:"+ screen.width + ";");  });
+ window.addEventListener("pageshow",function() { document.body.setAttribute("style","min-height:"+ screen.height + "px;");  });
+ window.addEventListener("resize",function() { document.body.setAttribute("style","min-height:"+ screen.height + "px;");  });
+ window.addEventListener("orientationchange",function() { document.body.setAttribute("style","min-height:"+ screen.height + "px;");  });
 
 
 
@@ -47,7 +47,12 @@ window.setTimeout(function() {
  
  
  function expand(ee) {
+	 if(ee.nextSibling.style.height=='unset') {
+	ee.innerHTML = ee.innerHTML.replace("-","+");
+	ee.nextSibling.setAttribute("style","height:0px;");
+	 } else {
 	ee.innerHTML = ee.innerHTML.replace("+","-");
-	ee.nextSibling.setAttribute("style","display:block;height:40%;"); 
+	ee.nextSibling.setAttribute("style","height:unset;"); 
+	 }
  }
  

@@ -13,7 +13,7 @@
 .bantwo {width:calc(50% - 1.5em);min-height:calc(40% - 5em);}
 .banthree {width:calc(33.333333% - 1.5em);min-height:calc(35% - 5em);}
 .banquad {width:calc(50% - 1.5em);min-height:calc(35% - 5em);}
-#sociallinks {margin-top:12px;}
+#sociallinks {display:block;margin-top:12px;}
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
@@ -28,7 +28,7 @@
 .bantwo {width:calc(50% - 1.5em);min-height:calc(50% - 5em);}
 .banthree {width:calc(33.333333% - 1.5em);min-height:calc(30% - 5em);}
 .banquad {width:calc(25% - 1.5em);min-height:calc(30% - 5em);}
-#sociallinks {margin-left:1.5em;margin-top:0px;}
+#sociallinks {display:inline-block;margin-left:1.5em;margin-top:0px;}
 }
 @media only screen and (min-width: 880px) {
   /* For desktop: */
@@ -41,5 +41,5 @@
 .bantwo {width:calc(50% - 1.5em);min-height:calc(66.666% - 5em);}
 .banthree {width:calc(33.333333% - 1.5em);min-height:calc(44% - 5em);}
 .banquad {width:calc(25% - 1.5em);min-height:calc(30% - 5em);}
-#sociallinks {margin-top:0px;margin-left:3em;}
+#sociallinks {display:inline-block;margin-top:0px;margin-left:3em;}
 }

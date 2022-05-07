@@ -1,7 +1,7 @@
 @font-face {font-family:black; src:url(roboto/Roboto-Black.ttf);}
 @font-face {font-family:mainfont; src:url(robotomedium.ttf);}
 @font-face {font-family:regular; src:url(roboto/Roboto-Regular.ttf);}
-html {width:100%;max-width:100%;overflow-x:hidden;}
+html {width:100%;max-width:100%;overflow-x:hidden;overflow-y:unset;}
 body {margin:0px;font-size:12px;background-color:#ffffff;overflow-x:hidden;width:100%;max-width:100%;overflow-x:hidden;}
 * {word-wrap: break-word;transition: all 1.5s;margin:0px;box-sizing: border-box;background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:cover;outline-color:rgba(255,186,66,1);text-decoration:none;}
 .center {transform:translate(-50%,-50%);left:50%;top:48%;}
@@ -28,7 +28,7 @@ div {display:block;margin:0px;}
 #header {opacity:0.95;position:fixed;top:0px;left:0px;width:100%;z-index:2;}
 
 
-.band {width:inherit;height:4em;border-bottom:1px solid rgba(20,60,100,1);box-shadow:0px 1px 1px rgba(10,30,50,0.9);overflow:none;}
+.band {width:100%;height:4em;border-bottom:1px solid rgba(20,60,100,1);box-shadow:0px 1px 1px rgba(10,30,50,0.9);}
 .band:before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:16px;float:left;margin-top:0.5em;}
 .ame {width:calc(100% - 6em);}
 .dmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
@@ -53,7 +53,7 @@ button + .shopping-bag {margin-left:4px;}
 #cartlist {height:70%;width:calc(100% - 16px);position:relative;margin:8px;border:1px solid #eee;border-radius:3px;}
 
 
-#content {margin:0px;padding:1em;padding-top:0px;display:block;background-color:white;width:100%;height:100%;}
+#content {margin:0px;padding:1em;padding-top:0px;display:block;background-color:white;max-width:100%;height:100%;overflow-x:hidden;overflow-y:unset;float:left;}
 
 .omenu:before {opacity:0;transition:all 1s;}
 .omenu {tex-align:right;overflow:hidden;}
@@ -61,7 +61,7 @@ button + .shopping-bag {margin-left:4px;}
 .mitem {background-color:#1f2840;height:3em;color:white;width:calc(100% - 1em);outline-color:transparent;font-size:20px;font-family:regular;border:1px solid transparent;text-align:right;padding-right:2em;border-top:1px dotted rgba(10,30,50,0.3);outline-color:transparent;margin-left:1em;}
 .bck {background-image:url(icons/multiply-3-xl.png);background-size:auto 40%;background-position:0px 50%;margin-top:8px;outline-color:transparent;}
 
-
+button a {text-decoration:none;color:inherit;font-size:inherit;font-family:inherit;}
 
 .banner {margin:0.75em;margin-top:0px;background-color:red;float:left;}
 .bantwo {margin:0.75em;margin-top:0px;background-color:blue;float:left;}
@@ -77,13 +77,13 @@ button + .shopping-bag {margin-left:4px;}
 
 
 
-#footer {position:relative;width:100%;font-size:11px;display:block;bottom:0px;text-align:center;overflow:hidden;min-height:4em;background-color:#101320;padding:1.5em;padding-right:1em;padding-top:1em;padding-bottom:7px;border-top:1px solid #1f2840;}
+#footer {position:relative;width:100%;font-size:11px;display:block;bottom:0px;text-align:center;overflow:hidden;min-height:4em;background-color:#101320;padding-right:1.5em;padding-left:2em;padding-top:1em;padding-bottom:7px;border-top:1px solid #1f2840;}
 .boarder {border-bottom:1px solid #000;display:inline-block;width:calc(100% - 3em);opacity:0.1;}
 #footer a {line-height:24px;font-size:11px;font-family:mainfont;color:#bbb;}
 #footer span {line-height:24px;display:inline;margin-left:12px;margin-right:10px;color:transparent;font-size:8px;}
 .lali {font-size:10px;font-family:regular;color:#aaa;padding-top:18px;border-top:1px dotted #123;margin-top:6px;line-height:10px;}
 
-#sociallinks {display:inline-block;overflow:none;height:16px;}
+#sociallinks {overflow:none;height:16px;opacity:0.9;}
 #sociallinks a {opacity:0.9;display:inline-block;width:16px;height:16px;margin-top:0px;margin-left:16px;position:relative;bottom:-3px;}
 #sociallinks a:nth-child(1) {background-image:url(social/whatsapp.png);margin-left:0px;}
 #sociallinks a:nth-child(2) {background-image:url(social/facebook-.png);}
