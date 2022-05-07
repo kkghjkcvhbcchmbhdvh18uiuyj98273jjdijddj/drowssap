@@ -65,14 +65,17 @@ button a {text-decoration:none;color:inherit;font-size:inherit;font-family:inher
 
 button.mbg {color:white;}
 
-.banner {margin:0.75em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
-.bantwo {margin:0.75em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
-.banthree {margin:0.75em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
-.banquad {margin:0.75em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
 
-#content [class*="ban"] img {opacity:0.5;}
+.banner {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+.bantwo {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+.banthree {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+.banquad {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+
+#content [class*="ban"] img {opacity:0.9;}
+#content [class*="ban"] span {display:block;margin-top:-5em;position:absolute;color:white;font-family:mainfont;margin-left:14px;padding-right:2em;text-shadow:0px 0px 1px #888;}
 
 
+#content .banner span font {font-size:14px;display:block;margin-top:16px;font-family:regular;}
 
 
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);}

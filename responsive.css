@@ -9,10 +9,12 @@
   .shopping-menu + .omenu .mitem {display:none;}
   .shopping-menu:focus + .omenu .mitem {display:inline-block;}
   .shopping-menu:focus + .omenu:before {opacity:1;background-color:rgba(0,0,0,0.4);height:inherit;width:100%;content:" ";position:fixed;left:calc(-100% - 3em);top:-4px;}
+  #content [class*="ban"] span {font-size:32px;}
   .banner {width:calc(100% - 1.5em);}
 .bantwo {width:calc(100% - 1.5em);}
 .banthree {width:calc(100% - 1.5em);}
 .banquad {width:calc(100% - 1.5em);}
+#content .banquad span {font-size:32px;}
 #sociallinks {display:block;margin-top:12px;}
 
 @media only screen and (min-width: 600px) {
@@ -24,6 +26,8 @@
   .shopping-menu:focus + .omenu {width:calc(50% + 4.5em);}
   .shopping-menu:focus + .omenu:before {opacity:1;background-color:rgba(0,0,0,0.4);height:inherit;width:100%;content:" ";position:fixed;left:calc(-50% - 3em);top:-4px;}
   .shopping-menu:blur + .omenu .mitem {display:none;}
+#content .banquad span {font-size:18px;margin-top:-3em;margin-left:10px;}
+#content .banquad span font {display:none;}
     .banner {width:calc(100% - 1.5em);}
 .bantwo {width:calc(50% - 1.5em);;}
 .banthree {width:calc(50% - 1.5em);;}
@@ -37,6 +41,7 @@
   .tmenu {display:none;}
   #cart .box {height:40%;width:50%;}
   .omenu {display:none;}
+#content .banquad span {font-size:20px;}
   .banner {width:calc(100% - 1.5em);}
 .bantwo {width:calc(50% - 1.5em);}
 .banthree {width:calc(33.333333% - 1.5em);}
