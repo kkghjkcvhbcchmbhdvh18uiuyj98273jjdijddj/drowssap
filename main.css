@@ -22,11 +22,12 @@ section {display:inline;margin:0px;}
 div {display:block;margin:0px;}
 .brm {border:1px solid #101224;border-radius:3px;}
 .brn {border:1px solid #1f2840;border-radius:3px;}
+.h1 {display:block;width:100%;font-size:16px;font-family:mainfont;margin-top:16px;margin-bottom:8px;}
 
-#header {position:fixed;top:0px;left:0px;width:100%;z-index:2;}
+#header {opacity:0.95;position:fixed;top:0px;left:0px;width:100%;z-index:2;}
 
 
-.band {width:100%;height:4em;border-bottom:1px solid #011f40;}
+.band {width:100%;height:4em;border-bottom:1px solid rgba(20,60,100,1);box-shadow:0px 1px 1px rgba(10,30,50,0.9);}
 .band:before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:16px;float:left;margin-top:0.5em;}
 .ame {width:calc(100% - 6em);}
 .dmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
@@ -42,6 +43,8 @@ div {display:block;margin:0px;}
 .shopping-menu:focus + .omenu {border:1px solid #123;box-shadow:0px 0px 3px rgba(0,0,0,0.3);}
 button + .shopping-bag {margin-left:4px;}
 
+.bandaid {height:4em;width:100%;background-color:#1f2840;margin:0px;}
+
 #cart {position:fixed;width:0px;height:0px;background-color:rgba(0,0,0,0.4);z-index:3;top:50%;transition:width 0.1s, height 0.1s;overflow:hidden;}
 #cart .box {background-color:white;border:1px solid #fff;box-shadow:0px 0px 2px rgba(0,0,0,0.5);border-radius:3px;position:relative;transition:width 0.5s, height 0.5s;text-align:center;overflow:hidden;}
 #cart .box button {width:calc(100% * 0.4);height:calc(100% * 0.15);margin:calc(100% * 0.025);margin-top:0.55em;font-family:mainfont;font-size:15px;outline-color:transparent;overflow:hidden;}
@@ -49,8 +52,7 @@ button + .shopping-bag {margin-left:4px;}
 #cartlist {height:70%;width:calc(100% - 16px);position:relative;margin:8px;border:1px solid #eee;border-radius:3px;}
 
 
-#content {width:calc(100% - 3em);margin:1.5em;min-height:calc(200% - 5em);overflow:hidden;font-size:16px;background-color:#ffffff;position:relative;display:block;}
-.mimg {height:100%;width:100%;border:1px solid red;opacity:0;}
+#content {margin:0px;padding:1em;padding-top:0px;display:block;background-color:white;width:100%;height:100%;}
 
 .omenu:before {opacity:0;transition:all 1s;}
 .omenu {tex-align:right;overflow:hidden;}
@@ -60,11 +62,31 @@ button + .shopping-bag {margin-left:4px;}
 
 
 
+.banner {margin:0.75em;margin-top:0px;background-color:red;float:left;}
+.bantwo {margin:0.75em;margin-top:0px;background-color:blue;float:left;}
+.banthree {margin:0.75em;margin-top:0px;background-color:green;float:left;}
+.banquad {margin:0.75em;margin-top:0px;background-color:orange;float:left;}
+
+#services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);}
+#services .h1 {margin-left:1.5em;color:#123;}
+.exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:1.5em;line-height:24px;height:24px;margin-bottom:4px;outline-color:transparent;border:1px solid transparent;}
+.exp + div {height:0px;width:calc(100% - 3em);overflow:hidden;padding-left:1.5em;}
+.exp + div select, .exp + div input, .exp + div button, .exp + div span {margin-left:1.5em;border-radius:3px;padding:4px;border:1px solid #123;color:#123;}
+
+
+
 
 #footer {position:relative;width:100%;font-size:11px;display:block;bottom:0px;text-align:center;overflow:hidden;min-height:4em;background-color:#101320;padding:1.5em;padding-right:1em;padding-top:1em;padding-bottom:7px;border-top:1px solid #1f2840;}
 .boarder {border-bottom:1px solid #000;display:inline-block;width:calc(100% - 3em);opacity:0.1;}
 #footer a {line-height:24px;font-size:11px;font-family:mainfont;color:#bbb;}
 #footer span {line-height:24px;display:inline;margin-left:12px;margin-right:10px;color:transparent;font-size:8px;}
-.lali {font-size:10px;font-family:regular;color:#aaa;padding-top:18px;border-top:1px dotted #123;margin-top:6px;}
+.lali {font-size:10px;font-family:regular;color:#aaa;padding-top:18px;border-top:1px dotted #123;margin-top:6px;line-height:10px;}
+
+#sociallinks {display:inline-block;overflow:none;height:16px;}
+#sociallinks a {opacity:0.9;display:inline-block;width:16px;height:16px;margin-top:0px;margin-left:16px;position:relative;bottom:-3px;}
+#sociallinks a:nth-child(1) {background-image:url(social/whatsapp.png);margin-left:0px;}
+#sociallinks a:nth-child(2) {background-image:url(social/facebook-.png);}
+#sociallinks a:nth-child(3) {background-image:url(social/instagram-.png);}
+#sociallinks a:nth-child(4) {background-image:url(social/twitter--v1.png);}
 
 

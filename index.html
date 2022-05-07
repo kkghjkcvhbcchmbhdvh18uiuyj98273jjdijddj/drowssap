@@ -70,14 +70,50 @@
 </div>
 </div>
 </section>
+<div class="bandaid"></div>
 <div class="center" id="cart"><div class="center box">
 <div class="" id="cartlist"></div>
 <button class="nbg brn" id="closecartB">Hide Cart</button>
 <button class="mbg brm" id="checkoutB">Checkout</button>
 </div></div>
+
+
+
+
 <section id="content">
-<div class="mimg"><img src="rocket.jpg"></div>
+<div class="banner"></div>
+<div class="bantwo"></div>
+<div class="bantwo"></div>
+<div class="banthree"></div>
+<div class="banthree"></div>
+<div class="banthree"></div>
+<div class="banquad"></div>
+<div class="banquad"></div>
+<div class="banquad"></div>
+<div class="banquad"></div>
 </section>
+
+
+<div id="services">
+<div class="h1">Looking for something specific?</div>
+<button class="exp" onclick="expand(this)">&plus; Define Custom Battery</button><div>
+<select id="volsel" onchange="if(this.value=='3.7v'){ this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'milli-Ampere hours (mAh)\'><option value=\'2200mAh\'>2200mAh</option><option value=\'2600mah\'>2600mAh</option><option value=\'2800mah\'>2800mAh</option><option value=\'3000mah\'>3000mAh</option><option value=\'3200mah\'>3200mAh</option></optgroup>';} else { this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'Ampere hours (Ah)\'><option value=\'50ah\'>50Ah</option><option value=\'100ah\'>100Ah</option><option value=\'200ah\'>200Ah</option><option value=\'500ah\'>500Ah</option><option value=\'1000ah\'>1000Ah</option></optgroup>';}">
+<option selected disabled>Nominal Voltage</option>
+<optgroup label="Volts (V)">
+<option value="3.7v">3.7V</option>
+<option value="12v">12V</option>
+<option value="24v">24V</option>
+<option value="48v">48V</option>
+</optgroup>
+</select><select>
+<option selected disabled>Capacity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+</select>
+</div>
+<button class="exp" onclick="expand(this)">&plus; Define Custom Power Bank</button><div></div>
+<button class="exp" onclick="expand(this)">&plus; Define Custom Portable Power</button><div></div>
+<button class="exp" onclick="expand(this)">&plus; Define Custom Power Wall</button><div></div>
+<p>&nbsp;</p>
+</div>
 <section id="footer"><p class="boarder">&nbsp;</p>
 <br/>
 <br/>
@@ -101,8 +137,15 @@
 <a href="about">About</a><span>&bull;</span>
 <a href="legal">Legal</a><span>&bull;</span>
 <a href="sitemap">Sitemap</a>
+
 <p>&nbsp;</p>
-<div class="lali">&copy; 2022 Bleeding Edge Lab (PTY) Ltd. All rights reserved.</div>
+<div class="lali">&copy; 2022 Bleeding Edge Lab (PTY) Ltd. All rights reserved.
+<div id="sociallinks">
+<a href="https://wa.me/27829311944"></a>
+<a href="https://facebook.com/bleedingedgelab"></a>
+<a href="https://instagram.com/bleedingedgelab"></a>
+<a href="https://twitter.com/bleedingedgelab"></a>
+</div></div>
 <p>&nbsp;</p>
 
 </section>

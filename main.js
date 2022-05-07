@@ -28,7 +28,10 @@ window.addEventListener("load", function() {
  window.addEventListener("pageshow",function() { getE('#tom').setAttribute("style","height:"+ screen.height + "px;");  });
  window.addEventListener("pageshow",function() { getE('#mom').setAttribute("style","height:"+ screen.height + "px;");  });
 
-
+//body height for fixed 100% height
+ window.addEventListener("pageshow",function() { document.body.setAttribute("style","height:"+ screen.height + "px;","width:"+ screen.width + "px;");  });
+ window.addEventListener("resize",function() { document.body.setAttribute("style","height:"+ screen.height + "px;","width:"+ screen.width + "px;");  });
+ window.addEventListener("orientationchange",function() { document.body.setAttribute("style","height:"+ screen.height + "px;","width:"+ screen.width + "px;");  });
 
 
 
@@ -37,8 +40,14 @@ window.setTimeout(function() {
 		document.querySelector('#loader').style.opacity="0";
 		window.setTimeout(function() {
 		document.querySelector('#loader').outerHTML="";
-		}, 2000);
-		}, 2000);
+		}, 1000);
+		}, 1000);
  });
  
+ 
+ 
+ function expand(ee) {
+	ee.innerHTML = ee.innerHTML.replace("+","-");
+	ee.nextSibling.setAttribute("style","display:block;height:40%;"); 
+ }
  
