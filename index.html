@@ -80,8 +80,8 @@
 
 
 <section id="content">
-<div class="banner"><img src="rocket.jpg" style="width:100%;"><span>The Power Tank
-<font>A portable energy storage unit & mains electricity power supply device. To power your home during loadshedding or to take with when you travel.<br/>Power Your Appliances Everywhere You Go...</font>
+<div class="banner"><img src="rocket.jpg" style="width:100%;"><span>The Power Tank<br>
+<font>Power Your Appliances Everywhere You Go...&nbsp;<a href="Power_Tank">Learn More</a></font>
 </span></div>
 <div class="bantwo"><img src="rocket.jpg" style="width:100%;"><span>The Power Tank</span></div>
 <div class="bantwo"><img src="rocket.jpg" style="width:100%;"><span>The Power Tank</span></div>
@@ -98,21 +98,21 @@
 <div id="services">
 <div class="h1">Looking for something specific?</div>
 <button class="exp" onclick="expand(this)">&plus; Define Custom Battery</button><div>
-<select id="volsel" onchange="if(this.value=='3.7v'){ this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Current Output</option><optgroup label=\'milli-Amperes (mA)\'><option value=\'5000mA\'>5000mA</option><option value=\'8000ma\'>8000mA</option><option value=\'10000ma\'>10000mA</option><option value=\'15000ma\'>15000mA</option><option value=\'20000ma\'>20000mA</option></optgroup>';this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'milli-Ampere hours (mAh)\'><option value=\'2200mAh\'>2200mAh</option><option value=\'2600mah\'>2600mAh</option><option value=\'2800mah\'>2800mAh</option><option value=\'3000mah\'>3000mAh</option><option value=\'3200mah\'>3200mAh</option></optgroup>';} else { this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Output Current</option><optgroup label=\'Amperes (A)\'><option value=\'50a\'>50A</option><option value=\'100a\'>100A</option><option value=\'200a\'>200A</option><option value=\'500a\'>500A</option><option value=\'1000a\'>1000A</option></optgroup>'; this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'Ampere hours (Ah)\'><option value=\'50ah\'>50Ah</option><option value=\'100ah\'>100Ah</option><option value=\'200ah\'>200Ah</option><option value=\'500ah\'>500Ah</option><option value=\'1000ah\'>1000Ah</option></optgroup>';}">
+<select id="volsel" onchange="if(this.value=='90/3.7v'){ this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Current Output</option><optgroup label=\'milli-Amperes (mA)\'><option value=\'1/5000mA\'>5000mA</option><option value=\'1.5/8000ma\'>8000mA</option><option value=\'2/10000ma\'>10000mA</option><option value=\'3/15000ma\'>15000mA</option><option value=\'4/20000ma\'>20000mA</option></optgroup>';this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'milli-Ampere hours (mAh)\'><option value=\'1/2200mAh\'>2200mAh</option><option value=\'1.4/2600mah\'>2600mAh</option><option value=\'1.6/2800mah\'>2800mAh</option><option value=\'1.8/3000mah\'>3000mAh</option><option value=\'2/3200mah\'>3200mAh</option></optgroup>';} else { this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Output Current</option><optgroup label=\'Amperes (A)\'><option value=\'1/50a\'>50A</option><option value=\'2/100a\'>100A</option><option value=\'4/200a\'>200A</option><option value=\'10/500a\'>500A</option><option value=\'20/1000a\'>1000A</option></optgroup>'; this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'Ampere hours (Ah)\'><option value=\'1/50ah\'>50Ah</option><option value=\'2/100ah\'>100Ah</option><option value=\'4/200ah\'>200Ah</option><option value=\'10/500ah\'>500Ah</option><option value=\'20/1000ah\'>1000Ah</option></optgroup>';};getTotal(this,'plus');">
 <option selected disabled>Nominal Voltage</option>
 <optgroup label="Volts (V)">
-<option value="3.7v">3.7V</option>
-<option value="12v">12V</option>
-<option value="24v">24V</option>
-<option value="48v">48V</option>
+<option value="90/3.7v">3.7V</option>
+<option value="750/12v">12V</option>
+<option value="1350/24v">24V</option>
+<option value="2500/48v">48V</option>
 </optgroup>
-</select><select>
+</select><select id="capsel" onchange="getTotal(this,'times')">
 <option selected disabled>Capacity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
 <optgroup label="Select a Nominal Volage first"></optgroup>
-</select><select>
+</select><select id="cursel" onchange="getTotal(this,'times')">
 <option selected disabled>Max Current Output </option>
 <optgroup label="Select a Nominal Volage first"></optgroup>
-</select><button onclick="addToCart()" class="mbg">Add To Cart</button>
+</select><button onclick="" class="nbg total">0.00</button><button onclick="getE('#services').outerHTML = xservices" class="nbg">Reset</button><button onclick="addToCart()" class="mbg">Add To Cart</button>
 </div>
 <button class="exp" onclick="expand(this)">&plus; Define Custom Power Bank</button><div></div>
 <button class="exp" onclick="expand(this)">&plus; Define Custom Portable Power</button><div></div>

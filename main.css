@@ -58,12 +58,14 @@ button + .shopping-bag {margin-left:4px;}
 .omenu:before {opacity:0;transition:all 1s;}
 .omenu {tex-align:right;overflow:hidden;}
 
-.mitem {background-color:#1f2840;height:3em;color:white;width:calc(100% - 1em);outline-color:transparent;font-size:20px;font-family:regular;border:1px solid transparent;text-align:right;padding-right:2em;border-top:1px dotted rgba(10,30,50,0.3);outline-color:transparent;margin-left:1em;}
+.mitem {background-color:#1f2840;height:3em;color:white;width:calc(100% - 1.5em);outline-color:transparent;font-size:20px;font-family:regular;border:1px solid transparent;text-align:right;padding-right:2em;border-top:1px dotted rgba(10,30,50,0.3);outline-color:transparent;margin-left:1em;}
 .bck {background-image:url(icons/multiply-3-xl.png);background-size:auto 40%;background-position:0px 50%;margin-top:8px;outline-color:transparent;}
 
-button a {text-decoration:none;color:inherit;font-size:inherit;font-family:inherit;width:inherit;height:inherit;}
+button a {text-decoration:none;color:inherit;font-size:inherit;font-family:inherit;width:inherit;height:inherit;display:inline;}
+#tom button a, #mom button a {text-decoration:none;color:inherit;font-size:inherit;font-family:inherit;width:inherit;height:inherit;display:inline-block;}
 
 button.mbg {color:white;}
+button.nbg {color:white;}
 
 
 .banner {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
@@ -72,10 +74,11 @@ button.mbg {color:white;}
 .banquad {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
 
 #content [class*="ban"] img {opacity:0.9;}
-#content [class*="ban"] span {display:block;margin-top:-5em;position:absolute;color:white;font-family:mainfont;margin-left:14px;padding-right:2em;text-shadow:0px 0px 1px #888;}
+#content [class*="ban"] span {display:block;margin-top:-3.5em;position:absolute;color:white;font-family:mainfont;margin-left:14px;padding-right:2em;text-shadow:0px 0px 2px #555;}
 
 
-#content .banner span font {font-size:14px;display:block;margin-top:16px;font-family:regular;}
+#content .banner span font {font-size:16px;display:inline-block;margin-top:15px;font-family:regular;}
+#content .banner span font a {font-size:16px;display:inline-block;margin-top:8px;font-family:regular;color:rgba(255,186,66,1);}
 
 
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);}
@@ -84,6 +87,9 @@ button.mbg {color:white;}
 .exp + div {height:0px;width:calc(100% - 3em);overflow:hidden;padding-left:1.5em;}
 .exp + div select, .exp + div input, .exp + div button, .exp + div span {margin-left:1.5em;border-radius:3px;padding:4px;border:1px solid #123;color:#123;margin:1em;height:32px;}
 .exp + div button, button.mbg {color:white;font-size:14px;padding-left:8px;padding-right:8px;font-family:mainfont;}
+.exp + div button.nbg {color:dimgray;font-size:14px;padding-left:8px;padding-right:8px;font-family:mainfont;}
+.exp + div button.total {color:dimgray;font-size:14px;padding-left:8px;padding-right:8px;font-family:mainfont;}
+.exp + div button.total:before {content:"R";color:dimgray;}
 
 
 

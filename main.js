@@ -38,7 +38,10 @@ window.addEventListener("load", function() {
  window.addEventListener("resize",function() { getE('#content').setAttribute("style","height:"+ screen.height + "px;");  });
  window.addEventListener("orientationchange",function() { getE('#content').setAttribute("style","height:"+ screen.height + "px;");  });
 
-linker()
+linker();
+
+//fetch services
+window.xservices = document.querySelector('#services').outerHTML;
 
 	
 window.setTimeout(function() {
@@ -61,3 +64,13 @@ window.setTimeout(function() {
 	 }
  }
  
+ 
+ function getTotal(ee,w) {
+	 ye = ee.value.split("/");
+	 eee = ye[0];
+	 if(w=="plus") {
+	 ee.parentNode.querySelector('.total').innerHTML = (ee.parentNode.querySelector('.total').innerHTML*1)+(eee*1); } else {
+	 ee.parentNode.querySelector('.total').innerHTML = (ee.parentNode.querySelector('.total').innerHTML*1)*(eee*1); }
+	 jj = ee.parentNode.querySelector('.total').innerHTML.split('.');
+	 ee.parentNode.querySelector('.total').innerHTML = jj[0];
+ }
