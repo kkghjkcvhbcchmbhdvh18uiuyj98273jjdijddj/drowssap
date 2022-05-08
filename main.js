@@ -73,4 +73,5 @@ window.setTimeout(function() {
 	 ee.parentNode.querySelector('.total').innerHTML = (ee.parentNode.querySelector('.total').innerHTML*1)*(eee*1); }
 	 jj = ee.parentNode.querySelector('.total').innerHTML.split('.');
 	 ee.parentNode.querySelector('.total').innerHTML = jj[0];
+	 ee.setAttribute("disabled","true");
  }
