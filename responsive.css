@@ -15,6 +15,22 @@
 .banthree {width:calc(100% - 1.5em);}
 .banquad {width:calc(100% - 1.5em);}
 #content .banquad span {font-size:32px;}
+
+
+
+#content [class*="ban"] span {display:block;position:absolute;color:white;font-family:mainfont;margin-left:14px;padding-right:2em;text-shadow:0px 0px 2px #555;}
+#content .banner span {margin-top:-5em;}
+
+
+#content [class*="ban"] span font {font-size:16px;display:inline-block;margin-top:15px;font-family:regular;}
+#content [class*="ban"] span font a {font-size:16px;display:inline;margin-top:8px;font-family:regular;color:rgba(255,186,66,1);}
+
+#content .banner span {margin-top:-5.5em;}
+#content .bantwo span {margin-top:-5.5em;}
+#content .banthree span {margin-top:-5em;}
+#content .banquad span {margin-top:-5em;}
+
+
 #sociallinks {display:block;margin-top:12px;}
 
 @media only screen and (min-width: 600px) {
@@ -25,15 +41,37 @@
   #cart .box {height:65%;width:75%;}
   .shopping-menu:focus + .omenu {width:calc(50% + 4.5em);}
   .shopping-menu:focus + .omenu:before {opacity:1;background-color:rgba(0,0,0,0.4);height:inherit;width:100%;content:" ";position:fixed;left:calc(-50% - 3em);top:-4px;}
-  .shopping-menu:blur + .omenu .mitem {display:none;}
-#content .banquad span {font-size:18px;margin-top:-3em;margin-left:10px;}
-#content .banquad span font {display:none;}
-    .banner {width:calc(100% - 1.5em);}
-.bantwo {width:calc(50% - 1.5em);;}
-.banthree {width:calc(50% - 1.5em);;}
-.banquad {width:calc(25% - 1.5em);}
+	.shopping-menu:blur + .omenu .mitem {display:none;}
+	#content .banquad span {font-size:16px;margin-top:-3em;margin-left:8px;}
+	#content .bantwo span {font-size:24px;margin-top:-5em;margin-left:8px;}
+	#content .banquad span font {display:none;}
+	#content .bantwo span font {font-size:13px;}
+	.banner {width:calc(100% - 1.5em);}
+	.bantwo {width:calc(50% - 1.5em);;}
+	.banthree {width:calc(50% - 1.5em);;}
+	.banquad {width:calc(25% - 1.5em);}
+
+
+
+#content [class*="ban"] span {display:block;position:absolute;color:white;font-family:mainfont;margin-left:14px;padding-right:2em;text-shadow:0px 0px 2px #555;}
+#content .banner span {margin-top:-5.5em;}
+#content .bantwo span {margin-top:-8em;}
+#content .banthree span {margin-top:-7em;}
+#content .banquad span {margin-top:-5em;}
+
+
+#content [class*="ban"] span font {font-size:14px;display:inline-block;margin-top:15px;font-family:regular;}
+#content [class*="ban"] span font a {font-size:14px;display:block;margin-top:8px;font-family:regular;color:rgba(255,186,66,1);}
+
+
 #sociallinks {display:inline-block;margin-left:1.5em;margin-top:0px;}
+
+.rr span {display:inline-block;width:8.5em;}
+
+
+
 }
+
 @media only screen and (min-width: 880px) {
   /* For desktop: */
   .dmenu {display:block;}
@@ -41,7 +79,23 @@
   .tmenu {display:none;}
   #cart .box {height:40%;width:50%;}
   .omenu {display:none;}
+  
+  
 #content .banquad span {font-size:20px;}
+
+#content [class*="ban"] span {display:block;margin-top:-4em;position:absolute;color:white;font-family:mainfont;margin-left:14px;padding-right:2em;text-shadow:0px 0px 2px #555;}
+
+
+#content [class*="ban"] span font {font-size:16px;display:inline-block;margin-top:15px;font-family:regular;}
+#content [class*="ban"] span font a {font-size:16px;display:inline;font-family:regular;color:rgba(255,186,66,1);}
+
+
+#content .banner span {margin-top:-5.5em;}
+#content .bantwo span {margin-top:-6em;}
+#content .banthree span {margin-top:-5em;}
+#content .banquad span {margin-top:-5em;}
+.rr span {display:inline-block;width:11em;}
+
   .banner {width:calc(100% - 1.5em);}
 .bantwo {width:calc(50% - 1.5em);}
 .banthree {width:calc(33.333333% - 1.5em);}

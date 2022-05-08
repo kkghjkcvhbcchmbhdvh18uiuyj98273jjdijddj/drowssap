@@ -73,23 +73,22 @@ button.nbg {color:white;}
 .banthree {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
 .banquad {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
 
-#content [class*="ban"] img {opacity:0.9;}
-#content [class*="ban"] span {display:block;margin-top:-3.5em;position:absolute;color:white;font-family:mainfont;margin-left:14px;padding-right:2em;text-shadow:0px 0px 2px #555;}
-
-
-#content .banner span font {font-size:16px;display:inline-block;margin-top:15px;font-family:regular;}
-#content .banner span font a {font-size:16px;display:inline-block;margin-top:8px;font-family:regular;color:rgba(255,186,66,1);}
+#content [class*="ban"] * {line-height:1.5em;overflow:hidden;word-wrap:break-word;}
+#content [class*="ban"].banquad {color:rgba(255,186,66,1);text-decoration:none;} 
+#content [class*="ban"] img {opacity:0.85;}
 
 
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;}
 #services .h1 {margin-left:1.5em;color:#123;}
-.exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:1.5em;line-height:24px;height:24px;margin-bottom:4px;outline-color:unset;border:1px solid transparent;}
+.exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:1.5em;line-height:24px;height:24px;margin-bottom:4px;outline-color:#eee;border:1px solid transparent;}
 .exp + div {height:0px;width:calc(100% - 3em);overflow:hidden;padding-left:1.5em;}
 .exp + div select, .exp + div input, .exp + div button, .exp + div span {margin-left:1.5em;border-radius:3px;padding:4px;border:1px solid #123;color:#123;margin:1em;height:32px;}
 .exp + div button, button.mbg {color:white;font-size:14px;padding-left:8px;padding-right:8px;font-family:mainfont;}
 .exp + div button.nbg {color:dimgray;font-size:14px;padding-left:8px;padding-right:8px;font-family:mainfont;}
 .exp + div button.total {color:dimgray;font-size:14px;padding-left:8px;padding-right:8px;font-family:mainfont;}
 .exp + div button.total:before {content:"R";color:dimgray;}
+
+
 
 
 
@@ -107,7 +106,7 @@ button.nbg {color:white;}
 #sociallinks a:nth-child(4) {background-image:url(social/twitter--v1.png);}
 
 
-#delnot {display:block;width:100%;min-height:3em;overflow:hidden;color:white;text-shadow:0px 0px 2px #444;background-color:rgba(255,186,66,1);font-family:mainfont;text-align:center;font-size:18px;padding:1em;border-top:1px solid rgba(239,170,50,1);}
-#delnot .delicon {background-image:url(icons/pin-8-xl.png);display:inline-block;height:20px;width:20px;margin-right:0.5em;}
+#delnot {display:block;width:100%;min-height:2em;overflow:hidden;color:white;text-shadow:0px 0px 2px #444;background-color:rgba(255,186,66,1);font-family:mainfont;text-align:center;font-size:16px;padding:0.75em;border-top:1px solid rgba(239,170,50,0.9);}
+#delnot .delicon {background-image:url(icons/pin-8-xl.png);display:inline-block;height:18px;width:18px;margin-right:0.5em;}
 
 
