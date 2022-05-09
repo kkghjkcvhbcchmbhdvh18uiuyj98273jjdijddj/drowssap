@@ -68,10 +68,7 @@ button.mbg {color:white;}
 button.nbg {color:white;}
 
 
-.banner {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
-.bantwo {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
-.banthree {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
-.banquad {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+.rr {margin:0.5em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
 
 #content .rr * {line-height:1.5em;overflow:hidden;word-wrap:break-word;text-transform:capitalize;}
 #content .rr.banquad {color:rgba(255,186,66,1);text-decoration:none;} 
