@@ -73,9 +73,9 @@ button.nbg {color:white;}
 .banthree {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
 .banquad {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
 
-#content [class*="ban"] * {line-height:1.5em;overflow:hidden;word-wrap:break-word;text-transform:capitalize;}
-#content [class*="ban"].banquad {color:rgba(255,186,66,1);text-decoration:none;} 
-#content [class*="ban"] img {opacity:0.85;}
+#content .rr * {line-height:1.5em;overflow:hidden;word-wrap:break-word;text-transform:capitalize;}
+#content .rr.banquad {color:rgba(255,186,66,1);text-decoration:none;} 
+#content .rr img {opacity:0.85;}
 
 
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;}
