@@ -50,6 +50,7 @@ button + .shopping-bag {margin-left:4px;}
 #cart .box {background-color:white;border:1px solid #fff;box-shadow:0px 0px 2px rgba(0,0,0,0.5);border-radius:3px;position:relative;transition:width 0.5s, height 0.5s;text-align:center;overflow:hidden;}
 #cart .box button {width:calc(100% * 0.4);height:calc(100% * 0.15);margin:calc(100% * 0.025);margin-top:0.55em;font-family:mainfont;font-size:15px;outline-color:transparent;overflow:hidden;}
 #closecartB {color:#1f3044;}
+#closecartB:before {content:"R";color:inherit;}
 #cartlist {height:70%;width:calc(100% - 16px);position:relative;margin:8px;border:1px solid #eee;border-radius:3px;}
 
 
@@ -69,10 +70,14 @@ button.nbg {color:white;}
 
 
 .rr {margin:0.5em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
+.rr img {opacity:0.8;}
 
-#content .rr * {line-height:1.5em;overflow:hidden;word-wrap:break-word;text-transform:capitalize;}
+.rr:nth-child(1) {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+.rr:nth-child(1) img {opacity:0.9;}
+.rr:nth-child(3) img {opacity:0.5;}
+
+#content .rr * {line-height:1.5em;overflow:hidden;word-wrap:break-word;text-transform:capitalize;text-shadow:0px 0px 3px #555;}
 #content .rr.banquad {color:rgba(255,186,66,1);text-decoration:none;} 
-#content .rr img {opacity:0.85;}
 
 
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;}
@@ -103,7 +108,7 @@ button.nbg {color:white;}
 #sociallinks a:nth-child(4) {background-image:url(social/twitter--v1.png);}
 
 
-#delnot {display:block;width:100%;min-height:2em;overflow:hidden;color:white;text-shadow:0px 0px 2px #444;background-color:rgba(255,186,66,1);font-family:mainfont;text-align:center;font-size:16px;padding:0.75em;border-top:1px solid rgba(239,170,50,0.9);}
+#delnot {display:block;width:100%;min-height:2em;overflow:hidden;color:white;text-shadow:0px 0px 2px #444;background-color:rgba(240,170,50,1);font-family:mainfont;text-align:center;font-size:16px;padding:0.75em;border-top:1px solid rgba(239,170,50,0.9);}
 #delnot .delicon {background-image:url(icons/pin-8-xl.png);display:inline-block;height:18px;width:18px;margin-right:0.5em;}
 
 
