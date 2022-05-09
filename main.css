@@ -118,6 +118,5 @@ button.nbg {color:white;}
 
 
 #delnot {display:block;width:100%;min-height:2em;overflow:hidden;color:white;text-shadow:0px 0px 2px #444;background-color:rgba(240,170,50,1);font-family:mainfont;text-align:center;font-size:16px;padding:0.75em;border-top:1px solid rgba(239,170,50,0.9);}
-#delnot .delicon {background-image:url(icons/pin-8-xl.png);display:inline-block;height:18px;width:18px;margin-right:0.5em;}
 
 
