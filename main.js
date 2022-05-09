@@ -37,6 +37,10 @@ window.addEventListener("load", function() {
  window.addEventListener("pageshow",function() { getE('#content').setAttribute("style","height:"+ screen.height + "px;");  });
  window.addEventListener("resize",function() { getE('#content').setAttribute("style","height:"+ screen.height + "px;");  });
  window.addEventListener("orientationchange",function() { getE('#content').setAttribute("style","height:"+ screen.height + "px;");  });
+ 
+ window.addEventListener("pageshow",function() { getE('body').setAttribute("style","width:"+ screen.width + "px;");  });
+ window.addEventListener("resize",function() { getE('body').setAttribute("style","width:"+ screen.width + "px;");  });
+ window.addEventListener("orientationchange",function() { getE('body').setAttribute("style","width:"+ screen.width + "px;");  });
 
 linker();
 

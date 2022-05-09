@@ -1,7 +1,7 @@
 @font-face {font-family:black; src:url(roboto/Roboto-Black.ttf);}
 @font-face {font-family:mainfont; src:url(robotomedium.ttf);}
 @font-face {font-family:regular; src:url(roboto/Roboto-Regular.ttf);}
-html {width:100%;max-width:100%;min-height:100%;overflow-x:hidden;}
+html {margin:0px;width:100%;max-width:100%;min-height:100%;overflow-x:hidden;}
 body {margin:0px;font-size:12px;background-color:#ffffff;overflow-y:unset;width:100%;max-width:100%;overflow-x:hidden;height:100%;}
 * {word-wrap: break-word;transition: all 1.5s;margin:0px;box-sizing: border-box;background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:cover;outline-color:rgba(255,186,66,1);text-decoration:none;}
 .center {transform:translate(-50%,-50%);left:50%;top:48%;}
