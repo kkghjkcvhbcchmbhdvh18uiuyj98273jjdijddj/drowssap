@@ -72,9 +72,18 @@ button.nbg {color:white;}
 .rr {margin:0.5em;margin-top:0px;background-color:rgba(31,40,64,1);float:left;}
 .rr img {opacity:0.8;}
 
-.rr:nth-child(1) {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
-.rr:nth-child(1) img {opacity:0.9;}
+.rr:nth-child(1) img {opacity:0.6;}
+.rr:nth-child(2) img {opacity:0.4;}
 .rr:nth-child(3) img {opacity:0.5;}
+.rr:nth-child(4) img {opacity:0.6;}
+.rr:nth-child(5) img {opacity:0.6;}
+.rr:nth-child(6) img {opacity:0.5;}
+.rr:nth-child(7) img {opacity:0.5;}
+.rr:nth-child(8) img {opacity:0.6;}
+.rr:nth-child(9) img {opacity:0.7;}
+.rr:nth-child(10) img {opacity:0.7;}
+.rr:nth-child(11) img {opacity:0.7;}
+.rr:nth-child(12) img {opacity:0.7;}
 
 #content .rr * {line-height:1.5em;overflow:hidden;word-wrap:break-word;text-transform:capitalize;text-shadow:0px 0px 3px #555;}
 #content .rr.banquad {color:rgba(255,186,66,1);text-decoration:none;} 
