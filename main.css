@@ -29,8 +29,8 @@ div {display:block;margin:0px;}
 
 
 .band {width:100%;height:4em;border-bottom:1px solid rgba(20,60,100,1);box-shadow:0px 1px 1px rgba(10,30,50,0.9);}
-.band:before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:16px;float:left;margin-top:0.5em;}
-.ame {width:calc(100% - 6em);}
+.band:before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:2px;float:left;margin-top:0.5em;}
+.ame {width:calc(100% - 3.5em);}
 .dmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
 .tmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
 .mmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
@@ -53,7 +53,7 @@ button + .shopping-bag {margin-left:4px;}
 #cartlist {height:70%;width:calc(100% - 16px);position:relative;margin:8px;border:1px solid #eee;border-radius:3px;}
 
 
-#content {margin:0px;padding:1em;padding-top:0px;display:block;background-color:white;width:100%;overflow:unset;}
+#content {margin:0px;padding:0.25em;padding-top:0px;display:block;background-color:white;width:100%;overflow:unset;}
 
 .omenu:before {opacity:0;transition:all 1s;}
 .omenu {tex-align:right;overflow:hidden;}
@@ -68,10 +68,10 @@ button.mbg {color:white;}
 button.nbg {color:white;}
 
 
-.banner {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
-.bantwo {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
-.banthree {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
-.banquad {margin:0.75em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+.banner {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+.bantwo {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+.banthree {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
+.banquad {margin:0.5em;margin-top:0px;background-color:rgba(255,186,66,1);float:left;}
 
 #content [class*="ban"] * {line-height:1.5em;overflow:hidden;word-wrap:break-word;text-transform:capitalize;}
 #content [class*="ban"].banquad {color:rgba(255,186,66,1);text-decoration:none;} 
@@ -79,8 +79,8 @@ button.nbg {color:white;}
 
 
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;}
-#services .h1 {margin-left:1.5em;color:#123;}
-.exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:1.5em;line-height:24px;height:24px;margin-bottom:4px;outline-color:#eee;border:1px solid transparent;}
+#services .h1 {margin-left:0.75em;color:#123;}
+.exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:0.75em;line-height:24px;height:24px;margin-bottom:4px;outline-color:#eee;border:1px solid transparent;}
 .exp + div {height:0px;width:calc(100% - 3em);overflow:hidden;padding-left:1.5em;}
 .exp + div select, .exp + div input, .exp + div button, .exp + div span {margin-left:1.5em;border-radius:3px;padding:4px;border:1px solid #123;color:#123;margin:1em;height:32px;}
 .exp + div button, button.mbg {color:white;font-size:14px;padding-left:8px;padding-right:8px;font-family:mainfont;}
@@ -92,7 +92,7 @@ button.nbg {color:white;}
 
 
 
-#footer {position:relative;width:100%;font-size:11px;display:block;bottom:0px;text-align:center;overflow:hidden;min-height:4em;background-color:#101320;padding-right:1.5em;padding-left:2em;padding-top:1em;padding-bottom:7px;border-top:1px solid #1f2840;}
+#footer {position:relative;width:100%;font-size:11px;display:block;bottom:0px;text-align:center;overflow:hidden;min-height:4em;background-color:#101320;padding-right:1em;padding-left:1.5em;padding-top:1em;padding-bottom:7px;border-top:1px solid #1f2840;}
 .boarder {border-bottom:1px solid #000;display:inline-block;width:calc(100% - 3em);opacity:0.1;}
 #footer a {line-height:24px;font-size:11px;font-family:mainfont;color:#bbb;}
 #footer span {line-height:24px;display:inline;margin-left:12px;margin-right:10px;color:transparent;font-size:8px;}
