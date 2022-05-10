@@ -89,6 +89,7 @@ button.nbg {color:white;}
 #content .rr.banquad {color:rgba(255,186,66,1);text-decoration:none;} 
 
 
+
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;}
 #services .h1 {margin-left:0.75em;color:#123;}
 .exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:0.75em;line-height:24px;height:24px;margin-bottom:4px;outline-color:#eee;border:1px solid transparent;}
@@ -103,7 +104,8 @@ button.nbg {color:white;}
 
 
 
-#footer {position:relative;width:100%;font-size:11px;display:block;bottom:0px;text-align:center;overflow:hidden;min-height:4em;background-color:#101320;padding-right:1em;padding-left:1.5em;padding-top:1em;padding-bottom:7px;border-top:1px solid #1f2840;}
+#footer {position:relative;width:100%;font-size:11px;display:block;bottom:0px;text-align:center;overflow:hidden;min-height:4em;background-color:#101320;padding-top:1em;padding-bottom:7px;border-top:1px solid #1f2840;}
+#footer .keepin {display:inline-block;}
 .boarder {border-bottom:1px solid #000;display:inline-block;width:calc(100% - 3em);opacity:0.1;}
 #footer a {line-height:24px;font-size:11px;font-family:mainfont;color:#bbb;}
 #footer span {line-height:24px;display:inline;margin-left:12px;margin-right:10px;color:transparent;font-size:8px;}

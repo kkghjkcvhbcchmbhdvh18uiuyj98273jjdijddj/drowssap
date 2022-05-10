@@ -45,8 +45,9 @@ window.addEventListener("load", function() {
 linker();
 
 //fetch services
+if(document.querySelector('#services')) {
 window.xservices = document.querySelector('#services').outerHTML;
-
+}
 	
 window.setTimeout(function() {
 		document.querySelector('#loader').style.opacity="0";

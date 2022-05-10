@@ -33,7 +33,7 @@
 .rr span {display:inline-block;width:10em;}
 
 #sociallinks {display:block;margin-top:12px;}
-
+#footer .keepin {width:calc(100% - 4em);padding-left:1.15em;}
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .tmenu {display:block;}
@@ -81,7 +81,7 @@
 
 .rr span {display:inline-block;width:8.5em;}
 #content .rr {overflow:hidden;}
-
+#footer .keepin {display:inline-block;width:calc(100% - 2em);padding-left:1.9em;text-align:center;}
 
 }
 
@@ -126,4 +126,6 @@
 .banthree {width:calc(33.333333% - 1em);}
 .banquad {width:calc(25% - 1em);}
 #sociallinks {display:inline-block;margin-top:0px;margin-left:3em;}
+#footer .keepin {display:inline-block;width:calc(100% - 2em);padding-left:auto;text-align:center}
+
 }
