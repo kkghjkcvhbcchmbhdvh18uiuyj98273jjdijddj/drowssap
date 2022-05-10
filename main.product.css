@@ -39,7 +39,7 @@
 .pfaq {display:block;width:100%;background-color:#eee;float:left;}
 .bfh {font-size:15px;font-family:mainfont;margin:16px;color:rgba(31,40,64,1);}
 .bfq {outline-color:transparent;font-size:15px;font-family:regular;margin:16px;color:royalblue;}
-.qanswer {display:none;height:0px;overflow:hidden;padding:12px;width:calc(100% - 3em);font-family:regular;color:#123;margin-left:12px;}
+.qanswer {display:none;height:0px;overflow:hidden;padding:12px;width:calc(100% - 3em);font-family:regular;color:#123;margin-left:16px;}
 .bfq:focus + .qanswer {display:block;height:unset;}
 
 
