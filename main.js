@@ -1,3 +1,5 @@
+localStorage.removeItem('cartlist');
+
 function timed() {
 	window.setTimeout(function() {
 		
