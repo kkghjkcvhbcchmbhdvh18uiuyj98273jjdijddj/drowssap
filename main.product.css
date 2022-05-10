@@ -12,7 +12,7 @@
 .ph1 {font-size:24px;font-family:mainfont;margin:1em;}
 .ph2 {font-size:16px;font-family:regular;margin:1em;}
 .ph3 {font-size:14px;font-family:regular;margin:1em;font-style:italic;color:royalblue;}
-.phv {margin-left:6px;}
+.phv {margin-left:16px;}
 .prodinfo .addToCart {top:1px;}
 
 .adder {overflow:hidden;border:1px solid grey;display:inline-flex;font-size:14px;border-radius:2px;}
