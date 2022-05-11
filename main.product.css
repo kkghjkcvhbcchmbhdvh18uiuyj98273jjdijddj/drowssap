@@ -29,11 +29,11 @@
 .ph7 {font-size:16px;font-family:regular;margin:1em;line-height:1.5em;}
 
 .previews {position:relative;display:block;top:4px;width:100%;height:4em;font-size:16px;}
-.prev {width:4em;height:4em;border:2px solid rgba(31,40,64,1);margin-left:4px;display:inline-block;opacity:0.7;}
+.prev {width:4em;height:4em;border:2px solid rgba(31,40,64,1);margin-left:4px;display:inline-block;opacity:0.8;}
 .prv1 {background-image:url(powertank.png);}
 .prv2  {background-image:url(powertank2.png);}
 
-.previews .selected {opacity:0.7;border:2px solid rgba(255,186,66,1);}
+.previews .selected {opacity:0.99;border:2px solid rgba(255,186,66,1);}
 .prod {transition:all 1s;}
 
 .pfaq {display:block;width:100%;background-color:#eee;float:left;}
