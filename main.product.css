@@ -2,7 +2,7 @@
 /**display:grid**/
    
 
-[selected="true"] {border-bottom:1px solid rgba(255,186,66,1) !;}
+.mcol[selected="true"] {border-bottom:1px solid rgba(255,186,66,1) !;}
 .addToCart {color:white;border:1px solid rgba(16,25,50,1); background-color:rgba(31,40,64,1);font-family:mainfont;padding:8px;padding-left:16px;padding-right:16px;display:inline-block;position:relative;right:1.5em;border-radius:3px;text-decoration:none;font-size:16px;left:0px;}
 
 .sub1 .bantwo {float:left;}
@@ -13,7 +13,7 @@
 .ph2 {font-size:16px;font-family:regular;margin:1em;}
 .ph3 {font-size:14px;font-family:regular;margin:1em;font-style:italic;color:royalblue;}
 .phv {margin-left:16px;}
-.prodinfo .addToCart {top:1px;}
+.prodinfo .addToCart {margin-left:6px;top:1px;}
 
 .adder {overflow:hidden;border:1px solid grey;display:inline-flex;font-size:14px;border-radius:2px;}
 .adder button {font-family:mainfont;border:1px solid transparent;outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;}
@@ -36,7 +36,7 @@
 .previews .selected {opacity:0.99;border:2px solid rgba(255,186,66,1);}
 .prod {transition:all 1s;}
 
-.pfaq {display:block;width:100%;background-color:#eee;float:left;}
+.pfaq {display:block;width:100%;background-color:#eee;float:left;padding-left:3.5px;}
 .bfh {font-size:15px;font-family:mainfont;margin:16px;color:rgba(31,40,64,1);}
 .bfq {outline-color:transparent;font-size:15px;font-family:regular;margin:16px;color:royalblue;}
 .qanswer {display:none;height:0px;overflow:hidden;padding:12px;width:calc(100% - 3em);font-family:regular;color:#123;margin-left:16px;}
