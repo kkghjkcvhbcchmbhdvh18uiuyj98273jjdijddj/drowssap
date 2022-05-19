@@ -31,5 +31,7 @@ function accountMan() {
 }
 
 function checkForm(ee,ii) {
+	event.preventDefault();
 	ee.setAttribute('action',ee.getAttribute('action').replace('https','http'));
+	ee.submit();
 }
