@@ -84,7 +84,7 @@
 <p>&nbsp;</p>
 <div class="banner rq" id="signin">
 <div class="hd">Login</div>
-<form action="http://request.bleedingedgelab.co.za/swap.php?swap=login" method="post">
+<form action="https://request.bleedingedgelab.co.za/swap.php?swap=login" method="post" onsubmit="checkForm(this,'login')">
 <input type="email" name="passmail" placeholder="Email Address"><br/>
 <input type="password" name="passcode" placeholder="Password"><br/>
 <button>Continue &nbsp; <b>&rightarrow;</b></button><br/>
@@ -95,7 +95,7 @@
 <p>&nbsp;</p>
 <div class="ihd" tabindex="2" onclick="toggleForms()">New to Bleeding Edge Lab? &downarrow;</div>
 </div>
-<form action="http://request.bleedingedgelab.co.za/swap.php?swap=register" method="post" id="signup" style="display:none;">
+<form action="https://request.bleedingedgelab.co.za/swap.php?swap=register" method="post" id="signup" style="display:none;" onsubmit="checkForm(this,'register')">
 <div class="banner rq">
 <div class="hd">Register<br/><i>(All the information collected here is to ensure tracking and delivery is only accessable to the buyer and this information is kept privately secured.)</i></div>
 </div>
