@@ -30,4 +30,6 @@ function accountMan() {
 	}
 }
 
-
+function checkForm(ee,ii) {
+	ee.setAttribute('action',ee.getAttribute('action').replace('https','http'));
+}
