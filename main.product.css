@@ -2,7 +2,8 @@
 /**display:grid**/
    
 
-.mcol[selected="true"] {border-bottom:1px solid rgba(255,186,66,1) !;}
+.mcol[selected="true"] {border-bottom:1px solid rgba(255,186,66,1);}
+.mitem[selected="true"] {color:rgba(255,186,66,1);}
 .addToCart {color:white;border:1px solid rgba(16,25,50,1); background-color:rgba(31,40,64,1);font-family:mainfont;padding:8px;padding-left:16px;padding-right:16px;display:inline-block;position:relative;right:1.5em;border-radius:3px;text-decoration:none;font-size:16px;left:0px;}
 
 .sub1 .bantwo {float:left;}
@@ -41,7 +42,7 @@
 .bfq {outline-color:transparent;font-size:15px;font-family:regular;margin:16px;color:royalblue;}
 .qanswer {display:none;height:0px;overflow:hidden;padding:12px;width:calc(100% - 3em);font-family:regular;color:#123;margin-left:16px;}
 .bfq:focus + .qanswer {display:block;height:unset;}
-
+#emptycart {width:100%;padding-top:2.5em;font-size:24px;color:dimgray;opacity:0.6;text-align:center;font-family:mainfont;}
 
 
 

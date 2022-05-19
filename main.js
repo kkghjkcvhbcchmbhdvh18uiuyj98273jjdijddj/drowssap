@@ -1,4 +1,4 @@
-localStorage.removeItem('cartlist');
+//.localStorage.removeItem('cartlist');
 
 function timed() {
 	window.setTimeout(function() {
@@ -49,6 +49,8 @@ linker();
 //fetch services
 if(document.querySelector('#services')) {
 window.xservices = document.querySelector('#services').outerHTML;
+
+accountMan()
 }
 	
 window.setTimeout(function() {
