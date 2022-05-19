@@ -63,5 +63,5 @@
 .login_page .banner form  input {width:60%;}
 .login_page form  input {margin-top:16px;width:90%;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:30px;}
 .login_page form  input:focus {border:1px solid #1f2840;outline:unset;}
-.login_page form  button {background-color:#1f2840;color:white;border:1px solid #123;border-radius:3px;font-size:16px;height:32px;width:9em;outline:unset;margin-top:18px;fonr-family:mainfont;}
+.login_page form  button {background-color:#1f2840;color:white;border:1px solid #123;border-radius:3px;font-size:16px;height:38px;width:9em;outline:unset;margin-top:18px;fonr-family:mainfont;}
 .xih {font-size:14px;display:block;margin-top:16px;font-family:mainfont;}
