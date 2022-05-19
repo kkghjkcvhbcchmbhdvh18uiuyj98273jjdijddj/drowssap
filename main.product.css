@@ -47,3 +47,21 @@
 
 
 
+
+
+
+
+.login_page .rq {float:left;font-family:regular;}
+.hd {display:block;font-size:20px;font-family:mainfont;margin-top:24px;}
+.shd {display:block;font-size:16px;font-family:mainfont;margin-top:24px;}
+.ihd {display:block;font-size:17px;font-family:regular;color:royalblue;text-align:center;margin-top:40px;}
+.thd {display:block;font-size:12px;font-family:regular;margin-top:10px;color:dimgray;}
+.login_page #content a {text-decoration:none;color:royalblue;}
+.login_page #content i {color:dimgray;font-size:10px;}
+.login_page #content {width:calc(100% - 32px);margin-left:16px;}
+
+.login_page .banner form  input {width:60%;}
+.login_page form  input {margin-top:16px;width:90%;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:30px;}
+.login_page form  input:focus {border:1px solid #1f2840;outline:unset;}
+.login_page form  button {background-color:#1f2840;color:white;border:1px solid #123;border-radius:3px;font-size:16px;height:32px;width:9em;outline:unset;margin-top:18px;fonr-family:mainfont;}
+.xih {font-size:14px;display:block;margin-top:16px;font-family:mainfont;}
