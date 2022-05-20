@@ -24,7 +24,7 @@
 <button class="mcol"><a href="BELMore">BELMore</a></button>
 <button class="mcol"><a href="BELStudio">BELStudio</a></button>
 <button class="mcol"><a href="Power_Wall">Power Wall</a></button>
-<button class="mcol"><a href="/#services">Custom Order</a></button>
+<button class="mcol"><a href="Custom">Custom Order</a></button>
 <button class="mcol"><a href="Batteries">Batteries</a></button>
 <button class="mcol"><a href="Electronics">Electronics</a></button>
 <button class="mcol" id="account_login"><a href="Login">Login</a></button>
@@ -46,7 +46,7 @@
 <button class="mitem bck" id=""></button>
 <button class="mitem"><a href="Batteries">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
-<button class="mitem"><a href="/#services">Custom Order</a></button>
+<button class="mitem"><a href="Custom">Custom Order</a></button>
 <button class="mitem" id="t_account_login"><a href="Login">Login</a></button>
 <button class="mitem"><a href="Support">Support</a></button>
 <button class="mitem"><a href="About">About</a></button>
@@ -64,7 +64,7 @@
 <button class="mitem"><a href="BELMore">BELMore</a></button>
 <button class="mitem"><a href="BELStudio">BELStudio</a></button>
 <button class="mitem"><a href="Power_Wall">Power Wall</a></button>
-<button class="mitem"><a href="/#services">Custom Order</a></button>
+<button class="mitem"><a href="Custom">Custom Order</a></button>
 <button class="mitem"><a href="Batteries">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
 <button class="mitem" id="m_account_login"><a href="Login">Login</a></button>
@@ -122,26 +122,7 @@ Lamps...&nbsp;<a href="Power_Tank">Learn More</a></font>
 
 <div id="services">
 <div class="h1">Looking for something specific?</div>
-<button class="exp" onclick="expand(this)">&plus; Define Custom Battery</button><div>
-<select id="volsel" onchange="if(this.value=='90/3.7v'){ this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Current Output</option><optgroup label=\'milli-Amperes (mA)\'><option value=\'1/5000mA\'>5000mA</option><option value=\'1.3/8000ma\'>8000mA</option><option value=\'1.5/10000ma\'>10000mA</option><option value=\'2/15000ma\'>15000mA</option><option value=\'2.5/20000ma\'>20000mA</option></optgroup>';this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'milli-Ampere hours (mAh)\'><option value=\'1/2200mAh\'>2200mAh</option><option value=\'1.2/2600mah\'>2600mAh</option><option value=\'1.3/2800mah\'>2800mAh</option><option value=\'1.4/3000mah\'>3000mAh</option><option value=\'1.5/3200mah\'>3200mAh</option></optgroup>';} else { this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Output Current</option><optgroup label=\'Amperes (A)\'><option value=\'1/50a\'>50A</option><option value=\'1.5/100a\'>100A</option><option value=\'2/200a\'>200A</option><option value=\'5/500a\'>500A</option><option value=\'10/1000a\'>1000A</option></optgroup>'; this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'Ampere hours (Ah)\'><option value=\'1/50ah\'>50Ah</option><option value=\'1.5/100ah\'>100Ah</option><option value=\'2/200ah\'>200Ah</option><option value=\'5/500ah\'>500Ah</option><option value=\'10/1000ah\'>1000Ah</option></optgroup>';};getTotal(this,'plus');">
-<option selected disabled>Nominal Voltage</option>
-<optgroup label="Volts (V)">
-<option value="90/3.7v">3.7V</option>
-<option value="750/12v">12V</option>
-<option value="1350/24v">24V</option>
-<option value="2500/48v">48V</option>
-</optgroup>
-</select><select id="capsel" onchange="getTotal(this,'times')">
-<option selected disabled>Capacity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
-<optgroup label="Select a Nominal Volage first"></optgroup>
-</select><select id="cursel" onchange="getTotal(this,'times')">
-<option selected disabled>Max Current Output </option>
-<optgroup label="Select a Nominal Volage first"></optgroup>
-</select><button onclick="" class="nbg total">0.00</button><button onclick="getE('#services').outerHTML = xservices" class="nbg">Reset</button><button onclick="addToCart()" class="mbg">Add To Cart</button>
-</div>
-<button class="exp" onclick="expand(this)">&plus; Define Custom Power Bank</button><div></div>
-<button class="exp" onclick="expand(this)">&plus; Define Custom Portable Power</button><div></div>
-<button class="exp" onclick="expand(this)">&plus; Define Custom Power Wall</button><div></div>
+<button class="exp" onclick="location = 'Custom';">&plus; Define Custom Battery, Power Bank, Portable Solar Generator(Portable Powerstation) or Power Wall</button>
 <p>&nbsp;</p>
 </div>
 <div id="delnot">Free Nationwide Delivery (South Africa)
@@ -157,7 +138,7 @@ Lamps...&nbsp;<a href="Power_Tank">Learn More</a></font>
 <a href="Power_Tank">Power&nbsp;Tank&nbsp;Pro</a><span>&bull;</span>
 <a href="BELMore">BELMore</a><span>&bull;</span>
 <a href="BELStudio">BELStudio</a><span>&bull;</span>
-<a href="/#services">Custom&nbsp;Order</a><span>&bull;</span>
+<a href="Custom">Custom&nbsp;Order</a><span>&bull;</span>
 <a href="Electronics">Electronics</a><span>&bull;</span>
 <a href="Batteries">Batteries</a><span>&bull;</span>
 <a href="Account" id="f_account_login">Account</a><span>&bull;</span>

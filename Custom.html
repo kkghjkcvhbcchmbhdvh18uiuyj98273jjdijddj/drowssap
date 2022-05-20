@@ -6,7 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<meta name="theme-color" content="#1f2840">
 	<meta name="description" content="">
-    <title>Login - Bleeding Edge Lab (PTY) Ltd </title>
+    <title>Custom Order - Bleeding Edge Lab (PTY) Ltd </title>
 	<base href="">
     <link href="main.css" type="text/css" rel="stylesheet">
     <link href="responsive.css" type="text/css" rel="stylesheet">
@@ -14,7 +14,9 @@
     <link rel="shortcut icon" href="icon.png" sizes="64x64, 128x128, 192x192, 240x240, 360x360, 480x480, 640x640, 720x720, 800x800, 1080x1080" type="image/png">
    <link rel="apple-touch-icon" href="icon.png" sizes="64x64,96x96,128x128,256x256" type="image/png"/>
     <link rel="shortcut icon" href="favicon.png" type="image/png" sizes="16x16,24x24,32x32,64x64"/>
-	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;z-index:9;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}	</style>
+	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;z-index:9;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}
+    #content {display:none;}
+	</style>
 </head>
 <body class="login_page">
 <section id="header">
@@ -28,7 +30,7 @@
 <button class="mcol"><a href="Custom">Custom Order</a></button>
 <button class="mcol"><a href="Batteries">Batteries</a></button>
 <button class="mcol"><a href="Electronics">Electronics</a></button>
-<button class="mcol" id="account_login" selected="true"><a href="Login">Login</a></button>
+<button class="mcol" id="account_login"><a href="Login">Login</a></button>
 <button class="mcol"><a href="Support">Support</a></button>
 <button class="mcol shopping-bag" id="mstore"><a href="Tracking">&nbsp;&nbsp;&nbsp;</a></button>
 <button class="mcol shopping-cart" id="mcart">&nbsp;</button>
@@ -48,7 +50,7 @@
 <button class="mitem"><a href="Batteries">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
 <button class="mitem"><a href="Custom">Custom Order</a></button>
-<button class="mitem" id="t_account_login" selected="true"><a href="Login">Login</a></button>
+<button class="mitem" id="t_account_login"><a href="Login">Login</a></button>
 <button class="mitem"><a href="Support">Support</a></button>
 <button class="mitem"><a href="About">About</a></button>
 
@@ -68,7 +70,7 @@
 <button class="mitem"><a href="Custom">Custom Order</a></button>
 <button class="mitem"><a href="Batteries">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
-<button class="mitem" id="m_account_login" selected="true"><a href="Login">Login</a></button>
+<button class="mitem" id="m_account_login"><a href="Login">Login</a></button>
 <button class="mitem"><a href="Support">Support</a></button>
 
 </div>
@@ -77,66 +79,33 @@
 </section>
 <div class="bandaid"></div>
 
-
-
-
-<section id="content" class="sub1">
-<p>&nbsp;</p>
-<div class="banner rq" id="signin">
-<div class="hd">Login</div>
-<form method="post" onsubmit="checkForm(this,'login')">
-<input type="email" name="email" placeholder="Email Address"><br/>
-<input type="password" name="password" placeholder="Password"><br/>
-<button>Continue &nbsp; <b>&rightarrow;</b></button><br/>
-</form>
-</div>
-<p>&nbsp;</p>
-<div class="banner rq">
-<p>&nbsp;</p>
-<div class="ihd" tabindex="2" onclick="toggleForms()">New to Bleeding Edge Lab? &downarrow;</div>
-</div>
-<form method="post" id="signup" style="display:none;" onsubmit="checkForm(this,'register')">
-<div class="banner rq">
-<div class="hd">Register<br/><i>(All the information collected here is to ensure tracking and delivery is only accessable to the buyer and this information is kept privately secured.)</i></div>
-</div>
-<div class="banthree rq">
-<div class="shd">Login Information</div>
-
-<input type="email" name="email" placeholder="Email Address"><br/>
-<input type="password" name="password" placeholder="New Password"><br/>
-<input type="password" name="password2" placeholder="Confirm New Password"><br/>
-</div>
-<div class="banthree rq">
-<div class="shd">Personal Information</div>
-<input type="name" name="fullname" placeholder="Full Name"><br/>
-<input type="id" name="idnumber" placeholder="ID/Passport Number"><br/>
-<input type="number" name="phone" placeholder="Contact Number"><br/>
-
-</div>
-<div class="banthree rq">
-<div class="shd">Delivery Information<br/><i>(You can update this information anytime.)</i></div>
-<input type="address" name="streetaddress" placeholder="Street Number & Name"><br/>
-<input type="city" name="city" placeholder="City"><br/>
-<input type="zip" name="postal" placeholder="Zip Code"><br/>
-<input type="country" name="country" placeholder="South Africa" readonly><br/>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-<div class="banner rq">
-<div class="thd">By continuing you agree to having read the full Terms of Service which can be accessed by <a href="Legal">clicking here</a>. Thank you for your support. Bleeding Edge Lab (PTY) Ltd - Just Making Progress...</div>
-<button>Continue &nbsp; <b>&rightarrow;</b></button>
-<a href="Login_Instead^" onclick="event.preventDefault();toggleForms()" class="xih">Do you already have an account?</a>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-</form>
-
-<p>&nbsp;</p>
+<section id="content" class="sub1 support">
 </section>
 
-
-
+<div id="services">
+<div class="h1">Looking for something specific?</div>
+<button class="exp" onclick="expand(this)">&plus; Define Custom Battery</button><div>
+<select id="volsel" onchange="if(this.value=='90/3.7v'){ this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Current Output</option><optgroup label=\'milli-Amperes (mA)\'><option value=\'1/5000mA\'>5000mA</option><option value=\'1.3/8000ma\'>8000mA</option><option value=\'1.5/10000ma\'>10000mA</option><option value=\'2/15000ma\'>15000mA</option><option value=\'2.5/20000ma\'>20000mA</option></optgroup>';this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'milli-Ampere hours (mAh)\'><option value=\'1/2200mAh\'>2200mAh</option><option value=\'1.2/2600mah\'>2600mAh</option><option value=\'1.3/2800mah\'>2800mAh</option><option value=\'1.4/3000mah\'>3000mAh</option><option value=\'1.5/3200mah\'>3200mAh</option></optgroup>';} else { this.nextSibling.nextSibling.innerHTML='<option selected disabled>Max Output Current</option><optgroup label=\'Amperes (A)\'><option value=\'1/50a\'>50A</option><option value=\'1.5/100a\'>100A</option><option value=\'2/200a\'>200A</option><option value=\'5/500a\'>500A</option><option value=\'10/1000a\'>1000A</option></optgroup>'; this.nextSibling.innerHTML='<option selected disabled>Capacity &nbsp; &nbsp; &nbsp;</option><optgroup label=\'Ampere hours (Ah)\'><option value=\'1/50ah\'>50Ah</option><option value=\'1.5/100ah\'>100Ah</option><option value=\'2/200ah\'>200Ah</option><option value=\'5/500ah\'>500Ah</option><option value=\'10/1000ah\'>1000Ah</option></optgroup>';};getTotal(this,'plus');">
+<option selected disabled>Nominal Voltage</option>
+<optgroup label="Volts (V)">
+<option value="90/3.7v">3.7V</option>
+<option value="750/12v">12V</option>
+<option value="1350/24v">24V</option>
+<option value="2500/48v">48V</option>
+</optgroup>
+</select><select id="capsel" onchange="getTotal(this,'times')">
+<option selected disabled>Capacity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+<optgroup label="Select a Nominal Volage first"></optgroup>
+</select><select id="cursel" onchange="getTotal(this,'times')">
+<option selected disabled>Max Current Output </option>
+<optgroup label="Select a Nominal Volage first"></optgroup>
+</select><button onclick="" class="nbg total">0.00</button><button onclick="getE('#services').outerHTML = xservices" class="nbg">Reset</button><button onclick="addToCart()" class="mbg">Add To Cart</button>
+</div>
+<button class="exp" onclick="expand(this)">&plus; Define Custom Power Bank</button><div></div>
+<button class="exp" onclick="expand(this)">&plus; Define Custom Portable Power</button><div></div>
+<button class="exp" onclick="expand(this)">&plus; Define Custom Power Wall</button><div></div>
 <p>&nbsp;</p>
+</div>
 <div id="delnot">Free Nationwide Delivery (South Africa)
 </div>
 <section id="footer"><p class="boarder">&nbsp;</p>
@@ -392,23 +361,13 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="main.special.js"></script>
 <script type="text/javascript" src="main.cart.js"></script>
+
 <script>
-function toggleForms() {
-	if(getE('#signup').style.display=='none') {
-	getE('#signup').style.display='unset';
-	getE('#signin').style.display='none';
-	getE('.ihd').style.display = "none";
-	} else {
-	getE('#signin').style.display='unset';
-	getE('#signup').style.display='none';
-	getE('.ihd').style.display = "block";
-	}
-	window.scrollTo(0,0);
+if(!localStorage.getItem('user'))
+{
+	//location = "Login";
 }
 
-if(localStorage.getItem('user'))
-{
-	location = "Account";
-}
+getTrackingInfo();
 </script>
 </html>
