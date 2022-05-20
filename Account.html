@@ -6,7 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<meta name="theme-color" content="#1f2840">
 	<meta name="description" content="">
-    <title>Login - Bleeding Edge Lab (PTY) Ltd </title>
+    <title>Account Details - Bleeding Edge Lab (PTY) Ltd </title>
 	<base href="">
     <link href="main.css" type="text/css" rel="stylesheet">
     <link href="responsive.css" type="text/css" rel="stylesheet">
@@ -28,7 +28,7 @@
 <button class="mcol"><a href="/#services">Custom Order</a></button>
 <button class="mcol"><a href="Batteries">Batteries</a></button>
 <button class="mcol"><a href="Electronics">Electronics</a></button>
-<button class="mcol" id="account_login" selected="true"><a href="Login">Login</a></button>
+<button class="mcol" id="account_login" selected="true"><a href="Account">Account</a></button>
 <button class="mcol"><a href="Support">Support</a></button>
 <button class="mcol shopping-bag" id="mstore"><a href="Tracking">&nbsp;</a></button>
 <button class="mcol shopping-cart" id="mcart">&nbsp;</button>
@@ -48,7 +48,7 @@
 <button class="mitem"><a href="Batteries">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
 <button class="mitem"><a href="/#services">Custom Order</a></button>
-<button class="mitem" id="t_account_login" selected="true"><a href="Login">Login</a></button>
+<button class="mitem" selected="true"><a href="Account">Account</a></button>
 <button class="mitem"><a href="Support">Support</a></button>
 <button class="mitem"><a href="About">About</a></button>
 
@@ -68,7 +68,7 @@
 <button class="mitem"><a href="/#services">Custom Order</a></button>
 <button class="mitem"><a href="Batteries">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
-<button class="mitem" id="m_account_login" selected="true"><a href="Login">Login</a></button>
+<button class="mitem" selected="true"><a href="Account">Account</a></button>
 <button class="mitem"><a href="Support">Support</a></button>
 
 </div>
@@ -82,29 +82,16 @@
 
 <section id="content" class="sub1">
 <p>&nbsp;</p>
-<div class="banner rq" id="signin">
-<div class="hd">Login</div>
-<form method="post" onsubmit="checkForm(this,'login')">
-<input type="email" name="passmail" placeholder="Email Address"><br/>
-<input type="password" name="passcode" placeholder="Password"><br/>
-<button>Continue &nbsp; <b>&rightarrow;</b></button><br/>
-</form>
-</div>
 <p>&nbsp;</p>
+<form method="post" id="updateaccount" style="" onsubmit="checkForm(this,'update')">
 <div class="banner rq">
-<p>&nbsp;</p>
-<div class="ihd" tabindex="2" onclick="toggleForms()">New to Bleeding Edge Lab? &downarrow;</div>
-</div>
-<form method="post" id="signup" style="display:none;" onsubmit="checkForm(this,'register')">
-<div class="banner rq">
-<div class="hd">Register<br/><i>(All the information collected here is to ensure tracking and delivery is only accessable to the buyer and this information is kept privately secured.)</i></div>
+<div class="hd">Account Details<br/><i>You can alter the information below. Note that this information is required for delivery & identity confirmation.</i></div>
 </div>
 <div class="banthree rq">
 <div class="shd">Login Information</div>
 
 <input type="email" name="passmail" placeholder="Email Address"><br/>
 <input type="password" name="passcode" placeholder="New Password"><br/>
-<input type="password" name="passcode2" placeholder="Confirm New Password"><br/>
 </div>
 <div class="banthree rq">
 <div class="shd">Personal Information</div>
@@ -114,7 +101,7 @@
 
 </div>
 <div class="banthree rq">
-<div class="shd">Delivery Information<br/><i>(You can update this information anytime.)</i></div>
+<div class="shd">Delivery Information<br/><i>(The address below is where we will deliver your next purchase. You can edit it to your preferred address.)</i></div>
 <input type="address" name="streetaddress" placeholder="Street Number & Name"><br/>
 <input type="city" name="city" placeholder="City"><br/>
 <input type="zip" name="postal" placeholder="Zip Code"><br/>
@@ -123,9 +110,9 @@
 <p>&nbsp;</p>
 </div>
 <div class="banner rq">
-<div class="thd">By continuing you agree to having read the full Terms of Service which can be accessed by <a href="Legal">clicking here</a>. Thank you for supporting us. Bleeding Edge Lab (PTY) Ltd - Just Making Progress...</div>
-<button>Continue &nbsp; <b>&rightarrow;</b></button>
-<a href="Login_Instead^" onclick="event.preventDefault();toggleForms()" class="xih">Already have an account?</a>
+<div class="thd">This information is privately secured and can only be seen by you. </div>
+<button>Update &nbsp; <b>&uparrow;</b></button>
+<a href="Tracking"class="xih">Track your purchases</a>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 </div>
@@ -392,23 +379,13 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="main.special.js"></script>
 <script type="text/javascript" src="main.cart.js"></script>
+
 <script>
-function toggleForms() {
-	if(getE('#signup').style.display=='none') {
-	getE('#signup').style.display='unset';
-	getE('#signin').style.display='none';
-	getE('.ihd').style.display = "none";
-	} else {
-	getE('#signin').style.display='unset';
-	getE('#signup').style.display='none';
-	getE('.ihd').style.display = "block";
-	}
-	window.scrollTo(0,0);
+if(!localStorage.getItem('user'))
+{
+	location = "Login";
 }
 
-if(localStorage.getItem('user'))
-{
-	location = "Account";
-}
+getAccountInfo();
 </script>
 </html>

@@ -49,9 +49,9 @@ linker();
 //fetch services
 if(document.querySelector('#services')) {
 window.xservices = document.querySelector('#services').outerHTML;
-
-accountMan()
 }
+
+accountMan();
 	
 window.setTimeout(function() {
 		document.querySelector('#loader').style.opacity="0";
@@ -59,6 +59,18 @@ window.setTimeout(function() {
 		document.querySelector('#loader').outerHTML="";
 		}, 1000);
 		}, 1000);
+	
+window.setTimeout(function() {
+		if(getQ('notify')) {
+			notify(getQ('notify'));
+		loc = location.href.split('?');
+		window.history.pushState({}, document.title, "/" + loc[0]);
+		}
+		}, 2000);
+
+
+//window.history.pushState({}, document.title, "/" + "my-new-url.html");
+//end of onload	
  });
  
  

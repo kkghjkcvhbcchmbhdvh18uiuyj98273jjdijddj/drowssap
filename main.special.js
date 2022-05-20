@@ -34,9 +34,12 @@ function checkForm(ee,ii) {
 	event.preventDefault();
 	
 	if(ii=="register") {
-	action="http://request.bleedingedgelab.co.za/swap.php?swap=register"
+	action="http://request.bleedingedgelab.co.za/man.php?ref=register"
 	} else if(ii=="login") {
-	action="http://request.bleedingedgelab.co.za/swap.php?swap=login"	
+	action="http://request.bleedingedgelab.co.za/man.php?ref=login"	
+	
+	} else if(ii=="update") {
+	action="http://request.bleedingedgelab.co.za/man.php?ref=update"	
 	
 	}
 	string = "";
@@ -45,5 +48,64 @@ function checkForm(ee,ii) {
 		string += '&' + ins[i].getAttribute('name') + '=' + ins[i].value;
 	}
 	
+	if(location.hash=='buying')
+	{
+		string += '&ref=buying';
+	}
 	location = action + string;
+	
 }
+
+function getQ(variable)
+{ 
+  var query = window.location.search.substring(1); 
+  var vars = query.split("&"); 
+  for (var i=0;i<vars.length;i++)
+  { 
+    var pair = vars[i].split("="); 
+    if (pair[0] == variable)
+    { 
+      return pair[1].replace(/_bel_/g, "&nbsp;").replace(/_br_/g, "<br>");
+    } 
+  }
+  return false; //not found 
+}
+
+
+function getAccountInfo() {
+	
+	string = "";
+	ins = getE('#updateaccount').getElementsByTagName('input');
+	for(let i = 0; i<ins.length; i++) {
+	ins[i].value = localStorage.getItem('user_' + ins[i].getAttribute('name'));
+	}
+	
+}
+
+
+function nameprint() {
+	np = querySelectorAll('.nameprint');
+	for(let i = 0; i<np.length; i++) {
+		np[i].innerHTML = localStorage.getItem('user');
+	}
+	
+}
+if(localStorage.getItem('user')) { nameprint(); }
+	
+document.body.innerHTML += `<div id="notify">Notifications will appear here!</div>`;
+
+function notify(ii) {
+	getE('#notify').innerHTML = ii;
+	getE('#notify').setAttribute('style','height:13em;');
+	window.setTimeout(function() {	
+	getE('#notify').setAttribute('style','height:0px;');
+	} ,4000);
+}
+
+function getTrackingInfo() {
+	
+}
+
+
+
+	

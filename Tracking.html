@@ -6,7 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<meta name="theme-color" content="#1f2840">
 	<meta name="description" content="">
-    <title>Login - Bleeding Edge Lab (PTY) Ltd </title>
+    <title>Track Your Order - Bleeding Edge Lab (PTY) Ltd </title>
 	<base href="">
     <link href="main.css" type="text/css" rel="stylesheet">
     <link href="responsive.css" type="text/css" rel="stylesheet">
@@ -28,9 +28,9 @@
 <button class="mcol"><a href="/#services">Custom Order</a></button>
 <button class="mcol"><a href="Batteries">Batteries</a></button>
 <button class="mcol"><a href="Electronics">Electronics</a></button>
-<button class="mcol" id="account_login" selected="true"><a href="Login">Login</a></button>
+<button class="mcol" id="account_login"><a href="Login">Login</a></button>
 <button class="mcol"><a href="Support">Support</a></button>
-<button class="mcol shopping-bag" id="mstore"><a href="Tracking">&nbsp;</a></button>
+<button class="mcol shopping-bag" id="mstore" selected="true"><a href="Tracking">&nbsp;</a></button>
 <button class="mcol shopping-cart" id="mcart">&nbsp;</button>
 </div>
 <div class="tmenu ame">
@@ -40,7 +40,7 @@
 <button class="mcol"><a href="BELMore">BELMore</a></button>
 <button class="mcol"><a href="BELStudio">BELStudio</a></button>
 <button class="mcol"><a href="Power_Wall">Power Wall</a></button>
-<button class="mcol shopping-bag" id="tstore"><a href="Tracking">&nbsp;</a></button>
+<button class="mcol shopping-bag" id="tstore" selected="true"><a href="Tracking">&nbsp;</a></button>
 <button class="mcol shopping-cart" id="tmcart">&nbsp;</button>
 <button class="mcol shopping-menu" id="ttmenu">&nbsp;</button>
 <div class="omenu" id="tom">
@@ -48,14 +48,14 @@
 <button class="mitem"><a href="Batteries">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
 <button class="mitem"><a href="/#services">Custom Order</a></button>
-<button class="mitem" id="t_account_login" selected="true"><a href="Login">Login</a></button>
+<button class="mitem" id="t_account_login"><a href="Login">Login</a></button>
 <button class="mitem"><a href="Support">Support</a></button>
 <button class="mitem"><a href="About">About</a></button>
 
 </div>
 </div>
 <div class="mmenu ame">
-<button class="mcol shopping-bag" id="mmstore"><a href="Tracking">&nbsp;</a></button>
+<button class="mcol shopping-bag" id="mmstore" selected="true"><a href="Tracking">&nbsp;</a></button>
 <button class="mcol shopping-cart" id="mmcart">&nbsp;</button>
 <button class="mcol shopping-menu" id="mmmenu">&nbsp;</button>
 <div class="omenu" id="mom">
@@ -68,7 +68,7 @@
 <button class="mitem"><a href="/#services">Custom Order</a></button>
 <button class="mitem"><a href="Batteries">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
-<button class="mitem" id="m_account_login" selected="true"><a href="Login">Login</a></button>
+<button class="mitem" id="m_account_login"><a href="Login">Login</a></button>
 <button class="mitem"><a href="Support">Support</a></button>
 
 </div>
@@ -82,55 +82,22 @@
 
 <section id="content" class="sub1">
 <p>&nbsp;</p>
-<div class="banner rq" id="signin">
-<div class="hd">Login</div>
-<form method="post" onsubmit="checkForm(this,'login')">
-<input type="email" name="passmail" placeholder="Email Address"><br/>
-<input type="password" name="passcode" placeholder="Password"><br/>
-<button>Continue &nbsp; <b>&rightarrow;</b></button><br/>
-</form>
-</div>
+<span id="track_nothing">
+<div class="info">There's nothing to track. How about you make a purchase first <font class="nameprint"></font>..?</div>
+</span>
+<span id="track_center">
+<div class="banner">
+<div class="hd">Tracking Information & Delivery Update<br/><i>(Contact Support Should you need any further clarity or assistance.)</i></div>
 <p>&nbsp;</p>
-<div class="banner rq">
-<p>&nbsp;</p>
-<div class="ihd" tabindex="2" onclick="toggleForms()">New to Bleeding Edge Lab? &downarrow;</div>
+<div class="shd vhd" tabindex="2" onfocus="getE('#cartlage').style.display='block';">View Order &downarrow;</div>
+<div class="cartlist items" style="dispay:none;" id="cartlage"></div> 
 </div>
-<form method="post" id="signup" style="display:none;" onsubmit="checkForm(this,'register')">
-<div class="banner rq">
-<div class="hd">Register<br/><i>(All the information collected here is to ensure tracking and delivery is only accessable to the buyer and this information is kept privately secured.)</i></div>
-</div>
-<div class="banthree rq">
-<div class="shd">Login Information</div>
-
-<input type="email" name="passmail" placeholder="Email Address"><br/>
-<input type="password" name="passcode" placeholder="New Password"><br/>
-<input type="password" name="passcode2" placeholder="Confirm New Password"><br/>
-</div>
-<div class="banthree rq">
-<div class="shd">Personal Information</div>
-<input type="name" name="fullname" placeholder="Full Name"><br/>
-<input type="id" name="idnumber" placeholder="ID/Passport Number"><br/>
-<input type="number" name="phone" placeholder="Contact Number"><br/>
+<div class="banner">
+<div class="bantwo">
 
 </div>
-<div class="banthree rq">
-<div class="shd">Delivery Information<br/><i>(You can update this information anytime.)</i></div>
-<input type="address" name="streetaddress" placeholder="Street Number & Name"><br/>
-<input type="city" name="city" placeholder="City"><br/>
-<input type="zip" name="postal" placeholder="Zip Code"><br/>
-<input type="country" name="country" placeholder="South Africa" readonly><br/>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 </div>
-<div class="banner rq">
-<div class="thd">By continuing you agree to having read the full Terms of Service which can be accessed by <a href="Legal">clicking here</a>. Thank you for supporting us. Bleeding Edge Lab (PTY) Ltd - Just Making Progress...</div>
-<button>Continue &nbsp; <b>&rightarrow;</b></button>
-<a href="Login_Instead^" onclick="event.preventDefault();toggleForms()" class="xih">Already have an account?</a>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-</form>
-
+</span>
 <p>&nbsp;</p>
 </section>
 
@@ -392,23 +359,13 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="main.special.js"></script>
 <script type="text/javascript" src="main.cart.js"></script>
+
 <script>
-function toggleForms() {
-	if(getE('#signup').style.display=='none') {
-	getE('#signup').style.display='unset';
-	getE('#signin').style.display='none';
-	getE('.ihd').style.display = "none";
-	} else {
-	getE('#signin').style.display='unset';
-	getE('#signup').style.display='none';
-	getE('.ihd').style.display = "block";
-	}
-	window.scrollTo(0,0);
+if(!localStorage.getItem('user'))
+{
+	//location = "Login";
 }
 
-if(localStorage.getItem('user'))
-{
-	location = "Account";
-}
+getTrackingInfo();
 </script>
 </html>
