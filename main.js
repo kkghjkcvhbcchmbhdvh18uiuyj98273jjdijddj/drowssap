@@ -64,7 +64,8 @@ window.setTimeout(function() {
 		if(getQ('notify')) {
 			notify(getQ('notify'));
 		loc = location.href.split('?');
-		window.history.pushState({}, document.title, "/" + loc[0]);
+		lo = loc[0].split('co.za/');
+		window.history.pushState({}, document.title, "/" + lo[1]);
 		}
 		}, 2000);
 
