@@ -1,3 +1,11 @@
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
+function replaceAll(str, find, replaces) {
+  return str.replace(new RegExp(escapeRegExp(find), 'g'), replaces);
+}
+
 function items(ee,bb,tt)
  {
 	 if(bb=="add") {
@@ -29,6 +37,8 @@ function accountMan() {
 		
 	}
 }
+
+
 
 function checkForm(ee,ii) {
 	event.preventDefault();
@@ -98,12 +108,14 @@ if(localStorage.getItem('user')) { nameprint(); }
 document.body.innerHTML += `<div id="notify">Notifications will appear here!</div>`;
 
 function notify(ii) {
+	ii = replaceAll(ii, '%20', ' ')
 	getE('#notify').innerHTML = ii;
 	getE('#notify').setAttribute('style','height:13em;');
 	window.setTimeout(function() {	
 	getE('#notify').setAttribute('style','height:0px;');
 	} ,4000);
 }
+
 
 function getTrackingInfo() {
 	
