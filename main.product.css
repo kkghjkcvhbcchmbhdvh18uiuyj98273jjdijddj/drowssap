@@ -95,3 +95,10 @@ form#supportForm textarea {margin-top:16px;width:90%;border:1px solid #eee;borde
 .support .cont {font-family:regular;}
 .bfh.xreg {font-family:regular;}
 .support .cont a {font-family:regular;color:royalblue;}
+
+#footer.footx {}
+#footer.footx .keepin {text-align:left;}
+#footer.footx span {font-size:18px;color:#eee;}
+#footer.footx a {font-size:18px;}
+#footer.footx .hd {color:white;}
+#footer.footx .smp {margin-top:20px;}
