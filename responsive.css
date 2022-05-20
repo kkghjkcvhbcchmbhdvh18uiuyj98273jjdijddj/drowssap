@@ -1,7 +1,7 @@
 
 /* For mobile phones: */
 
-.login_page #signin  input {width:calc(100% - 32px);}
+.login_page #signin  input {width:100%;}
   .mmenu {display:block;}
   .dmenu {display:none;}
   .tmenu {display:none;}
@@ -91,7 +91,7 @@
 @media only screen and (min-width: 880px) {
   /* For desktop: */
   
-.login_page #signin  input {width:calc(50% - 16px);}
+.login_page #signin  input {width:50%;}
   .dmenu {display:block;}
   .mmenu {display:none;}
   .tmenu {display:none;}
