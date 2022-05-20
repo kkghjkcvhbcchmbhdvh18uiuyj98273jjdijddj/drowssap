@@ -86,3 +86,10 @@ address {font-family:regular;letter-spacing:0px;font-size:16px;margin-top:16px;f
 .xl {font-size:35px;}
 .lb {font-size:25px;}
 
+.support {text-align:left;}
+.support .shd.smh {margin-top:20px;text-align:left;}
+form#supportForm {text-align:left;}
+form#supportForm input {margin-top:16px;width:90%;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:38px;}
+form#supportForm textarea {margin-top:16px;width:90%;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:128px;}
+form#supportForm i {font-family:regular;font-size:12px;margin-top:14px;}
+.support .cont {font-family:regular;}

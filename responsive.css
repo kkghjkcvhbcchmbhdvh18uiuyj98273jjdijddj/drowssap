@@ -1,7 +1,7 @@
 
 /* For mobile phones: */
 
-.login_page #signin  input {width:100%;}
+.login_page #signin  input, .login_page #signin  textarea {width:100%;}
   .mmenu {display:block;}
   .dmenu {display:none;}
   .tmenu {display:none;}
@@ -38,7 +38,7 @@
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   
-.login_page #signin  input {width:75%;}
+.login_page #signin  input, .login_page #signin  textarea {width:75%;}
   .tmenu {display:block;}
   .dmenu {display:none;}
   .mmenu {display:none;}
@@ -91,7 +91,7 @@
 @media only screen and (min-width: 880px) {
   /* For desktop: */
   
-.login_page #signin  input {width:50%;}
+.login_page #signin  input, .login_page #signin  textarea {width:50%;}
   .dmenu {display:block;}
   .mmenu {display:none;}
   .tmenu {display:none;}

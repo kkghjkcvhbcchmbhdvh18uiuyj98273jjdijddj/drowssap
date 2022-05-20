@@ -41,6 +41,9 @@ function checkForm(ee,ii) {
 	} else if(ii=="update") {
 	action="http://request.bleedingedgelab.co.za/man.php?ref=update"	
 	
+	} else if(ii=="support") {
+	action="http://request.bleedingedgelab.co.za/man.php?ref=support"	
+	
 	}
 	string = "";
 	ins = ee.getElementsByTagName('input');
