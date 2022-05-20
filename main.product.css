@@ -61,7 +61,6 @@
 .login_page #content i {color:dimgray;font-size:10px;}
 .login_page #content {width:calc(100% - 32px);margin-left:16px;}
 
-.login_page .banner form  input {width:70%;}
 .login_page form  input {margin-top:16px;width:90%;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:38px;}
 .login_page form  input:focus {border:1px solid #1f2840;outline:unset;}
 .login_page form  button {background-color:#1f2840;color:white;border:1px solid #123;border-radius:3px;font-size:16px;height:40px;width:9em;outline:unset;margin-top:18px;font-family:mainfont;}
