@@ -24,6 +24,11 @@ function linker() {
 window.addEventListener("load", function() {
 //all codes
 
+ getE('#mstore').addEventListener("focus",function() { getE('#mstore').querySelector('a').click(); });
+ getE('#mmstore').addEventListener("focus",function() { getE('#mstore').querySelector('a').click(); });
+ getE('#tstore').addEventListener("focus",function() { getE('#mstore').querySelector('a').click(); });
+
+
  getE('#mcart').addEventListener("focus",function() { getE('#cart').setAttribute("style","width:100%;height:100%;"); });
  document.querySelector('#mmcart').addEventListener("focus",function() { getE('#cart').setAttribute("style","width:100%;height:100%;"); });
  document.querySelector('#tmcart').addEventListener("focus",function() { getE('#cart').setAttribute("style","width:100%;height:100%;"); });
