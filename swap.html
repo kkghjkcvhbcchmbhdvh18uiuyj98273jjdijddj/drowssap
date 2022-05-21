@@ -33,6 +33,8 @@ function setAccountInfo() {
 	localStorage.setItem('user_' + ins[i],inx[i]);
 	}
 	localStorage.setItem('user_keys',string);
+        np = localStorage.getItem('user_fullname').split(" ");
+        localStorage.setItem('user',np[0]);
 }
 
 
@@ -56,7 +58,7 @@ if(getQ('status')=="success") {
 setAccountInfo();
 if(getQ('do')=="buying") {
 buying(); } else {
-location.replace('http://bleedingedgelab.co.za/Account'); }
+location.replace('https://bleedingedgelab.co.za/Account'); }
  }
 else if(getQ('status')=="false") { 
 location.replace('https://bleedingedgelab.co.za/Login?notify=The%20entered%20Login%20details%20are%20incorrect.');
