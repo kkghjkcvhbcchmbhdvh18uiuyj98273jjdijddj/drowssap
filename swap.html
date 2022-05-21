@@ -21,7 +21,7 @@ function setAccountInfo() {
 	var vars = query.split("&"); 
 	for(let i = 0; i<vars.length; i++) {
 	
-	var s = vars.split('=');
+	var s = vars[i].split('=');
 	string += '@bel@' + s[0];
 	vals += '@bel@' + s[1];
 	}
