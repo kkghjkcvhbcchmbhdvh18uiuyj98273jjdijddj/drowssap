@@ -56,18 +56,18 @@ if(getQ('status')=="success") {
 setAccountInfo();
 if(getQ('do')=="buying") {
 buying(); } else {
-location.replace('http://request.bleedingedgelab.co.za/Account'); }
+location.replace('http://bleedingedgelab.co.za/Account'); }
  }
 else if(getQ('status')=="false") { 
-location.replace('Login?notify=The%20entered%20Login%20details%20are%20incorrect.');
+location.replace('https://bleedingedgelab.co.za/Login?notify=The%20entered%20Login%20details%20are%20incorrect.');
  }
 break;
 case "tracking":
 setTrackingInfo();
-location.replace('http://request.bleedingedgelab.co.za/?email=' + localStorage.setItem('user_email') + '&ref=cart&cart=' + localStorage.setItem('user_cart')); 
+location.replace('http://request.bleedingedgelab.co.za/man.php?email=' + localStorage.setItem('user_email') + '&ref=cart&cart=' + localStorage.setItem('user_cart')); 
 break;
 default:
-location.replace('/'); 
+location.replace('https://bleedingedgelab.co.za/'); 
 break;
 }
 
