@@ -28,7 +28,7 @@ function setAccountInfo() {
 	vals += '@bel@' + s[1];
 	}
 	ins = string.split("@bel@");
-	inx = string.split("@bel@");
+	inx = vals.split("@bel@");
 	for(let i = 1; i<ins.length; i++) {
 	localStorage.setItem('user_' + ins[i],inx[i]);
 	}
