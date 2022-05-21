@@ -32,8 +32,8 @@ function accountMan() {
 	if(localStorage.getItem('user')) {
 		
 		getE('#account_login').outerHTML = '<button class="mcol" id="account_login"><a href="Account">Account</a></button>';
-		getE('#t_account_login').outerHTML = '<button class="mcol" id="t_account_login"><a href="Account">Account</a></button>';
-		getE('#m_account_login').outerHTML = '<button class="mcol" id="m_account_login"><a href="Account">Account</a></button>';
+		getE('#t_account_login').outerHTML = '<button class="mitem" id="t_account_login"><a href="Account">Account</a></button>';
+		getE('#m_account_login').outerHTML = '<button class="mitem" id="m_account_login"><a href="Account">Account</a></button>';
 		
 	}
 }
