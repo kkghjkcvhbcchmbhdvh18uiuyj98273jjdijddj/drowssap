@@ -114,6 +114,7 @@ function notify(ii) {
 
 
 function getTrackingInfo() {
+alert(localStorage.getItem('user_cart'))
 	if(localStorage.getItem('user_cart'))
 	{
 		getE('#cartlage').innerHTML = localStorage.getItem('user_cart');
