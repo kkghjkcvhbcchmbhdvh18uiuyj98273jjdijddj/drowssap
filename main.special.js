@@ -93,7 +93,7 @@ function getAccountInfo() {
 
 
 function nameprint() {
-	np = querySelectorAll('.nameprint');
+	np = document.querySelectorAll('.nameprint');
 	for(let i = 0; i<np.length; i++) {
 		np[i].innerHTML = localStorage.getItem('user');
 	}
