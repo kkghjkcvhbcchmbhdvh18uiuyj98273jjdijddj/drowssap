@@ -29,7 +29,7 @@ div {display:block;margin:0px;}
 
 
 .band {width:100%;height:4em;border-bottom:1px solid rgba(20,60,100,1);box-shadow:0px 1px 1px rgba(10,30,50,0.9);}
-.band:before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:2px;float:left;margin-top:0.5em;}
+.band span.before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:2px;float:left;margin-top:0.5em;}
 .ame {width:calc(100% - 3.5em);}
 .dmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
 .tmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
@@ -46,10 +46,11 @@ button + .shopping-bag {margin-left:4px;}
 
 
 .product_page .band {width:100%;height:4em;border-bottom:1px solid rgba(20,60,100,1);box-shadow:0px 1px 1px rgba(10,30,50,0.9);}
-.product_page .band:before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:12px;float:left;margin-top:0.5em;}
-.login_page .band:before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:12px;float:left;margin-top:0.5em;}
-.product_page .ame {width:calc(100% - 6em);}
-.login_page .ame {width:calc(100% - 6em);}
+.product_page .band span.before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:12px;float:left;margin-top:0.5em;}
+.login_page .band span.before {background-image:url(favicon.png);height:3em;width:3em;content:" ";display:block;background-size:cover;margin-left:12px;float:left;margin-top:0.5em;}
+.product_page .ame {width:calc(100% - 5em);}
+.login_page .ame {width:calc(100% - 5em);}
+.dev .ame {width:calc(100% - 5em);}
 .product_page .dmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
 .product_page .tmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
 .product_page .mmenu {float:left;text-align:right;position:relative;top:50%;transform:translate(0,-50%);height:3em;}
@@ -156,4 +157,5 @@ button.nbg {color:white;}
 #cartlist .it {text-align:left;display:block;}
 #cartlist .it:before {content:"";}
 #cartlist .ir {text-align:left;display:block;color:royalblue;cursor:pointer;}
-#cartlist .ir:hover {content:"fjhk";}
+#cartlist .ir:hover {content:" ";}
+

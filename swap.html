@@ -30,20 +30,42 @@ function setAccountInfo() {
 	for(let i = 1; i<ins.length; i++) {
 	localStorage.setItem('user_' + ins[i],inx[i]);
 	}
-	localStorage.setItem('user_keys',string)
+	localStorage.setItem('user_keys',string);
 }
 
 
+function setTrackingInfo() {
+	
+	localStorage.setItem('user_cart',localStorage.getItem('cartlist'));
+}
 
+function buying() {
 
+payfast = `<div id="payfast" style="display:none;"><form name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">  <input required type="hidden" name="cmd" value="_paynow">  <input required type="hidden" name="receiver" pattern="[0-9]" value="19754082">  <input type="hidden" name="return_url" value="http://request.bleedingedgelab.co.za/man.php?ref=buy&status=success">  <input type="hidden" name="cancel_url" value="http://request.bleedingedgelab.co.za/man.php?ref=buy&status=cancel">  <input required type="hidden" name="amount" value="` + localStorage.getItem('total') + `" id="injtotal">  <input required type="hidden" name="item_name" maxlength="255" value="Bleeding Edge Lab (PTY) Ltd - Checkout">  <input type="hidden" name="item_description" maxlength="255" value="Checkout item(s) from Bleeding Edge Lab (PTY) Ltd">  <table>  <tr>  <td colspan=2 align=center>  <input type="image" src="https://www.payfast.co.za/images/buttons/PayNow/Dark-Large-Square-PayNow.png" alt="Pay Now" title="Pay Now with PayFast" id="payfastgo">  </td>  </tr>  </table>  </form></div>`;
+
+document.body.innerHTML = payfast;
+document.querySelector('#payfastgo').click();
+}
 
 
 switch(getQ('ref')) {
 case "login":
-
+if(getQ('status')=="success") {
+setAccountInfo();
+if(getQ('do')=="buying") {
+buying(); } else {
+location.replace('Account'); }
+ }
+else if(getQ('status')=="false") { 
+location.replace('Login?notify=The%20entered%20Login%20details%20are%20incorrect.');
+ }
 break;
 case "tracking":
-
+setTrackingInfo();
+location.replace('http://request.bleedingedgelab.co.za/?email=' + localStorage.setItem('user_email') + '&ref=cart&cart=' + localStorage.setItem('user_cart')); 
+break;
+default:
+location.replace('/'); 
 break;
 }
 

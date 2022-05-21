@@ -61,10 +61,6 @@ function checkForm(ee,ii) {
 		string += '&' + ins[i].getAttribute('name') + '=' + ins[i].value;
 	}
 	
-	if(location.hash=='buying')
-	{
-		string += '&ref=buying';
-	}
 	location = action + string;
 	
 }
@@ -118,7 +114,24 @@ function notify(ii) {
 
 
 function getTrackingInfo() {
-	
+	if(localStorage.getItem('user_cart'))
+	{
+		getE('#cartlage').innerHTML = localStorage.getItem('user_cart');
+		getE('#rfullname').innerHTML = localStorage.getItem('user_fullname');
+		getE('#rphone').innerHTML = localStorage.getItem('user_phone');
+		getE('#rcity').innerHTML = localStorage.getItem('user_city');
+		getE('#rprovince').innerHTML = localStorage.getItem('user_province');
+		getE('#raddress').innerHTML = localStorage.getItem('user_address');
+		getE('#rpostal').innerHTML = localStorage.getItem('user_postal');
+		getE('#rdate1').innerHTML = localStorage.getItem('user_date1');
+		getE('#rdate2').innerHTML = localStorage.getItem('user_date2');
+		
+		getE('#track_nothing').style.display = "none";
+		getE('#track_center').style.display = "block";
+	} else {
+		getE('#track_center').style.display = "none";
+		getE('#track_nothing').style.display = "block";
+	}
 }
 
 

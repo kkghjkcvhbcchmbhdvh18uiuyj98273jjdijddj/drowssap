@@ -103,3 +103,23 @@ form#supportForm textarea {margin-top:16px;width:90%;border:1px solid #eee;borde
 #footer.footx .hd {color:white;}
 #footer.footx .smp {margin-top:20px;}
 #footer.footx .bantwo {float:left;}
+
+
+#subheader {width:100%;background-color:#101320;opacity:0.9;height:4em;font-size:14px;}
+
+span.title_ {height:3em;display:block;background-size:cover;position:absolute;font-family:black;font-size:18px;left:19px;top:3.6em;color:white;}
+span.side_ {height:3em;width:;display:block;background-size:cover;position:absolute;font-family:regular;font-size:16px;right:18px;top:4.1em;color:white;}
+
+#track_center div.bantwo {background-color:white;text-align:left;margin-top:12px;}
+#track_center div.banner {margin-top:20px;}
+#track_center div.banner .ttc {text-transform:capitalize;line-height:1.5em;}
+
+#cartlage .ir {display:none;}
+.tth {font-family:mainfont;font-size:15px;}
+.ttc {font-family:regular;font-size:15px;}
+
+.progressor {width:100%;height:64px;border-radius:2px;border:1px solid grey;background-color:rgba(0,0,0,0.2);overflow:hidden;box-shadow:inset 0px 0px 16px rgba(0,0,0,0.5);}
+.progressor .bar {width:10%;height:calc(100% + 2px);margin-top:-1px;overflow:visible;margin-left:-2px;border:1px solid #1f2840;background-color:#1f2840;color:white;font-family:black;font-size:13px;box-shadow:inset 0px 0px 16px rgba(0,0,0,0.1);word-wrap:normal;}
+
+.procs {display:flex;margin-top:10px;}
+.proc {flex:1;text-align:center;font-size:14px;font-family:black;}

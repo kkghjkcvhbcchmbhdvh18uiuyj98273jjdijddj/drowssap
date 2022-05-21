@@ -19,6 +19,7 @@
 <body class="login_page">
 <section id="header">
 <div class="band mbg">
+<span tabindex="2" onfocus="location='/';" class="before"></span>
 <div class="dmenu ame">
 <button class="mcol"><a href="Power_Tank">Power Tank</a></button>
 <button class="mcol"><a href="BELCharge">BELCharge</a></button>
@@ -404,6 +405,11 @@ function toggleForms() {
 	getE('.ihd').style.display = "block";
 	}
 	window.scrollTo(0,0);
+}
+
+if(window.location.hash=="buying") {
+getE('#signin').innerHTML += "<input type='hidden' name='do' value='buying'>";
+getE('#signup').innerHTML += "<input type='hidden' name='do' value='buying'>";
 }
 
 if(localStorage.getItem('user'))
