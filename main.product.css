@@ -127,4 +127,4 @@ span.side_ {height:3em;width:;display:block;background-size:cover;position:absol
 #services .bantwo {float:left;margin-left:9px;}
 .quo {background-color: #1f2840;color: white;border: 1px solid #123;border-radius: 3px;font-size: 16px;height: 40px;width: 9em;outline: unset;margin-top: 18px;font-family: mainfont;  }
 
-#services form#supportForm textarea, #services form#supportForm textarea {border:1px solid lightgray;}
+#services form#supportForm input, #services form#supportForm textarea {border:1px solid lightgray;}
