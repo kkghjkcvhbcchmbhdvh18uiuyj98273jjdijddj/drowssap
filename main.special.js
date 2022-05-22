@@ -34,9 +34,14 @@ function accountMan() {
 		getE('#account_login').outerHTML = '<button class="mcol" id="account_login"><a href="Account">Account</a></button>';
 		getE('#t_account_login').outerHTML = '<button class="mitem" id="t_account_login"><a href="Account">Account</a></button>';
 		getE('#m_account_login').outerHTML = '<button class="mitem" id="m_account_login"><a href="Account">Account</a></button>';
-		getE('#account_login').addEventListener("click",function() { location = 'Account';  });
-		getE('#t_account_login').addEventListener("click",function() { location = 'Account';  });
-		getE('#m_account_login').addEventListener("click",function() { location = 'Account';  });
+		getE('#account_login').addEventListener("touchstart",function() { location = 'Account';  });
+		getE('#account_login').addEventListener("mousedown",function() { location = 'Account';  });
+		getE('#t_account_login').addEventListener("touchstart",function() { location = 'Account';  });
+		getE('#t_account_login').addEventListener("mousedown",function() { location = 'Account';  });
+		getE('#m_account_login').addEventListener("touchstart",function() { location = 'Account';  });
+		getE('#m_account_login').addEventListener("mousedown",function() { location = 'Account';  });
+		
+		
 		
 	}
 }
