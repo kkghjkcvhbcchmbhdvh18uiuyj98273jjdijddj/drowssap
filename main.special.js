@@ -30,10 +30,11 @@ function items(ee,bb,tt)
  
 function accountMan() {
 	if(localStorage.getItem('user')) {
-		
-		getE('#account_login').outerHTML = '<button class="mcol" id="account_login"><a href="Account">Account</a></button>';
-		getE('#t_account_login').outerHTML = '<button class="mitem" id="t_account_login"><a href="Account">Account</a></button>';
-		getE('#m_account_login').outerHTML = '<button class="mitem" id="m_account_login"><a href="Account">Account</a></button>';
+		if(getE('#account_login').getAttribute('selected'))
+		{ se=' selected="true"'; } else { se=""; }
+		getE('#account_login').outerHTML = '<button class="mcol" id="account_login"' + se + '><a href="Account">Account</a></button>';
+		getE('#t_account_login').outerHTML = '<button class="mitem" id="t_account_login"' + se + '><a href="Account">Account</a></button>';
+		getE('#m_account_login').outerHTML = '<button class="mitem" id="m_account_login"' + se + '><a href="Account">Account</a></button>';
 		getE('#account_login').addEventListener("touchstart",function() { location = 'Account';  });
 		getE('#account_login').addEventListener("mousedown",function() { location = 'Account';  });
 		getE('#t_account_login').addEventListener("touchstart",function() { location = 'Account';  });
