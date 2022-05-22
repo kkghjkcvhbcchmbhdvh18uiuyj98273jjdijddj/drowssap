@@ -63,11 +63,17 @@ function checkForm(ee,ii) {
 	} else if(ii=="support") {
 	action="http://request.bleedingedgelab.co.za/man.php?ref=support"	
 	
+	} else if(ii=="quote") {
+	action="http://request.bleedingedgelab.co.za/man.php?ref=support"	
+	
 	}
 	string = "";
 	ins = ee.getElementsByTagName('input');
 	for(let i = 0; i<ins.length; i++) {
 		string += '&' + ins[i].getAttribute('name') + '=' + ins[i].value;
+		if(ii=="update") {
+			localStorage.setItem('user_' + ins[i].getAttribute('name'), ins[i].value);
+		}
 	}
 	
 	location = action + string;
