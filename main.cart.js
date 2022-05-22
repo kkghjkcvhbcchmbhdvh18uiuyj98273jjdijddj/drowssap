@@ -60,7 +60,7 @@ document.body.innerHTML += '<div class="center" id="cart"><div class="center box
  
  
  getE('#checkoutB').addEventListener('click',function() {
-	 if(localStorage.getItem('total')=="0.00") {  /**do nothing**/  }
+	 if(localStorage.getItem('total')=="0.00" || !localStorage.getItem('total')) {  /**do nothing**/  }
 	else {
 		if(!localStorage.getItem('user')) {
 		window.location = 'Login#buying';  }

@@ -66,7 +66,11 @@ case "login":
 if(getQ('status')=="success") {
 setAccountInfo();
 if(getQ('do')=="buying") {
-buying(); } else {
+if(localStorage.getItem('total')=="0.00" || !localStorage.getItem('total'))
+{  location.replace('https://bleedingedgelab.co.za/?notify=The%20Cart%20is%20empty.'); } else 
+{ buying(); }
+
+ } else {
 location.replace('https://bleedingedgelab.co.za/Account'); }
  }
 else if(getQ('status')=="false") { 
