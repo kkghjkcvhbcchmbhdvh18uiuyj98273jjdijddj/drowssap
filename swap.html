@@ -66,6 +66,7 @@ switch(getQ('ref')) {
 case "login":
 if(getQ('status')=="success") {
 setAccountInfo();
+alert(getQ('do'));
 if(getQ('do')=="buying") {
 if(localStorage.getItem('total')=="0.00" || !localStorage.getItem('total'))
 {  location.replace('https://bleedingedgelab.co.za/?notify=The%20Cart%20is%20empty.'); } else 
