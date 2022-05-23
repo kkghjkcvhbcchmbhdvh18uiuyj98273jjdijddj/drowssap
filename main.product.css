@@ -148,4 +148,4 @@ span.side_ {height:3em;width:;display:block;background-size:cover;position:absol
 .batlist .atr {font-size:14px;font-family:regular;line-height:1.5em;}
 a.goto {color:royalblue;}
 
-form#supportForm.custa input, form#supportForm.custa input {border:1px solid #ccc;}
+form#supportForm.custa input, form#supportForm.custa textarea {border:1px solid #ccc;}
