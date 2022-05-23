@@ -85,7 +85,7 @@ payfast = `<div id="payfast" style="display:none;"><form name="PayFastPayNowForm
  });
  
  window.addEventListener("load",function() {
-if(localStorage.setItem('total')=="0.00" || !localStorage.setItem('total')) {
+if(localStorage.getItem('total')=="0.00" || !localStorage.getItem('total')) {
 	getE('#mmcart').className = getE('#mmcart').className.replace('full','');
 	getE('#tmcart').className = getE('#tmcart').className.replace('full','');
 	getE('#mcart').className = getE('#mcart').className.replace('full','');
