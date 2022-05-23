@@ -153,3 +153,5 @@ span.side_ {height:3em;width:;display:block;background-size:cover;position:absol
 a.goto {color:royalblue;}
 
 form#supportForm.custa input, form#supportForm.custa textarea {border:1px solid #ccc;}
+
+#mmcart.full:after, #tmcart.full:after, #mcart.full:after {border-radius:8px;height:6px;width:6px;content:"";background-color:rgba(255,186,66,1);position:absolute;top:1px;}

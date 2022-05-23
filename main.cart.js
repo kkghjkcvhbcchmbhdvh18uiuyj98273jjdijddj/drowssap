@@ -84,6 +84,14 @@ payfast = `<div id="payfast" style="display:none;"><form name="PayFastPayNowForm
 	}
  });
  
- window.addEventListener("",function() {
-
+ window.addEventListener("load",function() {
+if(localStorage.setItem('total')=="0.00" || !localStorage.setItem('total')) {
+	getE('#mmcart').className = getE('#mmcart').className.replace('full','');
+	getE('#tmcart').className = getE('#tmcart').className.replace('full','');
+	getE('#mcart').className = getE('#mcart').className.replace('full','');
+} else {
+	getE('#mmcart').className += " full";
+	getE('#tmcart').className += " full";
+	getE('#mcart').className += " full";
+}
 	 });
