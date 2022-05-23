@@ -53,9 +53,9 @@ function checkForm(ee,ii) {
 	event.preventDefault();
 	
 	if(ii=="register") {
-	action="http://request.bleedingedgelab.co.za/man.php?ref=register"
+	action="http://request.bleedingedgelab.co.za/man.php?ref=register&do=" + getQ('do');
 	} else if(ii=="login") {
-	action="http://request.bleedingedgelab.co.za/man.php?ref=login"	
+	action="http://request.bleedingedgelab.co.za/man.php?ref=login&do=" + getQ('do');	
 	
 	} else if(ii=="update") {
 	action="http://request.bleedingedgelab.co.za/man.php?ref=update"	

@@ -84,4 +84,6 @@ payfast = `<div id="payfast" style="display:none;"><form name="PayFastPayNowForm
 	}
  });
  
- 
+ window.addEventListener("",function() {
+
+	 });
