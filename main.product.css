@@ -17,7 +17,8 @@
 .prodinfo .addToCart {margin-left:6px;top:1px;}
 
 .adder {overflow:hidden;border:1px solid grey;display:inline-flex;font-size:14px;border-radius:2px;}
-.adder button {font-family:mainfont;border:1px solid transparent;outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;}
+div.adder button {font-family:mainfont;border:1px solid transparent;outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;}
+#servicesx .adder button {font-family:mainfont;border:1px solid transparent;outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;margin-left:0px;height:32px;margin:0px;}
 .adder .minus {color:#444;border-right:1px solid dimgrey;flex:2;padding-top:10px;font-size:11px;font-family:black;padding-left:8px;padding-right:8px;}
 .adder .add {color:#444;border-left:1px solid dimgrey;flex:2;padding-top:10px;font-size:11px;font-family:black;padding-left:8px;padding-right:8px;}
 .adder .countz {flex:3;padding-left:12px;padding-right:12px;font-size:13px;}
@@ -125,6 +126,24 @@ span.side_ {height:3em;width:;display:block;background-size:cover;position:absol
 .proc {flex:1;text-align:center;font-size:14px;font-family:black;}
 
 #services .bantwo {float:left;margin-left:9px;}
+#servicesx .bantwo {float:left;margin-left:9px;}
 .quo {background-color: #1f2840;color: white;border: 1px solid #123;border-radius: 3px;font-size: 16px;height: 40px;width: 9em;outline: unset;margin-top: 18px;font-family: mainfont;  }
 
 #services form#supportForm input, #services form#supportForm textarea {border:1px solid lightgray;}
+
+.reseter {color:royalblue;font-family:mainfont;font-size:16px;display:inline-block;margin-bottom:2em;margin-top:1em;}
+.la.ihd {text-align:left;}
+.sidel select {height:32px;margin-left:16px;margin-top:8px;}
+.sidel .shd {margin-left:16px;}
+
+.bats .bantwo {padding-right:16px;}
+
+
+.batlist {width:calc(100% + 16px);min-height:7em;font-size:16px;border:1px solid transparent;border-radius:2px;padding:8px;overflow:hidden;margin-top:12px;}
+.batlist .adder {margin-left:0px;}
+.batlist .adder+button {margin-left:2px;}
+.batlist .adder+button+button {margin-left:2px;}
+.batlist .batp {width:4em;height:4em;background-image:url(carbat.jpg);float:left;}
+.batlist .batd {width:calc(100% - 5em);height:4em;float:left;margin-left:0.75em;}
+.batlist .atr {font-size:14px;font-family:regular;line-height:1.5em;}
+a.goto {color:royalblue;}

@@ -115,8 +115,8 @@ button.nbg {color:white;}
 
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;padding-left:0.1em;}
 #services .h1 {margin-left:0.75em;color:#123;}
-#servicesx {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;padding-left:0.365em;}
-#servicesx .h1 {margin-left:0.75em;color:#123;}
+#servicesx {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;padding-left:0.85em;}
+#servicesx .h1 {margin-left:0.1em;color:#123;}
 .exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:0.75em;line-height:24px;height:24px;margin-bottom:4px;outline-color:#eee;border:1px solid transparent;}
 .exp + div {height:0px;width:calc(100% - 3em);overflow:hidden;padding-left:1.5em;}
 .exp + div select, .exp + div input, .exp + div button, .exp + div span {margin-left:1.5em;border-radius:3px;padding:4px;border:1px solid #123;color:#123;margin:1em;height:32px;}
@@ -153,7 +153,7 @@ button.nbg {color:white;}
 #cartlist .item {text-align:left;overflow:hidden;margin-left:8px;display:block;width:calc(100% - 16px);height:6em;font-family:regular;border-bottom:1px solid #fefefe;margin-bottom:0.5em;}
 #cartlist .ip {display:inline-block;text-align:left;float:left;height:5em;width:5em;background-image:url(paper.jpg);background-size:auto 150%;}
 #cartlist .itemd {text-align:left;float:left;height:5em;width:calc(100% - 6em);margin-left:8px;display:inline-block;}
-#cartlist .ih {text-align:left;display:block;width:calc(100% - 1em);font-size:18px;font-family:mainfont;}
+#cartlist .ih {text-align:left;display:block;width:calc(100% - 1em);font-size:14px;font-family:black;}
 #cartlist .im {text-align:left;display:block;}
 #cartlist .im:before {content:"";}
 #cartlist .it {text-align:left;display:block;}

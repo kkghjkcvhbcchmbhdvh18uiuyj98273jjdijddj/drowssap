@@ -54,6 +54,8 @@ linker();
 //fetch services
 if(document.querySelector('#services')) {
 window.xservices = document.querySelector('#services').outerHTML;
+} else if(document.querySelector('#servicesx')){
+	window.xservices = document.querySelector('#servicesx').outerHTML;
 }
 
 accountMan();
@@ -96,9 +98,9 @@ window.setTimeout(function() {
 	 ye = ee.value.split("/");
 	 eee = ye[0];
 	 if(w=="plus") {
-	 ee.parentNode.querySelector('.total').innerHTML = (ee.parentNode.querySelector('.total').innerHTML*1)+(eee*1); } else {
-	 ee.parentNode.querySelector('.total').innerHTML = (ee.parentNode.querySelector('.total').innerHTML*1)*(eee*1); }
-	 jj = ee.parentNode.querySelector('.total').innerHTML.split('.');
-	 ee.parentNode.querySelector('.total').innerHTML = jj[0];
+	 ee.parentNode.parentNode.querySelector('.total').innerHTML = (ee.parentNode.parentNode.querySelector('.total').innerHTML*1)+(eee*1); } else {
+	 ee.parentNode.parentNode.querySelector('.total').innerHTML = (ee.parentNode.parentNode.querySelector('.total').innerHTML*1)*(eee*1); }
+	 jj = ee.parentNode.parentNode.querySelector('.total').innerHTML.split('.');
+	 ee.parentNode.parentNode.querySelector('.total').innerHTML = jj[0];
 	 ee.setAttribute("disabled","true");
  }

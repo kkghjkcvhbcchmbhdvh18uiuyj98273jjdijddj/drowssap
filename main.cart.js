@@ -21,11 +21,9 @@ document.body.innerHTML += '<div class="center" id="cart"><div class="center box
 	 
 	 if(!localStorage.getItem('cartlist')) {
 		 
-		  window.localStorage.setItem('cartlist','<div class="item" tabindex="2" id="reg' + id + '">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode)">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>');
-	 } else {
-		 
-	 window.localStorage.setItem('cartlist',localStorage.getItem('cartlist') +  '<div class="item" tabindex="2" id="reg' + id + '">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode)">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>');
-   }
+		  window.localStorage.setItem('cartlist','<div class="item" tabindex="2" id="reg' + id + '" tabindex="2" onfocus="viewz('+details+')" style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode)">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>'); 
+		  } else {
+	 window.localStorage.setItem('cartlist',localStorage.getItem('cartlist') +  '<div class="item" tabindex="2" id="reg' + id + '" tabindex="2" onfocus="viewz('+details+')" style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode)">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>'); }
    ee.innerHTML = "Added!";
    window.setTimeout(function() {
    ee.innerHTML = "Add To Cart"; },2000);
@@ -40,7 +38,9 @@ document.body.innerHTML += '<div class="center" id="cart"><div class="center box
    localStorage.setItem('total',getE('#closecartC').innerHTML);
  }
  
- 
+ function viewz(d) {
+	 notify(d);
+ }
  function removeCart(ee) {
 	 getE('#closecartC').innerHTML = getE('#closecartC').innerHTML-ee.querySelector('.it').innerHTML.replace("Price: R","");
 	 getE('#cartlist').removeChild(ee);

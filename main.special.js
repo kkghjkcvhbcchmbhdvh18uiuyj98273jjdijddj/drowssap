@@ -13,7 +13,7 @@ function items(ee,bb,tt)
 	 } else if(bb=="subtract" && ee.nextSibling.innerHTML>1){
 		ee.nextSibling.innerHTML = (ee.nextSibling.innerHTML*1)-1; 
 	 }
-	 getE('#total').innerHTML = tt*getE('.countz').innerHTML;
+	 ee.parentNode.parentNode.querySelector('.total').innerHTML = tt*ee.parentNode.parentNode.querySelector('.countz').innerHTML;
  }
  
  

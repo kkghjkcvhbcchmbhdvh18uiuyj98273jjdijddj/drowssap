@@ -1,21 +1,22 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<meta name="theme-color" content="#1f2840">
-	<meta name="description" content="We engineer products by employing unconventional methods and we are constantly tinkering to achieve breakthroughs. ">
-    <title>Bleeding Edge Lab (PTY) Ltd - Just Making Progress..</title>
+	<meta name="description" content="">
+    <title>Shop Our Batteries For Inverters & Cars - Bleeding Edge Lab (PTY) Ltd </title>
+	<base href="">
     <link href="main.css" type="text/css" rel="stylesheet">
-    <link href="main.product.css" type="text/css" rel="stylesheet">
     <link href="responsive.css" type="text/css" rel="stylesheet">
+    <link href="main.product.css" type="text/css" rel="stylesheet">
     <link rel="shortcut icon" href="icon.png" sizes="64x64, 128x128, 192x192, 240x240, 360x360, 480x480, 640x640, 720x720, 800x800, 1080x1080" type="image/png">
    <link rel="apple-touch-icon" href="icon.png" sizes="64x64,96x96,128x128,256x256" type="image/png"/>
     <link rel="shortcut icon" href="favicon.png" type="image/png" sizes="16x16,24x24,32x32,64x64"/>
 	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;z-index:9;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}	</style>
 </head>
-<body>
+<body class="login_page">
 <section id="header">
 <div class="band mbg">
 <span tabindex="2" onfocus="location='/';" class="before"></span>
@@ -26,9 +27,9 @@
 <button class="mcol"><a href="BELStudio">BELStudio</a></button>
 <button class="mcol"><a href="Power_Wall">Power Wall</a></button>
 <button class="mcol"><a href="Custom">Custom Order</a></button>
-<button class="mcol"><a href="Batteries">Batteries</a></button>
+<button class="mcol"><a href="Batteries" selected="true">Batteries</a></button>
 <button class="mcol"><a href="Electronics">Electronics</a></button>
-<button class="mcol" id="account_login"><a href="Login">Login</a></button>
+<button class="mcol" id="account_login"><a href="Account">Account</a></button>
 <button class="mcol"><a href="Support">Support</a></button>
 <button class="mcol shopping-bag" id="mstore"><a href="Tracking">&nbsp;&nbsp;&nbsp;</a></button>
 <button class="mcol shopping-cart" id="mcart">&nbsp;</button>
@@ -45,10 +46,10 @@
 <button class="mcol shopping-menu" id="ttmenu">&nbsp;</button>
 <div class="omenu" id="tom">
 <button class="mitem bck" id=""></button>
-<button class="mitem"><a href="Batteries">Batteries</a></button>
+<button class="mitem"><a href="Batteries" selected="true">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
 <button class="mitem"><a href="Custom">Custom Order</a></button>
-<button class="mitem" id="t_account_login"><a href="Login">Login</a></button>
+<button class="mitem" id="t_account_login"><a href="Account">Account</a></button>
 <button class="mitem"><a href="Support">Support</a></button>
 <button class="mitem"><a href="About">About</a></button>
 
@@ -66,9 +67,9 @@
 <button class="mitem"><a href="BELStudio">BELStudio</a></button>
 <button class="mitem"><a href="Power_Wall">Power Wall</a></button>
 <button class="mitem"><a href="Custom">Custom Order</a></button>
-<button class="mitem"><a href="Batteries">Batteries</a></button>
+<button class="mitem"><a href="Batteries" selected="true">Batteries</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
-<button class="mitem" id="m_account_login"><a href="Login">Login</a></button>
+<button class="mitem" id="m_account_login"><a href="Account">Account</a></button>
 <button class="mitem"><a href="Support">Support</a></button>
 
 </div>
@@ -80,84 +81,101 @@
 
 
 
-<section id="content">
-<div class="banner rr"><img src="bel.jpg" style="width:100%;"><span>Bleeding Edge Lab (PTY) Ltd<br>
-<font>Just Making Progress...&nbsp;<a href="About">Learn More</a></font>
-</span></div>
-<div class="bantwo rr"><img src="powertank.jpg" style="width:100%;"><span>The Power Tank<br>
-<font>For your Decoder, TV & 
-Lamps...&nbsp;<a href="Power_Tank">Learn More</a></font>
-</span></div>
-<div class="bantwo rr"><img src="forcharge.webp" style="width:100%;"><span>BELCharge<br>
-<font>The Pocket Sized Power Bank For Mobile Phone & Laptop... &nbsp;<a href="BELCharge">Learn More</a></font>
-</span></div>
-<div class="bantwo rr"><img src="rocket.jpg" style="width:100%;"><span>Power Tank Pro<br>
-<font>For your work or Gaming Station......&nbsp;<a href="Power_Tank">Learn More</a></font>
-</span></div>
-<div class="bantwo rr"><img src="belchargepro.jpg" style="width:100%;"><span>BELCharge Pro<br>
-<font>Pocket Sized Power Bank for your TV, Router, Mobile Phone & Laptop... &nbsp;<a href="BELCharge">Learn More</a></font>
-</span></div>
-<div class="banthree rr"><img src="belstudio.jpg" style="width:100%;"><span>BELStudio<br>
-<font>For Your Power Tools & work equipment - Work Anywhere...&nbsp;<a href="BELStudio">Learn More</a></font>
-</span></div>
-<div class="banthree rr"><img src="kitchen.jpg" style="width:100%;"><span>BELMore<br>
-<font>Power your stove, heater, kettle & other kitchen appliances...&nbsp;<a href="BELMore">Learn More</a></font>
-</span></div>
-<div class="banthree rr"><img src="powerwall.jpg" style="width:100%;"><span>Power Wall<br>
-<font>Off-Grid Power Storage Solution for your home or business...&nbsp;<a href="Power_Wall">Learn More</a></font>
-</span></div>
-<div class="banquad rr"><img src="carbat.jpg" style="width:100%;"><span>Batteries<br>
-<font>Deep Cycle Batteries For Cars & Inverters... <a href="Batteries">Learn More</a></font>
-</span></div>
-<div class="banquad rr"><img src="18650.jpeg" style="width:100%;"><span>18650 Cells<br>
-<font>Shop Li-Ion Cells... <a href="Batteries">Learn More</a></font>
-</span></div>
-<div class="banquad rr"><img src="mosfet.jpg" style="width:100%;"><span>Electronics<br>
-<font>Electronic Equipment & Components... <a href="Electronics">Learn More</a></font>
-</span></div>
-<div class="banquad rr"><img src="crowd.jpg" style="width:100%;"><span>Campaigns<br>
-<font>Support Our Projects... <a href="Campaigns">Learn More</a></font>
-</span></div>
+<section id="content" class="sub1 bats">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="banner rq">
+<div class="hd bl">Batteries<br/><i>Deep cycle batteries with high current discharge for use with inverters & cars.</i></div>
+</div>
+<div class="bantwo rq">
+<div class="shd bl">For Cars & Inverters</div>
+<div class="batlist">
+<div class="batp"></div>
+<div class="batd">
+<div class="atr">12V Nominal Voltage</div>
+<div class="atr">50Ah Capacity</div>
+<div class="atr">100A Continuous Output Current</div>
+<div class="atr">2000 Cycles</div>
+</div>
+<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/><div class="adder phv">
+<button class="minus" onclick=" items(this,'subtract','1125');">&minus;</button><button class="countz">1</button><button class="add" onclick=" items(this,'add','1125'
+);">+</button>
+</div>
+<button onclick="" class="total" id="total">1125</button>
+<button onclick="addToCart(this,'12V Battery 50Ah - 100A','','carbat.jpg',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv">Add To Cart</button>
+</div>
+
+
+<div class="batlist">
+<div class="batp"></div>
+<div class="batd">
+<div class="atr">12V Nominal Voltage</div>
+<div class="atr">100Ah Capacity</div>
+<div class="atr">600A Continuous Output Current</div>
+<div class="atr">2000 Cycles</div>
+</div>
+<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/><div class="adder phv">
+<button class="minus" onclick=" items(this,'subtract','6000');">&minus;</button><button class="countz">1</button><button class="add" onclick=" items(this,'add','6000'
+);">+</button>
+</div>
+<button onclick="" class="total" id="total">6000</button>
+<button onclick="addToCart(this,'12V Battery 100Ah - 600A','','carbat.jpg',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv">Add To Cart</button>
+</div>
+
+
+<div class="batlist">
+<div class="batp"></div>
+<div class="batd">
+<div class="atr">24V Nominal Voltage</div>
+<div class="atr">100Ah Capacity</div>
+<div class="atr">600A Continuous Output Current</div>
+<div class="atr">2000 Cycles</div>
+</div>
+<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/><div class="adder phv">
+<button class="minus" onclick=" items(this,'subtract','10200');">&minus;</button><button class="countz">1</button><button class="add" onclick=" items(this,'add','10200'
+);">+</button>
+</div>
+<button onclick="" class="total" id="total">10200</button>
+<button onclick="addToCart(this,'24V Battery 100Ah - 600A','','carbat.jpg',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv">Add To Cart</button>
+</div>
+
+<div class="batlist">
+<div class="batp"></div>
+<div class="batd">
+<div class="atr">48V Nominal Voltage</div>
+<div class="atr">100Ah Capacity</div>
+<div class="atr">600A Continuous Output Current</div>
+<div class="atr">2000 Cycles</div>
+</div>
+<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/><div class="adder phv">
+<button class="minus" onclick=" items(this,'subtract','19000');">&minus;</button><button class="countz">1</button><button class="add" onclick=" items(this,'add','19000'
+);">+</button>
+</div>
+<button onclick="" class="total" id="total">19000</button>
+<button onclick="addToCart(this,'48V Battery 100Ah - 600A','','carbat.jpg',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv">Add To Cart</button>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<div class="bantwo rq" id="servx">
+<div class="shd bl" onclick="">About Our Batteries </div>
+<div class="cont rq" onclick="">Bleeding Edge Lab batteries utilize switch mode circuits to provide high current and a stable voltage.</div>
+<div class="cont rq" onclick="">Each battery has a life cycle of 2000 Cycles, meaning they can be charged and discharged 2000 times before degradation.</div>
+<div class="cont rq" onclick="">At the core of the batteries are Li-ion cells, engineered to collectively deliver high currents, with less heat and high efficency. <a href="Custom" class="goto">Order a custom battery that is suited for your needs.</a></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</div>
+
+<p>&nbsp;</p>
 </section>
 
 
-<div id="services" class="login_page support">
-<div class="h1 bl">Looking For Something Specific?</div>
-<button class="exp" onclick="location = 'Custom';">Define a Custom Battery&uparrow; </button>
-<button class="exp" onclick="location = 'Custom';">Define a Custom Power Bank &uparrow; </button>
-<button class="exp" onclick="location = 'Custom';">Define a Custom Portable Power Station or Solar Generator &uparrow; </button>
-<button class="exp" onclick="location = 'Custom';">Define a Custom Power Wall &uparrow; </button>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div class="bantwo">
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div class="shd smh">Still Can't Find What You Looking For? Get A Quote.</div>
-<form method="post" id="supportForm" onsubmit="checkForm(this,'quote')">
-<input type="name" name="fullname" placeholder="Your Full Name"><br/>
-<input type="number" name="phone" placeholder="Your Phone Number"><br/>
-<input type="email" name="email" placeholder="Your Email Address"><br/>
 
-<textarea name="message" placeholder="Specifics Here.."></textarea><br/>
-<button class="quo">Get Quote</button><br/>
-</form>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-<div class="bantwo">
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<img src="icon.png" style="width:calc(100% - 10px);"/>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
 <div id="delnot">Free Nationwide Delivery (South Africa)
 </div>
 <section id="footer"><p class="boarder">&nbsp;</p>
@@ -413,4 +431,8 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="main.special.js"></script>
 <script type="text/javascript" src="main.cart.js"></script>
+
+<script>
+window.servx = getE('#servx').innerHTML;
+</script>
 </html>
