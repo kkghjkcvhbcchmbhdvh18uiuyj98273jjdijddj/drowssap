@@ -113,7 +113,7 @@ button.nbg {color:white;}
 
 
 
-#services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;}
+#services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;padding-left:0.1em;}
 #services .h1 {margin-left:0.75em;color:#123;}
 #servicesx {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;padding-left:0.365em;}
 #servicesx .h1 {margin-left:0.75em;color:#123;}
