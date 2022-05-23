@@ -140,12 +140,14 @@ span.side_ {height:3em;width:;display:block;background-size:cover;position:absol
 
 
 .batlist {width:calc(100% + 16px);min-height:7em;font-size:16px;border:1px solid transparent;border-radius:2px;padding:8px;overflow:hidden;margin-top:12px;}
+.c18650 {width:calc(100% + 16px);min-height:8em;font-size:16px;border:1px solid transparent;border-radius:2px;padding:8px;overflow:hidden;margin-top:12px;}
 .batlist .adder {margin-left:0px;}
 .batlist .adder+button {margin-left:2px;}
 .batlist .adder+button+button {margin-left:2px;}
 .batlist .batp {width:4em;height:4em;background-image:url(carbat.jpg);float:left;}
 .c18650 .batp {width:4em;height:4em;background-image:url(18650.png);float:left;}
 .batlist .batd {width:calc(100% - 5em);height:4em;float:left;margin-left:0.75em;}
+.c18650 .batd {width:calc(100% - 5em);height:6em;float:left;margin-left:0.75em;}
 .c18650 .batd {width:calc(100% - 5em);height:7em;float:left;margin-left:0.75em;}
 .batlist .atr {font-size:14px;font-family:regular;line-height:1.5em;}
 a.goto {color:royalblue;}
