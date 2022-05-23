@@ -407,7 +407,7 @@ function toggleForms() {
 	window.scrollTo(0,0);
 }
 
-if(window.location.hash=="buying") {
+if(getQ('do')=="buying") {
 getE('#signin').innerHTML += "<input type='hidden' name='do' value='buying'>";
 getE('#signup').innerHTML += "<input type='hidden' name='do' value='buying'>";
 }
