@@ -68,11 +68,11 @@ function checkForm(ee,ii) {
 	
 	}
 	string = "";
-	ins = ee.getElementsByTagName('input');
        if(ee.getElementsByTagName('textarea')[0]) 
        { 
-ins = ins.push(ee.getElementsByTagName('textarea')[0]);
+       ee.getElementsByTagName('textarea')[0].tagName = "input";
        }
+        ins = ee.getElementsByTagName('input');
 	for(let i = 0; i<ins.length; i++) {
 		string += '&' + ins[i].getAttribute('name') + '=' + ins[i].value + '';
 		if(ii=="update") {
