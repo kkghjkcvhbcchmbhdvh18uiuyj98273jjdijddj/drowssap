@@ -111,7 +111,7 @@ function fixBag(ee) {
 		par = pr[0];
 		pars = par.split('=,=');
 		ih = pars[0];
-		id = pars[1];
+		details = pars[1];
 		ip = pars[2];
 		im = pars[3];
 		it = pars[4];
