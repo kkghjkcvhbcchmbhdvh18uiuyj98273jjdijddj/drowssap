@@ -70,7 +70,7 @@ function checkForm(ee,ii) {
 	string = "";
 	ins = ee.getElementsByTagName('input');
 	for(let i = 0; i<ins.length; i++) {
-		string += '&' + ins[i].getAttribute('name') + 'xbel=' + ins[i].value + 'xbel';
+		string += '&' + ins[i].getAttribute('name') + '=' + ins[i].value + '';
 		if(ii=="update") {
 			localStorage.setItem('user_' + ins[i].getAttribute('name'), ins[i].value);
 		}
