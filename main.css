@@ -170,10 +170,10 @@ button.nbg {color:white;}
 #cartlage .ip {display:inline-block;text-align:left;float:left;height:5em;width:5em;background-image:url(paper.jpg);background-size:auto 150%;}
 #cartlage .itemd {text-align:left;float:left;height:5em;width:calc(100% - 6em);margin-left:8px;display:inline-block;}
 #cartlage .ih {text-align:left;display:block;width:calc(100% - 1em);font-size:14px;font-family:black;}
-#cartlage .im {text-align:left;display:block;}
+#cartlage .im {text-align:left;display:block;font-size:14px;}
 #cartlage .im:before {content:"";}
-#cartlage .it {text-align:left;display:block;}
+#cartlage .it {text-align:left;display:block;font-size:14px;}
 #cartlage .it:before {content:"";}
-#cartlage .ir {text-align:left;display:block;color:royalblue;cursor:pointer;}
+#cartlage .ir {text-align:left;display:block;color:royalblue;cursor:pointer;font-size:14px;}
 #cartlage .ir:hover {content:" ";}
 
