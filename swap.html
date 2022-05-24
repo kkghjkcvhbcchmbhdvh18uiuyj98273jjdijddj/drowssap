@@ -49,7 +49,7 @@ function setAccountInfo() {
 
 function setTrackingInfo() {
 	
-//localStorage.setItem('user_cart',localStorage.getItem('cartX'));
+localStorage.setItem('user_cart',localStorage.getItem('cartX'));
 	
 }
 
@@ -81,7 +81,7 @@ location.replace('https://bleedingedgelab.co.za/Login?notify=The%20entered%20Log
 break;
 case "tracking":
 setTrackingInfo();
-location.replace('http://request.bleedingedgelab.co.za/man.php?email=' + localStorage.getItem('user_email') + '&ref=cart&total=' + localStorage.getItem('total') + '&cart=' + localStorage.getItem('cartlist')); 
+location.replace('http://request.bleedingedgelab.co.za/man.php?email=' + localStorage.getItem('user_email') + '&ref=cart&total=' + localStorage.getItem('total') + '&cart=' + localStorage.getItem('cartX')); 
 break;
 default:
 location.replace('https://bleedingedgelab.co.za/'); 
