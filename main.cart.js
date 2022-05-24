@@ -115,6 +115,7 @@ function fixBag(ee) {
 		ip = pars[2];
 		im = pars[3];
 		it = pars[4];
+		id = "";
 		ult += '<div class="item" tabindex="2" id="reg' + id + '" tabindex="2"  style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus=""> &#10003; Paid </div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>';
 	}
 	
