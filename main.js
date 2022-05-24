@@ -72,6 +72,7 @@ if(getQ('cart')=="enable") {
 localStorage.setItem('user_cart',localStorage.getItem('cartlist'));
 localStorage.setItem('user_date1', getQ('date1'));
 localStorage.setItem('user_date2',getQ('date2'));
+localStorage.setItem('user_percent',getQ('percent'));
 
 localStorage.removeItem('cartlist');
 }
