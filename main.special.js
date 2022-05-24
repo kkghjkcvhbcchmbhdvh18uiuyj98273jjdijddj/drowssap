@@ -149,6 +149,8 @@ function getTrackingInfo() {
 		getE('#rdate1').innerHTML = localStorage.getItem('user_date1');
 		getE('#rdate2').innerHTML = localStorage.getItem('user_date2');
 		
+		getE('#cartlage').innerHTML = fixBag(localStorage.getItem('user_cart'));
+		
 		getE('#track_nothing').style.display = "none";
 		getE('#track_center').style.display = "block";
 	} else {
