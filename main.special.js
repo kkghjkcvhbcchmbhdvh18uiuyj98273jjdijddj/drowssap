@@ -69,8 +69,8 @@ function checkForm(ee,ii) {
 	}
 	string = "";
 	ins = ee.getElementsByTagName('input');
-        if(ee.getElememtsByTagName('textarea')[0]) 
-       { ins[ins.length] = ee.getElememtsByTagName('textarea'); }
+        if(ee.querySelector('textarea')) 
+       { ins[ins.length] = ee.getElememtsByTagName('textarea')[0]; }
 	for(let i = 0; i<ins.length; i++) {
 		string += '&' + ins[i].getAttribute('name') + '=' + ins[i].value + '';
 		if(ii=="update") {
