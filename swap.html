@@ -81,7 +81,7 @@ location.replace('https://bleedingedgelab.co.za/Login?notify=The%20entered%20Log
 break;
 case "tracking":
 setTrackingInfo();
-location.replace('http://request.bleedingedgelab.co.za/man.php?emailxbel=' + localStorage.getItem('user_email') + 'xbel&ref=cart&total=' + localStorage.getItem('total') + '&cart=' + localStorage.getItem('user_cart')); 
+location.replace('http://request.bleedingedgelab.co.za/man.php?email=' + localStorage.getItem('user_email') + '&ref=cart&total=' + localStorage.getItem('total') + '&cart=' + localStorage.getItem('user_cart')); 
 break;
 default:
 location.replace('https://bleedingedgelab.co.za/'); 
