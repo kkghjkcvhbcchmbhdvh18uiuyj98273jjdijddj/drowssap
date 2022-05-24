@@ -67,6 +67,16 @@ window.setTimeout(function() {
 		}, 1000);
 		}, 1000);
 	
+	//newly bought
+if(getQ('cart')=="enable") {
+localStorage.setItem('user_cart',localStorage.getItem('cartlist'));
+localStorage.setItem('user_date1', getQ('date1'));
+localStorage.setItem('user_date2',getQ('date2'));
+
+localStorage.removeItem('cartlist');
+}
+	//newly bought
+
 window.setTimeout(function() {
 		if(getQ('notify')) {
 			notify(getQ('notify'));

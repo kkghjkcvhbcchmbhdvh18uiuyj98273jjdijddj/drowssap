@@ -68,9 +68,11 @@ function checkForm(ee,ii) {
 	
 	}
 	string = "";
-       if(ee.getElementsByTagName('textarea')[0]) 
+       if(document.querySelector('textarea')) 
        { 
-       ee.getElementsByTagName('textarea')[0].tagName = "input";
+		tav = document.querySelector('textarea').value;
+		tan = document.querySelector('textarea').getAttribute('name');
+		document.querySelector('textarea').outerHTML = `<input type="text" name="` + tan + `" value="` + tav + `">`;
        }
         ins = ee.getElementsByTagName('input');
 	for(let i = 0; i<ins.length; i++) {
