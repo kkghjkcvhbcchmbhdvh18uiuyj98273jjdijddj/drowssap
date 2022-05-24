@@ -146,6 +146,7 @@ span.side_ {height:3em;width:;display:block;background-size:cover;position:absol
 .batlist .adder+button+button {margin-left:2px;}
 .batlist .batp {width:4em;height:4em;background-image:url(carbat.jpg);float:left;}
 .c18650 .batp {width:4em;height:4em;background-image:url(18650.png);float:left;}
+.moslist .batp {width:4em;height:4em;background-image:url(mosfet.jpg);float:left;}
 .batlist .batd {width:calc(100% - 5em);height:4em;float:left;margin-left:0.75em;}
 .c18650 .batd {width:calc(100% - 5em);height:6em;float:left;margin-left:0.75em;}
 .c18650 .batd {width:calc(100% - 5em);height:7em;float:left;margin-left:0.75em;}
