@@ -119,7 +119,7 @@ span.side_ {height:3em;width:;display:block;background-size:cover;position:absol
 .tth {font-family:mainfont;font-size:15px;}
 .ttc {font-family:regular;font-size:15px;}
 
-.progressor {width:calc(100% + 16px);height:64px;border-radius:2px;border:1px solid grey;background-color:rgba(0,0,0,0.2);overflow:hidden;box-shadow:inset 0px 0px 16px rgba(0,0,0,0.5);}
+.progressor {width:calc(100% + 16px);height:32px;border-radius:2px;border:1px solid grey;background-color:rgba(0,0,0,0.2);overflow:hidden;box-shadow:inset 0px 0px 16px rgba(0,0,0,0.5);}
 .progressor .bar {width:1%;height:calc(100% + 2px);margin-top:-1px;overflow:visible;margin-left:-2px;border:1px solid #1f2840;background-color:#1f2840;color:white;font-family:black;font-size:13px;box-shadow:inset 0px 0px 16px rgba(0,0,0,0.1);word-wrap:normal;}
 
 .procs {display:flex;margin-top:10px;width:calc(100% + 16px);}
