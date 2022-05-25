@@ -413,6 +413,7 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 <script>
 
 getTrackingInfo();
+alert(localStorage.getItem('user_cart'))
 window.setTimeout(function() {
 getE('.progressor .bar').style.width = localStorage.getItem('user_percent') + "%";
 },3000);
