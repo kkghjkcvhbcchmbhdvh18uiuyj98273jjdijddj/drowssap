@@ -105,9 +105,9 @@ cartnot();
 
 function fixBag(ee) {
 	ult = "";
-	se = ee.split('@(@');
+	se = ee.split('(@');
 	for(let y = 1; se.length>y; y++) {
-		pr = se[y].split('@)@');
+		pr = se[y].split('@)');
 		par = pr[0];
 		pars = par.split('@,@');
 		ih = pars[0];
