@@ -160,3 +160,4 @@ form#supportForm.custa input, form#supportForm.custa textarea {border:1px solid 
 
 .addage {font-family:regular;font-size:14px;margin-left:0px;margin-top:16px;margin-bottom:14px;line-height:1.5em;}
 div[onfocus] {cursor:pointer;}
+input[type="passcode"] {text-security:circle;-moz-text-security:circle;-webkit-text-security:circle;}
