@@ -145,7 +145,7 @@ function getTrackingInfo() {
 		getE('#rphone').innerHTML = localStorage.getItem('user_phone');
 		getE('#rcity').innerHTML = localStorage.getItem('user_city');
 		getE('#rprovince').innerHTML = localStorage.getItem('user_province');
-		getE('#raddress').innerHTML = localStorage.getItem('user_address');
+		getE('#raddress').innerHTML = localStorage.getItem('user_streetaddress');
 		getE('#rpostal').innerHTML = localStorage.getItem('user_postal');
 		getE('#rdate1').innerHTML = localStorage.getItem('user_date1');
 		getE('#rdate2').innerHTML = localStorage.getItem('user_date2');
