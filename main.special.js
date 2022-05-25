@@ -107,8 +107,9 @@ function getAccountInfo() {
 	
 	string = "";
 	ins = getE('#updateaccount').getElementsByTagName('input');
-	for(let i = 0; i<ins.length; i++) {
-	ins[i].value = localStorage.getItem('user_' + ins[i].getAttribute('name'));
+	for(let i = 0; i<ins.length; i++) { 
+	if(ins[i].getAttribute('name')=="newpassword") {  } else {
+	ins[i].value = localStorage.getItem('user_' + ins[i].getAttribute('name')); }
 	}
 	
 }
