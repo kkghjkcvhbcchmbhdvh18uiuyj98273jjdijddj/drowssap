@@ -113,7 +113,7 @@ span.side_ {height:3em;width:;display:block;background-size:cover;position:absol
 
 #track_center div.bantwo {background-color:white;text-align:left;margin-top:12px;}
 #track_center div.banner {margin-top:20px;}
-#track_center div.banner .ttc {text-transform:capitalize;line-height:1.5em;}
+#track_center .ttc {text-transform:capitalize;line-height:1.5em;}
 
 #cartlage .ir {display:none;}
 .tth {font-family:mainfont;font-size:15px;}

@@ -167,8 +167,8 @@ button.nbg {color:white;}
 #cartlage {overflow-x:hidden;overflow-y:auto;padding:8px;text-align:center;}
 
 #cartlage .item {text-align:left;overflow:hidden;margin-left:0px;display:block;width:calc(100% - 16px);height:3em;font-family:regular;border-bottom:1px solid #fefefe;margin-bottom:0.5em;}
-#cartlage .ip {display:inline-block;text-align:left;float:left;height:2em;width:2em;background-image:url(paper.jpg);background-size:auto 150%;}
-#cartlage .itemd {text-align:left;float:left;height:5em;width:calc(100% - 4.5em);margin-left:2px;display:inline-block;}
+#cartlage .ip {display:inline-block;text-align:left;float:left;height:2em;width:2em;background-image:url(paper.jpg);background-size:auto 130%;}
+#cartlage .itemd {text-align:left;float:left;height:3em;width:calc(100% - 4.5em);margin-left:2px;display:inline-block;}
 #cartlage .ih {text-align:left;display:block;width:calc(100% - 1em);font-size:14px;font-family:black;}
 #cartlage .im {text-align:left;display:block;font-size:14px;}
 #cartlage .im:before {content:"";}
