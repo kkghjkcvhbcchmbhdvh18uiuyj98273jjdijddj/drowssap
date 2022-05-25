@@ -34,6 +34,7 @@ div.adder button {font-family:mainfont;border:1px solid transparent;outline:none
 .prev {width:4em;height:4em;border:2px solid rgba(31,40,64,1);margin-left:4px;display:inline-block;opacity:0.8;}
 .prv1 {background-image:url(powertank.png);}
 .prv2  {background-image:url(powertank2.png);}
+.prv3  {background-image:url(powertank3.png);}
 
 .previews .selected {opacity:0.99;border:2px solid rgba(255,186,66,1);}
 .prod {transition:all 1s;}
