@@ -22,11 +22,11 @@ document.body.innerHTML += '<div class="center" id="cart"><div class="center box
 	 if(!localStorage.getItem('cartlist')) {
 		 
 		  window.localStorage.setItem('cartlist','<div class="item" tabindex="2" id="reg' + id + '" tabindex="2"  style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode)">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>');
-    cartX = `=(=` + ee + `=,=` + ih + `=,=` + details + `=,=` + ip + `=,=` + im + `=,=` + it + `=)=`;
+    cartX = `@(@` + ih + `@,@` + details + `@,@` + ip + `@,@` + im + `@,@` + it + `@)@`;
    localStorage.setItem('cartX',cartX);
 		  } else {
 	 window.localStorage.setItem('cartlist',localStorage.getItem('cartlist') +  '<div class="item" tabindex="2" id="reg' + id + '" tabindex="2" style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode)">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>');
-    cartX = `=(=` + ih + `=,=` + details + `=,=` + ip + `=,=` + im + `=,=` + it + `=)=`;
+    cartX = `@(@` + ih + `@,@` + details + `@,@` + ip + `@,@` + im + `@,@` + it + `@)@`;
    localStorage.setItem('cartX',localStorage.getItem('cartX') + cartX);
 	 }
    ee.innerHTML = "Added!";
@@ -105,11 +105,11 @@ cartnot();
 
 function fixBag(ee) {
 	ult = "";
-	se = ee.split('=(=');
+	se = ee.split('@(@');
 	for(let y = 1; se.length>y; y++) {
-		pr = se[y].split('=)=');
+		pr = se[y].split('@)@');
 		par = pr[0];
-		pars = par.split('=,=');
+		pars = par.split('@,@');
 		ih = pars[0];
 		details = pars[1];
 		ip = pars[2];
