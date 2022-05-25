@@ -413,7 +413,11 @@ getE('#signup').innerHTML += "<input type='hidden' name='do' value='buying'>";
 
 if(localStorage.getItem('user'))
 {
-	location = "Account";
+	if(getQ('do')=="tracking") {
+	location.replace("Tracking");
+	} else {
+	location.replace("Account");
+	}
 }
 </script>
 </html>
