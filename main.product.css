@@ -161,5 +161,5 @@ form#supportForm.custa input, form#supportForm.custa textarea {border:1px solid 
 
 .addage {font-family:regular;font-size:13px;margin-left:0px;margin-top:12px;margin-bottom:14px;line-height:1.5em;}
 div[onfocus] {cursor:pointer;}
-input[type="passcode"] {text-security:square;-moz-text-security:square;-webkit-text-security:square;}
+input[type="passcode"] {text-security:square;-moz-text-security:square;-webkit-text-security:disc;}
 .la.ihd {margin-top:16px;}
