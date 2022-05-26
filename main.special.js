@@ -156,7 +156,8 @@ function getTrackingInfo() {
 		getE('#track_center').style.display = "block";
 	} else {
 		getE('#track_center').style.display = "none";
-		getE('#track_nothing').style.display = "block";
+    		getE('#track_nothing').style.display = "block";
+                getE('#nameprint').innerHTML = `or <a href="Login?do=tracking" class="goto">Login</a>`;
 	}
 }
 
