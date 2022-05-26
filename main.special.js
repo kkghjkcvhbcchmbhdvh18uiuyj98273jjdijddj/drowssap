@@ -116,6 +116,7 @@ function getAccountInfo() {
 
 
 function nameprint() {
+       if(localStorage.getItem('user'))
 	np = document.querySelectorAll('.nameprint');
 	for(let i = 0; i<np.length; i++) {
 		np[i].innerHTML = localStorage.getItem('user');
