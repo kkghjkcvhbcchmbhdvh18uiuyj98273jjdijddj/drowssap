@@ -26,7 +26,7 @@ div#notify {width:100%;left:0px;}
 #content .rr span font {font-size:16px;display:inline-block;margin-top:15px;font-family:regular;}
 #content .rr span font a {font-size:16px;display:inline;margin-top:8px;font-family:regular;color:rgba(255,186,66,1);}
 
-#content .banner span {margin-top:-5.5em;}
+#content .banner span {margin-top:-6em;}
 #content .bantwo span {margin-top:-6em;}
 #content .banthree span {margin-top:-6em;}
 #content .banquad span {margin-top:-5em;}
@@ -105,7 +105,7 @@ div#notify {width:50%;left:25%;}
 #content .banthree span {font-size:24px;}
 #content .banquad span {font-size:20px;}
 
-#content .rr span {display:block;margin-top:-4em;position:absolute;color:white;font-family:mainfont;margin-left:14px;padding-right:2em;text-shadow:0px 0px 2px #555;}
+#content .rr span {display:block;margin-top:-5em;position:absolute;color:white;font-family:mainfont;margin-left:14px;padding-right:2em;text-shadow:0px 0px 2px #555;}
 
 
 #content .banner span font {font-size:16px;display:inline-block;margin-top:15px;font-family:regular;}
@@ -124,7 +124,7 @@ div#notify {width:50%;left:25%;}
 
 #content .banner span {margin-top:-5.5em;}
 #content .bantwo span {margin-top:-7em;}
-#content .banthree span {margin-top:-6.5em;}
+#content .banthree span {margin-top:-7em;}
 #content .banquad span {margin-top:-6.5em;}
 .rr span {display:inline-block;width:11em;}
 
