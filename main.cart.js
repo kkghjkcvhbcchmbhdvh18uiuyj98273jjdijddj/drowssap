@@ -64,6 +64,7 @@ cartnot();
 	 
 	 
    localStorage.setItem('total',getE('#closecartC').innerHTML);
+   fixList();
 cartnot();
  }
  
@@ -72,10 +73,11 @@ cartnot();
  getE('#checkoutB').addEventListener('click',function() {
 	 if(localStorage.getItem('total')=="0.00" || !localStorage.getItem('total')) {  /**do nothing**/  }
 	else {
+		fixList();
 		if(!localStorage.getItem('user')) {
 		window.location = 'Login?do=buying';  }
 		else {
-payfast = `<div id="payfast" style="display:none;"><form name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">  <input required type="hidden" name="cmd" value="_paynow">  <input required type="hidden" name="receiver" pattern="[0-9]" value="19754082">  <input type="hidden" name="return_url" value="http://request.bleedingedgelab.co.za/man.php?ref=buy&status=success">  <input type="hidden" name="cancel_url" value="http://request.bleedingedgelab.co.za/man.php?ref=buy&status=cancel">  <input required type="hidden" name="amount" value="` + localStorage.getItem('total') + `" id="injtotal">  <input required type="hidden" name="item_name" maxlength="255" value="Bleeding Edge Lab (PTY) Ltd - Checkout">  <input type="hidden" name="item_description" maxlength="255" value="Checkout item(s) from Bleeding Edge Lab (PTY) Ltd">  <table>  <tr>  <td colspan=2 align=center>  <input type="image" src="https://www.payfast.co.za/images/buttons/PayNow/Dark-Large-Square-PayNow.png" alt="Pay Now" title="Pay Now with PayFast" id="payfastgo">  </td>  </tr>  </table>  </form></div>`;
+payfast = `<div id="payfast" style="display:none;"><form name="PayFastPayNowForm" action="https://www.payfast.co.za/eng/process" method="post">  <input required type="hidden" name="cmd" value="_paynow">  <input required type="hidden" name="receiver" pattern="[0-9]" value="19754082">  <input type="hidden" name="return_url" value="http://request.bleedingedgelab.co.za/man.php?ref=buy&status=success">  <input type="hidden" name="cancel_url" value="http://request.bleedingedgelab.co.za/man.php?ref=buy&status=cancel">  <input required type="hidden" name="amount" value="` + localStorage.getItem('total') + `" id="injtotal">  <input required type="hidden" name="item_name" maxlength="255" value="Bleeding Edge Lab (PTY) Ltd - Checkout">  <input type="hidden" name="item_description" maxlength="255" value="Checkout item(s): ` + localStorage.getItem('itemlist') + `">  <table>  <tr>  <td colspan=2 align=center>  <input type="image" src="https://www.payfast.co.za/images/buttons/PayNow/Dark-Large-Square-PayNow.png" alt="Pay Now" title="Pay Now with PayFast" id="payfastgo">  </td>  </tr>  </table>  </form></div>`;
 		document.body.innerHTML = payfast;
 		
 		getE('#payfastgo').click();
@@ -117,6 +119,27 @@ function fixBag(ee) {
 		it = pars[4];
 		id = "";
 		ult += '<div class="item" tabindex="2" id="reg' + id + '" tabindex="2"  style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus=""> &#10003; Paid </div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>';
+	}
+	
+	return ult;
+}
+function fixList() {
+	ee = localStorage.getItem('cartX')
+	ult = "";
+	se = ee.split('(@');
+	for(let y = 1; se.length>y; y++) {
+		pr = se[y].split('@)');
+		par = pr[0];
+		pars = par.split('@,@');
+		ih = pars[0];
+		details = pars[1];
+		ip = pars[2];
+		im = pars[3];
+		it = pars[4];
+		id = "";
+		
+		ult += ih + '; ';
+		localStorage.setItem('itemlist', ult);
 	}
 	
 	return ult;
