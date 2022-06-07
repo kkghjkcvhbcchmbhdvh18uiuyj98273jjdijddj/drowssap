@@ -51,6 +51,8 @@ function setAccountInfo() {
 function setTrackingInfo() {
 	
 localStorage.setItem('user_cart',localStorage.getItem('user_cart') +localStorage.getItem('cartX'));
+localStorage.removeItem('total');
+
 	
 }
 
