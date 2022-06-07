@@ -422,7 +422,7 @@ getTrackingInfo();
 localStorage.getItem('user_cart')
 window.setTimeout(function() {
 getE('.progressor .bar').style.width = localStorage.getItem('user_percent') + "%";
-getE('.progressor .bar').innerHTML += "&nbsp;" + localStorage.getItem('user_percent') + "%";
+getE('.progressor .bar').innerHTML += "&nbsp;" + localStorage.getItem('user_percent').replace('+','') + "%";
 },3000);
 
 </script>
