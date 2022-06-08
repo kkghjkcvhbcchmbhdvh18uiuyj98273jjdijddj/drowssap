@@ -38,12 +38,6 @@
 </url>
 
 
-<url>
-  <loc>https://bleedingedgelab.co.za/Power_Tank_Pro</loc>
-  <priority>0.8</priority>
-  <changefreq>daily</changefreq>
- 
-</url>
 
 
 <url>
@@ -55,12 +49,6 @@
 
 <url>
   <loc>https://bleedingedgelab.co.za/BELCharge</loc>
-  <priority>0.8</priority>
-  <changefreq>daily</changefreq>
- 
-</url>
-<url>
-  <loc>https://bleedingedgelab.co.za/BELCharge_Pro</loc>
   <priority>0.8</priority>
   <changefreq>daily</changefreq>
  
@@ -134,7 +122,12 @@
   <changefreq>daily</changefreq>
  
 </url>
-
+<url>
+  <loc>https://bleedingedgelab.co.za/Seller</loc>
+  <priority>0.9</priority>
+  <changefreq>daily</changefreq>
+ 
+</url>
 <url>
   <loc>https://bleedingedgelab.co.za/Legal</loc>
   <priority>0.5</priority>
