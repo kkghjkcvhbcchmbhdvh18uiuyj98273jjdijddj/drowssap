@@ -168,6 +168,12 @@ function getTrackingInfo() {
 		window.addEventListener("contextmenu", function(event) {
 			if(event.target.tagName == 'IMG'|| event.target.tagName == 'img') {
 				event.preventDefault();
+			} else if(event.target.className=='item') {
+				event.preventDefault();
+			} else if(event.target.parentNode.className=='item') {
+				event.preventDefault();
+			} else if(event.target.parentNode.parentNode.className=='item') {
+				event.preventDefault();
 			}
 			
 		});
