@@ -165,5 +165,9 @@ function getTrackingInfo() {
 }
 
 
-
-	
+		window.addEventListener("contextmenu", function(event) {
+			if(event.target.tagName == 'IMG'|| event.target.tagName == 'img') {
+				event.preventDefault();
+			}
+			
+		});
