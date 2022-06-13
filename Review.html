@@ -106,7 +106,7 @@
 <option value='2'>2</option>
 <option value='1'>1 Worst</option>
 </optgroup><select>
-<input type="hidden" name="rate" placeholder="" id="rate">
+<input type="hidden" name="rate" placeholder="" id="rate"><input type="hidden" name="red" placeholder="" id="red">
 <input type="email" name="email" placeholder="Your Email Address"><br/>
 <input type="fullname" name="fullname" placeholder="Your Full Name"><br/>
 <textarea name="message" placeholder="Describe Your Experience Here.." cols="20" rows="8"></textarea><br/>
@@ -400,6 +400,7 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 <script>
 getE('#produkt').innerHTML = replaceAll(getQ('product'),'%20',' ');
 getE('#rmg').src = replaceAll(getQ('image'),'%20',' ');
+getE('#red').value = replaceAll(getQ('red'),'%20',' ');
 </script>
 <script>
 
