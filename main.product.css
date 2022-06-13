@@ -63,7 +63,7 @@ div.adder button {font-family:mainfont;border:1px solid transparent;outline:none
 .login_page #content i {color:dimgray;font-size:10px;}
 .login_page #content {width:calc(100% - 32px);margin-left:16px;}
 
-.login_page form  input {margin-top:16px;width:90%;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:38px;}
+.login_page form  input, .login_page form  select {margin-top:16px;width:90%;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:38px;}
 .login_page form  input:focus {border:1px solid #1f2840;outline:unset;}
 .login_page form  button {background-color:#1f2840;color:white;border:1px solid #123;border-radius:3px;font-size:16px;height:40px;width:9em;outline:unset;margin-top:18px;font-family:mainfont;}
 .xih {font-size:14px;display:block;margin-top:16px;font-family:regular;}
@@ -91,7 +91,7 @@ address {font-family:regular;letter-spacing:0px;font-size:16px;margin-top:16px;f
 .support {text-align:left;}
 .support .shd.smh {margin-top:20px;text-align:left;}
 form#supportForm {text-align:left;}
-form#supportForm input {margin-top:16px;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:38px;}
+form#supportForm input, form#supportForm .select {margin-top:16px;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:38px;}
 form#supportForm textarea {margin-top:16px;width:90%;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:128px;vertical-align:middle;}
 .support i {font-family:regular;font-size:12px;margin-top:14px;}
 .support .cont {font-family:regular;}
@@ -130,7 +130,7 @@ span.side_ {height:3em;width:;display:block;background-size:cover;position:absol
 #servicesx .bantwo {float:left;margin-left:9px;}
 .quo {background-color: #1f2840;color: white;border: 1px solid #123;border-radius: 3px;font-size: 16px;height: 40px;width: 9em;outline: unset;margin-top: 18px;font-family: mainfont;  }
 
-#services form#supportForm input, #services form#supportForm textarea {border:1px solid lightgray;}
+#services form#supportForm input, #services form#supportForm textarea, #services form#supportForm .select {border:1px solid lightgray;}
 
 .reseter {color:royalblue;font-family:mainfont;font-size:16px;display:inline-block;margin-bottom:2em;margin-top:1em;}
 .la.ihd {text-align:left;}
@@ -163,3 +163,4 @@ form#supportForm.custa input, form#supportForm.custa textarea {border:1px solid 
 div[onfocus] {cursor:pointer;}
 input[type="passcode"] {text-security:square;-moz-text-security:square;-webkit-text-security:disc;}
 .la.ihd {margin-top:16px;}
+.mf {font-family:mainfont;}

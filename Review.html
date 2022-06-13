@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<meta name="theme-color" content="#1f2840">
-	<meta name="description" content="A power bank for your phone or laptop charger. Technically a portable electrical energy storage device or carriable solid state electricity generator (or solar generator). Plug your phone, tablet and laptop charger or small appliances. For use during loadshedding or when outdoors.">
-    <title>The BELCharge - Bleeding Edge Lab (PTY) Ltd </title>
+	<meta name="description" content="Write a review of a product you purchased. Share your experience and give us feedback">
+    <title>Write A Review - Bleeding Edge Lab (PTY) Ltd </title>
 	<base href="">
     <link href="main.css" type="text/css" rel="stylesheet">
     <link href="responsive.css" type="text/css" rel="stylesheet">
@@ -14,15 +14,17 @@
     <link rel="shortcut icon" href="icon.png" sizes="64x64, 128x128, 192x192, 240x240, 360x360, 480x480, 640x640, 720x720, 800x800, 1080x1080" type="image/png">
    <link rel="apple-touch-icon" href="icon.png" sizes="64x64,96x96,128x128,256x256" type="image/png"/>
     <link rel="shortcut icon" href="favicon.png" type="image/png" sizes="16x16,24x24,32x32,64x64"/>
-	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;z-index:9;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}	</style><style> .seo {opacity:0;} </style>
+	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;z-index:9;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}
+    
+	</style><style> .seo {opacity:0;} </style>
 </head>
-<body class="product_page">
+<body class="login_page">
 <section id="header">
 <div class="band mbg">
 <span tabindex="2" onfocus="location='/';" class="before"></span>
 <div class="dmenu ame">
 <button class="mcol"><a href="Power_Tank">Power Tank</a></button>
-<button class="mcol" selected="true"><a href="BELCharge">BELCharge</a></button>
+<button class="mcol"><a href="BELCharge">BELCharge</a></button>
 <button class="mcol"><a href="BELMore">BELMore</a></button>
 <button class="mcol"><a href="BELStudio">BELStudio</a></button>
 <button class="mcol"><a href="BELChrome">BELChrome</a></button>
@@ -37,7 +39,7 @@
 <div class="tmenu ame">
 
 <button class="mcol"><a href="Power_Tank">Power Tank</a></button>
-<button class="mcol" selected="true"><a href="BELCharge">BELCharge</a></button>
+<button class="mcol"><a href="BELCharge">BELCharge</a></button>
 <button class="mcol"><a href="BELMore">BELMore</a></button>
 <button class="mcol"><a href="BELStudio">BELStudio</a></button>
 <button class="mcol"><a href="BELChrome">BELChrome</a></button>
@@ -62,7 +64,7 @@
 <div class="omenu" id="mom">
 <button class="mitem bck" id=""></button>
 <button class="mitem"><a href="Power_Tank">Power Tank</a></button>
-<button class="mitem" selected="true"><a href="BELCharge">BELCharge</a></button>
+<button class="mitem"><a href="BELCharge">BELCharge</a></button>
 <button class="mitem"><a href="BELMore">BELMore</a></button>
 <button class="mitem"><a href="BELStudio">BELStudio</a></button>
 <button class="mitem"><a href="BELChrome">BELChrome</a></button>
@@ -81,107 +83,55 @@
 
 
 
-<section id="content" class="sub1">
-<p>&nbsp;</p>
+
+<section id="content" class="sub1 support">
+<div class="banner">
+<div class="hd lb"><font id="produkt"></font> Review</div>
+<i color="dimgray">We appreciate your feedback on our products.</i>
+</div>
 <div class="bantwo">
-<img src="belcharge1.png" class="prod" alt="The BELCharge"/>
-<div class="previews">
-<div class="prev prv1 selected" tabindex="2" href="belcharge1.png" onfocus="preview(this)" style="background-image:url(belcharge1.png);"></div>
-<div class="prev prv2" tabindex="2" href="belcharge2.png" onfocus="preview(this)" style="background-image:url(belcharge2.png);"></div>
-<div class="prev prv3" tabindex="2" href="powertank3.png" onfocus="preview(this)" style="background-image:url(powertank3.png);"></div>
-</div>
-</div>
-<div class="bantwo prodinfo">
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<div class="ph1 phv">The BELCharge</div>
-<div class="ph2 phv">A power bank for your phone or laptop charger. Technically a portable electrical energy storage device or carriable solid state electricity generator (or solar generator).</div>
-<div class="ph2 phv">Plug your phone, tablet and laptop charger or small appliances. For use during loadshedding or when outdoors.</div>
-<div class="ph3 phv">Lab &#187; Portable Generators &#187; BELCharge</div>
+<div class="shd smh">Tell Us About Your Experience</div>
+<form method="post" id="supportForm" onsubmit="checkForm(this,'support')">
+<select class="select" onchange="getE('#rate').value=this.value"><option selected disabled>Rate the product</option><optgroup label='Out of 10'>
+<option value='10'>10 Best</option>
+<option value='9'>9</option>
+<option value='8'>8</option>
+<option value='7'>7</option>
+<option value='6'>6</option>
+<option value='5'>5 Okay</option>
+<option value='4'>4</option>
+<option value='3'>3</option>
+<option value='2'>2</option>
+<option value='1'>1 Worst</option>
+</optgroup><select>
+<input type="hidden" name="rate" placeholder="" id="rate">
+<input type="email" name="email" placeholder="Your Email Address"><br/>
+<input type="fullname" name="fullname" placeholder="Your Full Name"><br/>
+<textarea name="message" placeholder="Describe Your Experience Here.." cols="20" rows="8"></textarea><br/>
+<button>Submit Review</button><br/>
+</form>
 <p>&nbsp;</p>
-<div class="adder phv">
-<button class="minus" onclick="items(this,'subtract',1200);">&minus;</button><button class="countz">1</button><button class="add" onclick="items(this,'add',1200);">+</button>
 </div>
-<button onclick="" class="total" id="total">1200</button>
-<button onclick="addToCart(this,'BELCharge','Plug your phone, tablet and laptop charger or small appliances. For use during loadshedding or when outdoors.','belcharge1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv">Add To Cart</button>
+<div class="bantwo">
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<div class="ph4 phv">Delivery</div>
-<div class="ph5 phv">
-3 - 5 Working Days
-</div>
+<img src="" id="rmg" style="width:100%;"/>
 <p>&nbsp;</p>
-<div class="ph4 phv">Accepted Payment Methods</div>
-<div class="ph5 phv">
-Debit Card, Credit or Cheque Card, Instant EFT, Masterpass, Zapper, SnapScan & SCode
-</div>
-</div>
-<div class="bantwo prodinfo">
-<p>&nbsp;</p>
-<div class="ph4 phv">What's in the box?</div>
-<div class="ph5 phv">
-&bull; BELCharge
-<br>
-&bull; Charging Adapter
-</div>
-<p>&nbsp;</p>
-<div class="ph6 phv">Specifications</div>
-<div class="ph7 phv">
-&bull; 50Wh Capacity
-<br>
-&bull; 70W Continuous Output
-<br>
-&bull; 180W Peak Output
-<br>
-&bull; 50W Maximum Input (Charging)
-<br>
-&bull; 220V AC (MSW)
-<br>
-&bull; USB Port
-<br>
-&bull; 1x Electrical Twin Socket
-</div>
-<p>&nbsp;</p>
-<div class="ph6 phv">Dimensions</div>
-<div class="ph7 phv">
-&bull; Width: 10cm
-<br>
-&bull; height: 2.8cm
-<br>
-&bull; Length: 18cm
-<br>
-</div>
-
-<p>&nbsp;</p>
-
-
-
-</div>
-<div class="bantwo prodinfo">
-<div class="ph4 phv rc">0 Reviews &nbsp; ☆☆☆☆☆ &nbsp; <a href="Review?product=The%20BELCharge&image=belcharge1.png" class="goto">Write a review</a></div>
-<!--★★★★☆-->
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 </div>
+
 </section>
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 <div class="pfaq">
 <p>&nbsp;</p>
-<div class="bfh">Frequently Asked Questions</div>
-<div class="bfq" tabindex="2">How long will it charge my phone?</div>
-<div class="qanswer">Approximately 3 hours.</div>
-<div class="bfq" tabindex="2">How long will it power my laptop?</div>
-<div class="qanswer">Approximately an hour (based on older laptop builds thus modern laptops can be powered longer).</div>
+<div class="bfq bfh" tabindex="2" onfocus="location='Support';">Contact support for any further inquiries</div>
 
-<p>&nbsp;</p>
 <p>&nbsp;</p>
 </div>
-
-
 <div id="delnot">Free Nationwide Delivery (South Africa)
 </div>
 <section id="footer"><p class="boarder">&nbsp;</p>
@@ -434,19 +384,31 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 </div>
 <img class="seo" src="favicon.png" alt="Bleeding Edge Lab icon">
 <img class="seo" src="icon.png" alt="Bleeding Edge Lab logo">
-<h1 class="seo">The BELCharge</h1>
+<h1 class="seo">Submit a review</h1>
 <h2 class="seo">Bleeding Edge Lab</h2>
 <h3 class="seo">Just Making Progress</h3>
 <h4 class="seo">Proudly South African</h4>
 <h5 class="seo">Black Owned</h5>
 <h6 class="seo">High Tech Innovation</h6>
-<b class="seo">BELCharge</b>
+<b class="seo">Review our products</b>
 </div>
 </body>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="main.special.js"></script>
 <script type="text/javascript" src="main.cart.js"></script>
+
 <script>
-window.localStorage = "";
+getE('#produkt').innerHTML = replaceAll(getQ('product'),'%20',' ');
+getE('#rmg').src = replaceAll(getQ('image'),'%20',' ');
+</script>
+<script>
+
+
+if(!localStorage.getItem('user'))
+{
+	//location = "Login";
+}
+
+getTrackingInfo();
 </script>
 </html>
