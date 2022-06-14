@@ -164,6 +164,18 @@ button.nbg {color:white;}
 
 
 
+#summary {overflow-x:hidden;overflow-y:auto;padding:8px;text-align:center;}
+
+#summary .item {text-align:left;overflow:hidden;margin-left:0px;display:block;width:calc(100% - 16px);min-height:3em;font-family:regular;border-bottom:1px solid #fefefe;margin-bottom:0.5em;}
+#summary .ip {display:inline-block;text-align:left;float:left;height:2em;width:2em;background-image:url(paper.jpg);background-size:auto 130%;}
+#summary .itemd {text-align:left;float:left;min-height:3em;width:calc(100% - 4.5em);margin-left:2px;display:inline-block;}
+#summary .ih {text-align:left;display:block;width:calc(100% - 1em);font-size:14px;font-family:black;}
+#summary .im {text-align:left;display:block;font-size:14px;}
+#summary .im:before {content:"";}
+#summary .it {text-align:left;display:block;font-size:14px;}
+#summary .it:before {content:"";}
+div#summary div.ir {text-align:left;display:block;color:royalblue;cursor:pointer;font-size:14px;}
+#summary .ir:hover {content:" ";}
 #cartlage {overflow-x:hidden;overflow-y:auto;padding:8px;text-align:center;}
 
 #cartlage .item {text-align:left;overflow:hidden;margin-left:0px;display:block;width:calc(100% - 16px);min-height:3em;font-family:regular;border-bottom:1px solid #fefefe;margin-bottom:0.5em;}

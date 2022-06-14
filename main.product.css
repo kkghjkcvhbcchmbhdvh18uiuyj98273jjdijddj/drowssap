@@ -14,7 +14,8 @@
 .ph2 {font-size:16px;font-family:regular;margin:1em;}
 .ph3 {font-size:14px;font-family:regular;margin:1em;font-style:italic;color:royalblue;}
 .phv {margin-left:16px;}
-.prodinfo .addToCart {margin-left:6px;top:1px;}
+.prodinfo .addToCart {margin-left:16px;top:1px;margin-top:8px;}
+.prodinfo button.buyNow {margin-left:16px;top:1px;margin-top:8px;color:white;text-shadow:0px 0px 2px #444;background-color:rgba(240,170,50,1);font-family:mainfont;font-size:16px;border:1px solid rgba(200,120,30,1);}
 
 .adder {overflow:hidden;border:1px solid grey;display:inline-flex;font-size:14px;border-radius:2px;}
 div.adder button {font-family:mainfont;border:1px solid transparent;outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;}
@@ -164,3 +165,6 @@ div[onfocus] {cursor:pointer;}
 input[type="passcode"] {text-security:square;-moz-text-security:square;-webkit-text-security:disc;}
 .la.ihd {margin-top:16px;}
 .mf {font-family:mainfont;}
+
+.disclaim {color:dimgray;font-size:9px;font-family:regular;font-style:italic;margin-left:16px;margin-top:10px;margin-bottom:0px;padding-bottom:0px;}
+.disclaim b {font-weight:normal;font-family:mainfont;}
