@@ -38,6 +38,7 @@ document.body.innerHTML += '<div class="center" id="cart"><div class="center box
    
    localStorage.setItem('total',getE('#closecartC').innerHTML);
 cartnot();
+checkOutNow()
  }
 
  function addToCart(ee,ih,id,ip,im,it) {
