@@ -11,4 +11,4 @@
 .totg b {font-size:15px;font-family:mainfont;margin-top:10px;font-weight:normal;}
 .totg.bib {font-family:black;}
 .totg.bil {font-size:12px;}
-#summary:before {font-size:15px;display:block;content:"Summary";font-family:black;margin-top:4px;margin-bottom:14px;}
+#summary:before {color:inherit;font-size:15px;display:block;content:"Summary";font-family:black;margin-top:4px;margin-bottom:14px;}
