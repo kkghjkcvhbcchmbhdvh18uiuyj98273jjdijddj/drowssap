@@ -10,12 +10,17 @@
 .sub1 .bantwo:nth-child(1) {background-color:rgba(255,186,66,1);}
 .sub1 .bantwo:nth-child(2) {line-height:1em;appearance: auto;-webkit-writing-mode: horizontal-tb !important;text-rendering: auto;letter-spacing: normal;word-spacing: normal;text-transform: none;text-indent: 0px;text-shadow: none;display: inline-block;text-align: center;align-items: flex-start;cursor: pointer;box-sizing: border-box;margin: 0em;font: 400 13.3333px Arial;vertical-align:middle;}
 .sub1 .bantwo .prod {width:100%;}
-.ph1 {font-size:24px;font-family:mainfont;margin:1em;}
-.ph2 {font-size:16px;font-family:regular;margin:1em;}
-.ph3 {font-size:14px;font-family:regular;margin:1em;font-style:italic;color:royalblue;}
+.ph1 {font-size:20px;font-family:mainfont;margin:1em;}
+.ph2 {font-size:14px;font-family:regular;margin:1em;}
+.ph3 {font-size:12px;font-family:regular;margin:1em;font-style:italic;color:royalblue;}
 .phv {margin-left:16px;}
 .prodinfo .addToCart {margin-left:16px;top:1px;margin-top:8px;}
 .prodinfo button.buyNow {margin-left:16px;top:1px;margin-top:8px;color:white;text-shadow:0px 0px 2px #444;background-color:rgba(240,170,50,1);font-family:mainfont;font-size:16px;border:1px solid rgba(200,120,30,1);}
+.ph4 {font-size:14px;font-family:black;margin:1em;}
+.ph5 {font-size:14px;font-family:regular;margin:1em;line-height:1.5em;}
+.ph6 {font-size:14px;font-family:black;margin:1em;}
+.ph7 {font-size:14px;font-family:regular;margin:1em;line-height:1.5em;}
+
 
 .adder {overflow:hidden;border:1px solid grey;display:inline-flex;font-size:14px;border-radius:2px;}
 div.adder button {font-family:mainfont;border:1px solid transparent;outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;}
@@ -25,11 +30,6 @@ div.adder button {font-family:mainfont;border:1px solid transparent;outline:none
 .adder .countz {flex:3;padding-left:12px;padding-right:12px;font-size:13px;}
 .total:before {content:"R";}
 .total {overflow:hidden;border:1px solid grey;display:inline-flex;font-size:14px;border-radius:2px;padding-left:12px;padding-right:12px;padding-top:8px;padding-bottom:10px;color:#444;margin-left:6px;}
-
-.ph4 {font-size:16px;font-family:black;margin:1em;}
-.ph5 {font-size:16px;font-family:regular;margin:1em;line-height:1.5em;}
-.ph6 {font-size:16px;font-family:black;margin:1em;}
-.ph7 {font-size:16px;font-family:regular;margin:1em;line-height:1.5em;}
 
 .previews {position:relative;display:block;top:4px;width:100%;height:4em;font-size:16px;}
 .prev {width:4em;height:4em;border:2px solid rgba(31,40,64,1);margin-left:4px;display:inline-block;opacity:0.8;}
