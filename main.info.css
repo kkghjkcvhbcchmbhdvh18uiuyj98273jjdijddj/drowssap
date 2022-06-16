@@ -6,9 +6,9 @@
 .rc {border-bottom:1px solid #999;padding-bottom:16px;}
 .poy {background-color:white;border:1px solid white;border-bottom:1px solid dimgray;color:dimgray;height:48px;text-align:left;display:block;width:100%;}
 #invoice {display:none;}
-.summarytotal {font-family:black;font-size:16px;text-align:left;}
-.totg {font-size:15px;font-family:regular;margin-top:10px;}
-.totg b {font-size:15px;font-family:mainfont;margin-top:10px;font-weight:normal;}
+.summarytotal {font-family:black;font-size:14px;text-align:left;}
+.totg {font-size:14px;font-family:regular;margin-top:10px;}
+.totg b {font-size:14px;font-family:mainfont;margin-top:10px;font-weight:normal;}
 .totg.bib {font-family:black;}
-.totg.bil {font-size:12px;}
-#summary:before {text-align:left;color:inherit;font-size:16px;display:block;content:"Summary";font-family:black;margin-top:4px;margin-bottom:14px;}
+.totg.bil {font-size:10px;}
+#summary:before {text-align:left;color:inherit;font-size:14px;display:block;content:"Summary";font-family:black;margin-top:4px;margin-bottom:14px;}

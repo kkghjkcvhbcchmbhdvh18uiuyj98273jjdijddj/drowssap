@@ -81,16 +81,16 @@ div.adder button {font-family:mainfont;border:1px solid transparent;outline:none
 
 
 
-.parg {font-family:regular;letter-spacing:0px;font-size:16px;margin-top:16px;line-height:1.5em;}
-address {font-family:regular;letter-spacing:0px;font-size:16px;margin-top:16px;font-style:normal;}
-.cont {font-family:mainfont;margin-top:16px;font-size:16px;}
+.parg {font-family:regular;letter-spacing:0px;font-size:14px;margin-top:16px;line-height:1.5em;}
+address {font-family:regular;letter-spacing:0px;font-size:14px;margin-top:16px;font-style:normal;}
+.cont {font-family:mainfont;margin-top:16px;font-size:14px;}
 
 .bl {font-family:black;}
-.xl {font-size:35px;}
-.lb {font-size:25px;}
+.xl {font-size:30px;}
+.lb {font-size:20px;}
 
 .support {text-align:left;}
-.support .shd.smh {margin-top:20px;text-align:left;}
+.support .shd.smh {margin-top:18px;text-align:left;}
 form#supportForm {text-align:left;}
 form#supportForm input, form#supportForm .select {margin-top:16px;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:38px;}
 form#supportForm textarea {margin-top:16px;width:90%;border:1px solid #eee;border-radius:2px;font-size:15px;font-family:regular;height:128px;vertical-align:middle;}
