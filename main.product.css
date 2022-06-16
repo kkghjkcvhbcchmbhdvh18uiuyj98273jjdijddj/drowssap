@@ -9,8 +9,8 @@
 .sub1 .bantwo {float:left;}
 .sub1 .bantwo:nth-child(1) {background-color:rgba(255,186,66,1);}
 .sub1 .bantwo:nth-child(2) {line-height:1em;appearance: auto;-webkit-writing-mode: horizontal-tb !important;text-rendering: auto;letter-spacing: normal;word-spacing: normal;text-transform: none;text-indent: 0px;text-shadow: none;display: inline-block;text-align: center;align-items: flex-start;cursor: pointer;box-sizing: border-box;margin: 0em;font: 400 13.3333px Arial;vertical-align:middle;}
-.sub1 .bantwo .prod {width:100%;}
-.ph1 {font-size:20px;font-family:mainfont;margin:1em;}
+.sub1 .bantwo .prod {width:100%;margin-top:0px;}
+.ph1 {font-size:22px;font-family:mainfont;margin:1em;text-align:left;}
 .ph2 {font-size:14px;font-family:regular;margin:1em;}
 .ph3 {font-size:12px;font-family:regular;margin:1em;font-style:italic;color:royalblue;}
 .phv {margin-left:16px;}
