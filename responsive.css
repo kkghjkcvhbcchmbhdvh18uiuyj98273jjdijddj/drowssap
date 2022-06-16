@@ -6,10 +6,10 @@ div#notify {width:100%;left:0px;}
   .dmenu {display:none;}
   .tmenu {display:none;}
   #cart .box {height:60%;width:calc(100% - 3em);}
-  .shopping-menu:focus + .omenu {width:calc(100% + 4.5em);}
+  .shopping-menu:focus + .omenu {width:calc(100% + 1.5em);}
   .shopping-menu + .omenu .mitem {display:none;}
   .shopping-menu:focus + .omenu .mitem {display:inline-block;}
-  .shopping-menu:focus + .omenu:before {opacity:1;background-color:rgba(0,0,0,0.4);height:inherit;width:100%;content:" ";position:fixed;left:calc(-100% - 3em);top:-4px;}
+  .shopping-menu:focus + .omenu:before {opacity:1;background-color:rgba(0,0,0,0.4);height:inherit;width:100%;content:" ";position:fixed;left:calc(-100% - 0em);top:-4px;}
   #content  span {font-size:28px;}
   .banner {width:calc(100% - 1em);}
 .bantwo {width:calc(100% - 1em);}
