@@ -171,4 +171,4 @@ input[type="passcode"] {text-security:square;-moz-text-security:square;-webkit-t
 
 .flohed {position:absolute;z-index:1;background-color:rgba(255,255,255,0.7);}
 
-.modn {font-weight:normal;color:dimgray;}
+.modn {font-weight:normal;color:dimgray;margin-left:32px;}
