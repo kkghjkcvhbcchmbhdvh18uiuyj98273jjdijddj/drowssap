@@ -173,10 +173,10 @@ input[type="passcode"] {text-security:square;-moz-text-security:square;-webkit-t
 
 
 .flohed .adder {overflow:hidden;border:1px solid rgba(16,25,50,1);display:inline-flex;font-size:14px;border-radius:3px;margin-left:0px;height:38px;float:left;}
-.flohed div.adder button {font-family:mainfont;border:1px solid transparent;outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;color:white;border:1px solid rgba(16,25,50,1); background-color:rgba(31,40,64,1);height:38px;}
-.flohed #servicesx .adder button {font-family:mainfont;border:1px solid transparent;outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;margin-left:0px;height:38px;margin:0px;}
-.flohed .adder .minus {color:white;border-right:1px solid rgba(16,25,50,1);flex:2;padding-top:10px;font-size:11px;font-family:black;padding-left:8px;padding-right:8px;}
-.flohed .adder .add {color:white;border-left:1px solid rgba(16,25,50,1);flex:2;padding-top:10px;font-size:11px;font-family:black;padding-left:8px;padding-right:8px;}
+.flohed div.adder button {font-family:mainfont;border:1px solid rgba(31,40,64,1);outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;color:white;border:1px solid rgba(16,25,50,1); background-color:rgba(31,40,64,1);height:36px;}
+.flohed #servicesx .adder button {font-family:mainfont;border:1px solid rgba(31,40,64,1);outline:none;outline-color:transparent;font-size:14px;padding-bottom:8px;padding-top:8px;color:#111;margin-left:0px;height:36px;margin:0px;}
+.flohed .adder .minus {color:white;border-right:1px solid rgba(16,25,50,1);flex:2;padding-top:10px;font-size:11px;font-family:black;padding-left:8px;padding-right:8px;border-radius:3px 0px 0px 3px;}
+.flohed .adder .add {color:white;border-left:1px solid rgba(16,25,50,1);flex:2;padding-top:10px;font-size:11px;font-family:black;padding-left:8px;padding-right:8px;border-radius:0px 3px 3px 0px;}
 .flohed .adder .countz {flex:3;padding-left:12px;padding-right:12px;font-size:13px;}
 .flohed .total:before {content:"R";}
 .flohed .total {overflow:hidden;border:1px solid rgba(16,25,50,1);display:inline-flex;font-size:14px;border-radius:3px;padding-left:12px;padding-right:12px;padding-top:8px;padding-bottom:10px;color:white;margin-left:6px; background-color:rgba(31,40,64,1);height:38px;float:left;}
@@ -184,7 +184,7 @@ input[type="passcode"] {text-security:square;-moz-text-security:square;-webkit-t
 
 
 
-.flohed {position:fixed;z-index:1;color:white;font-weight:normal;width:100%;min-height:72px;top:26px;margin-left:0px;left:0px;background-color:rgba(1,2,10,0.9);display:block;padding:11px;padding-top:13px;padding-left:20px;overflow:hidden;}
+.flohed {position:fixed;z-index:1;color:white;font-weight:normal;width:100%;min-height:72px;top:26px;margin-left:0px;left:0px;background-color:rgba(1,2,10,0.9);display:block;padding:10px;padding-top:14px;padding-left:20px;overflow:hidden;}
 
 .modn {font-weight:normal;color:dimgray;}
 .sub1 .bantwo h1.flohed .bantwo:nth-child(1) {background-color:unset;}
