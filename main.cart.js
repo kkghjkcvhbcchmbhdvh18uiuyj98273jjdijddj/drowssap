@@ -62,7 +62,7 @@ checkOutNow()
    localStorage.setItem('cartX',localStorage.getItem('cartX') + cartX);
 	 }
    caxn = ee.innerHTML;
-   ee.innerHTML = `<font class="atp">&#10003;&nbsp;</font>`;
+   ee.innerHTML = `<font class="atp">&nbsp;&#10003;&nbsp;</font>`;
    window.setTimeout(function() {
    ee.innerHTML = caxn; },3000);
   // pae = ee.getAttribute('onclick');
