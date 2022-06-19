@@ -184,7 +184,7 @@ input[type="passcode"] {text-security:square;-moz-text-security:square;-webkit-t
 
 
 
-.flohed {position:fixed;z-index:1;color:white;font-weight:normal;width:100%;min-height:72px;top:26px;margin-left:0px;left:0px;background-color:rgba(1,2,10,0.9);display:block;padding:10px;padding-top:14px;padding-left:20px;overflow:hidden;}
+.flohed {position:fixed;z-index:1;color:white;font-weight:normal;width:100%;min-height:72px;top:26px;margin-left:0px;left:0px;background-color:rgba(1,2,10,0.9);display:block;padding:10px;padding-top:14px;padding-left:18px;overflow:hidden;}
 
 .modn {font-weight:normal;color:dimgray;}
 .sub1 .bantwo h1.flohed .bantwo:nth-child(1) {background-color:unset;}
