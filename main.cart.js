@@ -62,9 +62,9 @@ checkOutNow()
    localStorage.setItem('cartX',localStorage.getItem('cartX') + cartX);
 	 }
    caxn = ee.innerHTML;
-   ee.innerHTML = `<font class="atp atp2">&nbsp;&#10003;&nbsp;&nbsp;</font>`;
-   window.setTimeout(function() {
-   ee.innerHTML = caxn; },3000);
+   ee.innerHTML = `<font class="atp atp2">&#10003;</font><img src="cart.png" class="ati"/>`;
+   ee.onclick = function() { getE('#cart').setAttribute("style","width:100%;height:100%;"); }
+   //window.setTimeout(function() { ee.innerHTML = caxn; },3000);
   // pae = ee.getAttribute('onclick');
    //ee.setAttribute("onclick","removeCart(getE('#reg" + id + "')); this.setAttribute('onclick',`" + pae + "`); this.innerHTML = 'Add To Cart';");
    
