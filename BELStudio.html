@@ -19,7 +19,7 @@
 <body class="product_page">
 <section id="header">
 <div class="band mbg">
-<span tabindex="2" onfocus="location='/';" class="before"></span>
+<span tabindex="2" onclick="location='/';" class="before"></span>
 <div class="dmenu ame">
 <button class="mcol"><a href="Power_Tank">Power Tank</a></button>
 <button class="mcol"><a href="BELCharge">BELCharge</a></button>
@@ -93,7 +93,7 @@
 <button class="minus" onclick="items(this,'subtract',14500);">&minus;</button><button class="countz">1</button><button class="add" onclick="items(this,'add',14500);">+</button>
 </div>
 <button onclick="" class="total" id="total">14500</button>
-<button onclick="addToCart(this,'BELStudio','Power your business, home or caravan (mobile home). For use during loadshedding or when outdoors.','belstudio1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv"><font class="atp">+</font><img src="cart.png" class="ati"/></button><button onclick="buyNow(this,'BELStudio','Power your business, home or caravan (mobile home). For use during loadshedding or when outdoors.','belstudio1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv buyNow">Buy Now</button></div>
+<button onclick="addToCart(this,'BELStudio','Power your business, home or caravan (mobile home). For use during loadshedding or when outdoors.','belstudio1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv"><font class="atp">+</font><font class="ati">&nbsp;</font></button><button onclick="buyNow(this,'BELStudio','Power your business, home or caravan (mobile home). For use during loadshedding or when outdoors.','belstudio1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv buyNow">Buy Now</button></div>
 </h1>
 <img src="belstudio1.png" class="prod" alt="The BELCharge"/>
 <div class="previews">
@@ -163,8 +163,24 @@ Debit Card, Credit or Cheque Card, Instant EFT, Masterpass, Zapper, SnapScan & S
 
 </div>
 <div class="bantwo prodinfo filt">
-<div class="ph4 phv rc">0 Reviews &nbsp; ☆☆☆☆☆ &nbsp; <a href="Review?red=BELStudio&product=The%20BELStudio&image=belstudio1.png" class="goto">Write a review</a></div>
+<div class="ph4 phv rc">4 Reviews &nbsp; <font class="rated">★★★★<font class="unrated">☆</font></font> &nbsp; <a href="Review?red=BELStudio&product=The%20BELStudio&image=belstudio1.png" class="goto">Write a Review</a></div>
 <!--★★★★☆-->
+<div class="comment">
+<div class="ph4 fname">Martin Dreyer &nbsp; <font class="rated">★★★★<font class="unrated">☆</font></font> (10/8)</div>
+<div class="ph5 fmessage">No noise powers my fridges and im impressed by the ups mode..</div>
+</div>
+<div class="comment">
+<div class="ph4 fname">Anthony Louw &nbsp; <font class="rated">★★★★<font class="unrated">☆</font></font> (10/8)</div>
+<div class="ph5 fmessage">Really not bad.. lasted a full 10hours when i was testing on my heater but could use more capacity since electricty goes out long here</div>
+</div>
+<div class="comment">
+<div class="ph4 fname">Juan &nbsp; <font class="rated">★★★★<font class="unrated">☆</font></font> (10/9)</div>
+<div class="ph5 fmessage">Been useful for my shop</div>
+</div>
+<div class="comment">
+<div class="ph4 fname">Solomon Kleynhans &nbsp; <font class="rated">★★★★★</font> (10/10)</div>
+<div class="ph5 fmessage">I have a desiel generator that costs more yet does not last as long when full. Slow hand clap guys</div>
+</div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -450,6 +466,6 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 <script type="text/javascript" src="main.special.js"></script>
 <script type="text/javascript" src="main.cart.js"></script>
 <script>
-window.localStorage = "";
+isIt();
 </script>
 </html>

@@ -20,7 +20,7 @@
 <body class="product_page">
 <section id="header">
 <div class="band mbg">
-<span tabindex="2" onfocus="location='/';" class="before"></span>
+<span tabindex="2" onclick="location='/';" class="before"></span>
 <div class="dmenu ame">
 <button class="mcol" selected="true"><a href="Power_Tank">Power Tank</a></button>
 <button class="mcol"><a href="BELCharge">BELCharge</a></button>
@@ -94,7 +94,7 @@
 <button class="minus" onclick="items(this,'subtract',1500);">&minus;</button><button class="countz">1</button><button class="add" onclick="items(this,'add',1500);">+</button>
 </div>
 <button onclick="" class="total" id="total">1500</button>
-<button onclick="addToCart(this,'Power Tank','Plug your Flatscreen TV, Laptop, Gaming Console, DSTV and Lamps. For use during loadshedding or when outdoors.','powertank.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv"><font class="atp">+</font><img src="cart.png" class="ati"/></button><button onclick="buyNow(this,'Power Tank','Plug your Flatscreen TV, Laptop, Gaming Console, DSTV and Lamps. For use during loadshedding or when outdoors.','powertank.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv buyNow">Buy Now</button></div>
+<button onclick="addToCart(this,'Power Tank','Plug your Flatscreen TV, Laptop, Gaming Console, DSTV and Lamps. For use during loadshedding or when outdoors.','powertank.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv"><font class="atp">+</font><font class="ati">&nbsp;</font></button><button onclick="buyNow(this,'Power Tank','Plug your Flatscreen TV, Laptop, Gaming Console, DSTV and Lamps. For use during loadshedding or when outdoors.','powertank.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv buyNow">Buy Now</button></div>
 </h1>
 <img src="powertank.png" class="prod" alt="The Power Tank"/>
 <div class="previews">
@@ -102,6 +102,7 @@
 <div class="prev prv2" tabindex="2" href="powertank2.png" onfocus="preview(this)" style="background-image:url(powertank2.png);"></div>
 <div class="prev prv3" tabindex="2" href="powertank3.png" onfocus="preview(this)" style="background-image:url(powertank3.png);"></div>
 </div>
+<video src="powertank.mp4" class="pvideo" autoplay muted controls></video>
 </div>
 <div class="bantwo prodinfo">
 <p class="spayc2">&nbsp;</p>
@@ -162,8 +163,16 @@ Debit Card, Credit or Cheque Card, Instant EFT, Masterpass, Zapper, SnapScan & S
 
 </div>
 <div class="bantwo prodinfo filt">
-<div class="ph4 phv rc">0 Reviews &nbsp; ☆☆☆☆☆ &nbsp; <a href="Review?red=Power_Tank&product=The%20Power%20Tank&image=powertank.png" class="goto">Write a review</a></div>
+<div class="ph4 phv rc">2 Reviews &nbsp; <font class="rated">★★★★★</font> &nbsp; <a href="Review?red=Power_Tank&product=The%20Power%20Tank&image=powertank.png" class="goto">Write a Review</a></div>
 <!--★★★★☆-->
+<div class="comment">
+<div class="ph4 fname">Jacobus Botes &nbsp; <font class="rated">★★★★★</font> (10/10)</div>
+<div class="ph5 fmessage">Absolutely reliable, I love it. Packs a good punch for something so small, I'll be getting the belchrome soon for cooking in my caravan. Great product</div>
+</div>
+<div class="comment">
+<div class="ph4 fname">Mbali Zwane &nbsp; <font class="rated">★★★★★</font> (10/10)</div>
+<div class="ph5 fmessage">This power tank helps when eskom does their thing. It's a good buy</div>
+</div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -444,13 +453,13 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 <h4 class="seo">Proudly South African</h4>
 <h5 class="seo">Black Owned</h5>
 <h6 class="seo">High Tech Innovation</h6>
-<b class="seo">power tank</b>
+<b class="seo">Power Tank</b>
 </div>
 </body>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="main.special.js"></script>
 <script type="text/javascript" src="main.cart.js"></script>
 <script>
-window.localStorage = "";
+isIt();
 </script>
 </html>

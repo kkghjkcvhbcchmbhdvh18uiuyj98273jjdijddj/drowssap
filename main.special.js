@@ -6,15 +6,6 @@ function replaceAll(str, find, replaces) {
   return str.replace(new RegExp(escapeRegExp(find), 'g'), replaces);
 }
 
-function items(ee,bb,tt)
- {
-	 if(bb=="add") {
-	 ee.previousSibling.innerHTML = (ee.previousSibling.innerHTML*1)+1;
-	 } else if(bb=="subtract" && ee.nextSibling.innerHTML>1){
-		ee.nextSibling.innerHTML = (ee.nextSibling.innerHTML*1)-1; 
-	 }
-	 ee.parentNode.parentNode.querySelector('.total').innerHTML = tt*ee.parentNode.parentNode.querySelector('.countz').innerHTML;
- }
  
  
  function preview(ee) {

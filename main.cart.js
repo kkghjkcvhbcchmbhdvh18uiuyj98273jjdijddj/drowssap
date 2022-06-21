@@ -51,18 +51,21 @@ checkOutNow()
    }
    id = localStorage.getItem('reg');
 	 
+   caxn = ee.getAttribute('onclick');
+   window.remaddo = ee.getAttribute('onclick');
+   window.remadd = ee;
+   ee.setAttribute('rego',id);
 	 if(!localStorage.getItem('cartlist')) {
 		 
-		  window.localStorage.setItem('cartlist','<div class="item" tabindex="2" id="reg' + id + '" tabindex="2"  style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode)">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>');
+		  window.localStorage.setItem('cartlist','<div class="item" tabindex="2" id="reg' + id + '" tabindex="2"  style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih" isit="' + ih + '">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode);">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + caxn + '</div></div>');
     cartX = `@(@` + ih + `@,@` + details + `@,@` + ip + `@,@` + im + `@,@` + it + `@)@`;
    localStorage.setItem('cartX',cartX);
 		  } else {
-	 window.localStorage.setItem('cartlist',localStorage.getItem('cartlist') +  '<div class="item" tabindex="2" id="reg' + id + '" tabindex="2" style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode)">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + id + '</div></div>');
+	 window.localStorage.setItem('cartlist','<div class="item" tabindex="2" id="reg' + id + '" tabindex="2" style="overflow-y:auto;">' + "<div class='ip' style='background-image:url("+ ip +");'>" + '</div><div class="itemd"><div class="ih" isit="' + ih + '">' + ih + '</div><div class="im">Quantity: ' + im + '</div><div class="it">Price: R' + it + '</div><div class="ir" tabindex="2" onfocus="removeCart(this.parentNode.parentNode)">Remove</div></div><div style="display:none" class="id" reg="' + id + '">' + caxn + '</div></div>' +  localStorage.getItem('cartlist'));
     cartX = `@(@` + ih + `@,@` + details + `@,@` + ip + `@,@` + im + `@,@` + it + `@)@`;
    localStorage.setItem('cartX',localStorage.getItem('cartX') + cartX);
 	 }
-   caxn = ee.innerHTML;
-   ee.innerHTML = `<font class="atp atp2">&#10003;</font><img src="cart.png" class="ati"/>`;
+   ee.innerHTML = `<font class="atp atp2">&#10003;</font><font class="ati">&nbsp;</font>`;
    ee.onclick = function() { getE('#cart').setAttribute("style","width:100%;height:100%;"); }
    //window.setTimeout(function() { ee.innerHTML = caxn; },3000);
   // pae = ee.getAttribute('onclick');
@@ -78,12 +81,16 @@ checkOutNow()
    
    localStorage.setItem('total',getE('#closecartC').innerHTML);
 cartnot();
+
+//localStorage.setItem('reg');
+
  }
  
  function viewz(d) {
 	 notify(d);
  }
  function removeCart(ee) {
+	 
 	 getE('#closecartC').innerHTML = getE('#closecartC').innerHTML-ee.querySelector('.it').innerHTML.replace("Price: R","");
 	 getE('#cartlist').removeChild(ee);
 	 localStorage.setItem('cartlist',getE('#cartlist').innerHTML);
@@ -99,8 +106,42 @@ cartnot();
    localStorage.setItem('total',getE('#closecartC').innerHTML);
    fixList();
 cartnot();
+
+reg = ee.querySelector('.id').getAttribute('reg');
+caxn = ee.querySelector('.id').innerHTML;
+if(document.querySelector('[rego]').getAttribute('rego')==reg) {
+	document.querySelector('[rego]').setAttribute('onclick',caxn);
+	document.querySelector('[rego]').innerHTML = `<font class="atp">+</font><font class="ati">&nbsp;</font>`;
+	
+	}
+
  }
  
+ 
+ 
+function items(ee,bb,tt)
+ {
+	 if(bb=="add") {
+	 ee.previousSibling.innerHTML = (ee.previousSibling.innerHTML*1)+1;
+	 arr = 'uparrow;';
+	 } else if(bb=="subtract" && ee.nextSibling.innerHTML>1){
+		ee.nextSibling.innerHTML = (ee.nextSibling.innerHTML*1)-1; 
+	 arr = 'downarrow;';
+	 }
+	 ee.parentNode.parentNode.querySelector('.total').innerHTML = tt*ee.parentNode.parentNode.querySelector('.countz').innerHTML;
+	 
+	 if(window.remadd) {
+		 rmd = document.querySelector(`[reg="` + window.remadd.getAttribute('rego') + `"]`)
+		 removeCart(rmd.parentNode);
+		 getE('button[onclick*="addToCart"]').setAttribute('onclick',window.remaddo);
+		 window.remadd.click();
+		 //alert(rmd.parentNode.outerHTML);
+		 atp = getE('.atp').innerHTML;
+		 getE('.atp').innerHTML = '&'+arr;
+		 window.setTimeout(function() {
+		 getE('.atp').innerHTML = atp; }, 2000);
+	 }
+ }
  
  
  getE('#checkoutB').addEventListener('click',function(){ checkOutNow();} );
@@ -216,6 +257,28 @@ function fixSum() {
 	getE('#idfer').innerHTML = "<b>Reference:</b> " + localStorage.getItem('user_idnumber');
 	getE('#adue').innerHTML = "<b>Amount Due:</b> R" + localStorage.getItem('total');
 	
+}
+
+
+
+
+//always last
+function isIt() {
+	if(localStorage.getItem('cartlist'))
+		if(getE('[isit="' + getE('b.seo').innerHTML + '"]'))
+	 {
+		 rego = getE('[isit="' + getE('b.seo').innerHTML + '"]').parentNode.parentNode.querySelector('.id').getAttribute('reg');
+		getE('button[onclick*="addToCart"]').setAttribute('rego',rego);
+		getE('button[onclick*="addToCart"]').innerHTML = `<font class="atp atp2">&#10003;</font><font class="ati">&nbsp;</font>`;
+		window.remaddo = getE('button[onclick*="addToCart"]').getAttribute('onclick');
+   getE('button[onclick*="addToCart"]').onclick = function() { getE('#cart').setAttribute("style","width:100%;height:100%;"); }
+   window.remadd = getE('button[onclick*="addToCart"]');
+   ixa = getE('[isit="' + getE('b.seo').innerHTML + '"]').parentNode.parentNode;
+   getE('.countz').innerHTML=ixa.querySelector('.im').innerHTML.split(' ')[1];
+   getE('.total').innerHTML=ixa.querySelector('.it').innerHTML.split(' R')[1];
+
+	}
+	//if(qetE('h1.seo').innerHTML==)
 }
 
 	 

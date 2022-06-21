@@ -19,7 +19,7 @@
 <body class="product_page">
 <section id="header">
 <div class="band mbg">
-<span tabindex="2" onfocus="location='/';" class="before"></span>
+<span tabindex="2" onclick="location='/';" class="before"></span>
 <div class="dmenu ame">
 <button class="mcol"><a href="Power_Tank">Power Tank</a></button>
 <button class="mcol" selected="true"><a href="BELCharge">BELCharge</a></button>
@@ -93,7 +93,7 @@
 <button class="minus" onclick="items(this,'subtract',1200);">&minus;</button><button class="countz">1</button><button class="add" onclick="items(this,'add',1200);">+</button>
 </div>
 <button onclick="" class="total" id="total">1200</button>
-<button onclick="addToCart(this,'BELCharge','Plug your phone, tablet and laptop charger or small appliances. For use during loadshedding or when outdoors.','belcharge1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv"><font class="atp">+</font><img src="cart.png" class="ati"/></button><button onclick="buyNow(this,'BELCharge','Plug your phone, tablet and laptop charger or small appliances. For use during loadshedding or when outdoors.','belcharge1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv buyNow">Buy Now</button></div>
+<button onclick="addToCart(this,'BELCharge','Plug your phone, tablet and laptop charger or small appliances. For use during loadshedding or when outdoors.','belcharge1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv"><font class="atp">+</font><font class="ati">&nbsp;</font></button><button onclick="buyNow(this,'BELCharge','Plug your phone, tablet and laptop charger or small appliances. For use during loadshedding or when outdoors.','belcharge1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv buyNow">Buy Now</button></div>
 </h1>
 <img src="belcharge1.png" class="prod" alt="The BELCharge"/>
 <div class="previews">
@@ -165,7 +165,7 @@ Debit Card, Credit or Cheque Card, Instant EFT, Masterpass, Zapper, SnapScan & S
 
 </div>
 <div class="bantwo prodinfo filt">
-<div class="ph4 phv rc">0 Reviews &nbsp; ☆☆☆☆☆ &nbsp; <a href="Review?red=BELCharge&product=The%20BELCharge&image=belcharge1.png" class="goto">Write a review</a></div>
+<div class="ph4 phv rc">No Reviews Yet &nbsp; ☆☆☆☆☆ &nbsp; <a href="Review?red=BELCharge&product=The%20BELCharge&image=belcharge1.png" class="goto">Write a Review</a></div>
 <!--★★★★☆-->
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -454,6 +454,6 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 <script type="text/javascript" src="main.special.js"></script>
 <script type="text/javascript" src="main.cart.js"></script>
 <script>
-window.localStorage = "";
+isIt();
 </script>
 </html>
