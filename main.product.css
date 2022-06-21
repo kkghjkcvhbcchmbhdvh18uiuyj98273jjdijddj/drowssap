@@ -201,5 +201,5 @@ input[type="passcode"] {text-security:square;-moz-text-security:square;-webkit-t
 .comment .fmessage {font-family:regular;font-size:13px;position:relative;top:-7px;}
 font.rated {color:rgba(255,186,66,1);}
 font.unrated {color:#1f2840;}
-.pvideo {width:17em;font-size:16px;height:10em;border:2px solid #1f2840;margin-top:40px;}
+.pvideo {width:17em;font-size:16px;height:10em;border:2px solid #1f2840;margin-top:40px;display:none;}
 
