@@ -203,3 +203,5 @@ font.rated {color:rgba(255,186,66,1);}
 font.unrated {color:#1f2840;}
 .pvideo {width:17em;font-size:16px;height:10em;border:2px solid #1f2840;margin-top:40px;display:none;}
 
+#servicesx .reseter {margin-left:16px;}
+#servicesx select {width:90%;height:40px;margin-left:16px;}

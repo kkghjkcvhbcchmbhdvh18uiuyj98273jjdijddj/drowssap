@@ -115,7 +115,7 @@ button.nbg {color:white;}
 
 
 #services {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;padding-left:0.1em;}
-#services .h1 {margin-left:0.75em;color:#123;}
+#services .h1 {margin-left:0.6em;color:#123;}
 #servicesx {float:left;background-color:#eee;color:#101320;text-align:left;width:calc(100%);padding-top:1.5em;padding-bottom:2em;padding-left:0.85em;}
 #servicesx .h1 {margin-left:0.1em;color:#123;}
 .exp {width:100%;font-size:16px;font-family:regular;border:1px solid transparent;background-color:#eee;color:#248;text-align:left;padding-left:0.75em;line-height:24px;height:24px;margin-bottom:4px;outline-color:#eee;border:1px solid transparent;}
