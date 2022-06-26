@@ -41,7 +41,7 @@
 
 
 <url>
-  <loc>https://bleedingedgelab.co.za/Batteries</loc>
+  <loc>https://bleedingedgelab.co.za/Lithium</loc>
   <priority>0.8</priority>
   <changefreq>daily</changefreq>
  
@@ -67,12 +67,6 @@
 </url>
 <url>
   <loc>https://bleedingedgelab.co.za/BELChrome</loc>
-  <priority>0.8</priority>
-  <changefreq>daily</changefreq>
- 
-</url>
-<url>
-  <loc>https://bleedingedgelab.co.za/Custom</loc>
   <priority>0.8</priority>
   <changefreq>daily</changefreq>
  
