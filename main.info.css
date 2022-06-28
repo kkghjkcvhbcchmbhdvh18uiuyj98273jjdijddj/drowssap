@@ -11,5 +11,5 @@
 .totg b {font-size:14px;font-family:mainfont;margin-top:10px;font-weight:normal;}
 .totg.bib {font-family:black;}
 .totg.bil {font-size:10px;}
-#summary {overflow-y:auto;height:13em;}
+#summary {overflow-y:auto;height:15em;}
 #summary:before {text-align:left;color:inherit;font-size:14px;display:block;content:"Summary";font-family:black;margin-top:4px;margin-bottom:14px;}
