@@ -1,12 +1,12 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<meta name="theme-color" content="#1f2840">
-	<meta name="description" content="Write a review of a product you purchased. Share your experience and give us feedback">
-    <title>Write A Review - Bleeding Edge Lab (PTY) Ltd </title>
+	<meta name="description" content="A large power bank to power a home, business or general high electricity demand applications. It can replace your backup generator or high power UPS. Power your business, home or caravan (mobile home). For use during loadshedding or when doing off-site constructions or other high electricity demand scenarios.">
+    <title>The BELStation - Bleeding Edge Lab (PTY) Ltd </title>
 	<base href="">
     <link href="main.css" type="text/css" rel="stylesheet">
     <link href="responsive.css" type="text/css" rel="stylesheet">
@@ -14,11 +14,9 @@
     <link rel="shortcut icon" href="icon.png" sizes="64x64, 128x128, 192x192, 240x240, 360x360, 480x480, 640x640, 720x720, 800x800, 1080x1080" type="image/png">
    <link rel="apple-touch-icon" href="icon.png" sizes="64x64,96x96,128x128,256x256" type="image/png"/>
     <link rel="shortcut icon" href="favicon.png" type="image/png" sizes="16x16,24x24,32x32,64x64"/>
-	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;z-index:9;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}
-    
-	</style><style> .seo {opacity:0;} </style>
+	<style>@font-face {font-family:mainfont; src:url(robotomedium.ttf);} * {} #loader {text-align:center;font-size:16px;background-color:white;width:100%;height:100%;position:fixed;overflow:hidden;top:0px;left:0px;display:block;ransition-timing-function: linear;font-family:mainfont;z-index:9;}	#loading {position:relative;top:50%;left:50%;transform:translate(-50%,-50%);}	</style><style> .seo {opacity:0;} </style>
 </head>
-<body class="login_page">
+<body class="product_page">
 <section id="header">
 <div class="band mbg">
 <span tabindex="2" onclick="location='/';" class="before"></span>
@@ -29,7 +27,7 @@
 <button class="mcol"><a href="BELStudio">BELStudio</a></button>
 <button class="mcol"><a href="BELChrome">BELChrome</a></button>
  
-<button class="mcol"><a href="BELStation">BELStation</a></button><button class="mcol"><a href="Lithium">18650 Li-ion</a></button>
+<button class="mcol" selected="true"><a href="BELStation">BELStation</a></button><button class="mcol"><a href="Lithium">18650 Li-ion</a></button>
 <button class="mcol"><a href="Electronics">Electronics</a></button>
 <button class="mcol" id="account_login"><a href="Login">Login</a></button>
 <button class="mcol"><a href="Support">Support</a></button>
@@ -42,6 +40,7 @@
 <button class="mcol"><a href="BELCharge">BELCharge</a></button>
 <button class="mcol"><a href="BELMore">BELMore</a></button>
 <button class="mcol"><a href="BELStudio">BELStudio</a></button>
+<button class="mcol" selected="true"><a href="BELStation">BELStation</a></button>
 <button class="mcol"><a href="BELChrome">BELChrome</a></button>
 <button class="mcol shopping-bag" id="tstore"><a href="Tracking">&nbsp;&nbsp;&nbsp;</a></button>
 <button class="mcol shopping-cart" id="tmcart">&nbsp;</button>
@@ -69,7 +68,8 @@
 <button class="mitem"><a href="BELCharge">BELCharge</a></button>
 <button class="mitem"><a href="BELMore">BELMore</a></button>
 <button class="mitem"><a href="BELStudio">BELStudio</a></button>
-<button class="mitem"><a href="BELChrome">BELChrome</a></button><button class="mitem"><a href="BELStation">BELStation</a></button>
+<button class="mitem" selected="true"><a href="BELStation">BELStation</a></button>
+<button class="mitem"><a href="BELChrome">BELChrome</a></button>
  
 <button class="mitem"><a href="Lithium">18650 Li-ion</a></button>
 <button class="mitem"><a href="Electronics">Electronics</a></button>
@@ -85,55 +85,120 @@
 
 
 
-
-<section id="content" class="sub1 support">
-<div class="banner">
-<div class="hd lb"><font id="produkt"></font> Review</div>
-<i color="dimgray">We appreciate your feedback on our products.</i>
-</div>
+<section id="content" class="sub1">
+<p class="spayc">&nbsp;</p>
 <div class="bantwo">
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div class="shd smh">Tell Us About Your Experience</div>
-<form method="post" id="supportForm" onsubmit="checkForm(this,'support')">
-<select class="select" onchange="getE('#rate').value=this.value"><option selected disabled>Rate the product</option><optgroup label='Out of 10'>
-<option value='10'>10 Best</option>
-<option value='9'>9</option>
-<option value='8'>8</option>
-<option value='7'>7</option>
-<option value='6'>6</option>
-<option value='5'>5 Okay</option>
-<option value='4'>4</option>
-<option value='3'>3</option>
-<option value='2'>2</option>
-<option value='1'>1 Worst</option>
-</optgroup><select>
-<input type="hidden" name="rate" placeholder="" id="rate"><input type="hidden" name="red" placeholder="" id="red">
-<input type="email" name="email" placeholder="Your Email Address"><br/>
-<input type="fullname" name="fullname" placeholder="Your Full Name"><br/>
-<textarea name="message" placeholder="Describe Your Experience Here.." cols="20" rows="8"></textarea><br/>
-<button>Submit Review</button><br/>
-</form>
-<p>&nbsp;</p>
+<h1 class="ph1 phv flohed">
+<div class="bantwo"> The BELStation
+<div class="ph3 phv">BELStore &#187; Portable Power &#187; BELStation</div></div><div class="bantwo">
+<div class="adder phv">
+<button class="minus" onclick="items(this,'subtract',29000);">&minus;</button><button class="countz">1</button><button class="add" onclick="items(this,'add',29000);">+</button>
 </div>
-<div class="bantwo">
+<button onclick="" class="total" id="total">29000</button>
+<button onclick="addToCart(this,'BELStation','Power your business, home or caravan (mobile home). For use during loadshedding or when outdoors.','belstudio1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv"><font class="atp">+</font><font class="ati">&nbsp;</font></button><button onclick="buyNow(this,'BELStation','Power your business, home or caravan (mobile home). For use during loadshedding or when outdoors.','belstudio1.png',getE('.countz').innerHTML,getE('.total').innerHTML)" class="addToCart phv buyNow">Buy Now</button></div>
+</h1>
+<img src="belstudio1.png" class="prod" alt="The BELCharge"/>
+<div class="previews">
+<div class="prev prv1 selected" tabindex="2" href="belstudio1.png" onfocus="preview(this)" style="background-image:url(belstudio1.png);"></div>
+<div class="prev prv2" tabindex="2" href="belstudio2.png" onfocus="preview(this)" style="background-image:url(belstudio2.png);"></div>
+<div class="prev prv3" tabindex="2" href="belchrome3.png" onfocus="preview(this)" style="background-image:url(belchrome3.png);"></div>
+</div>
+</div>
+<div class="bantwo prodinfo">
+<p class="spayc2">&nbsp;</p>
+<p class="spayc2">&nbsp;</p>
+<div class="ph4 phv">Description</div>
+<div class="ph2 phv">A large power bank to power a home, business or general high electricity demand applications. It can replace your backup generator or high power UPS.</div>
+<div class="ph2 phv">Power your business, home or caravan (mobile home). For use during loadshedding or when doing off-site constructions or other high electricity demand scenarios.</div>
+<div class="ph2 phv">Comes with a kettle cord port as means of charging this system. With the addition of an adapter, you can connect and charge the BELStation with a solar panel.</div>
+<!--<p class="disclaim">By choosing <b>Buy Now</b>, your cart will be cleared & this will be the only item you will checkout. If you select <b>Add To Cart</b>, this item will only be added to your cart - which you can checkout, along with all the items in your cart by selecting the cart icon on the top panel and then selecting <b>Checkout</b>.</p><b class="modn">&nbsp;&nbsp;&#8212;&nbsp;&nbsp;MN220004</b>-->
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<img src="" id="rmg" style="width:100%;"/>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<div class="ph6 phv">Specifications</div>
+<div class="ph7 phv">
+&bull; 50 000Wh (50kWh) Capacity
+<br>
+&bull; 15 000W (15kW) Continuous Output
+<br>
+&bull; 20 000W (20kW) Peak Output
+<br>
+&bull; 6600W (6.6kW) Maximum Input (Charging)
+<br>
+&bull; 230V AC (MSW)
+<br>
+&bull; 4 Electrical Sockets
+<br>
+&bull; 10 Year Life Cycle
+</div>
+<p class="spayc2">&nbsp;</p>
+<p class="spayc2">&nbsp;</p>
+</div>
+<div class="bantwo prodinfo">
+<div class="ph6 phv">Dimensions</div>
+<div class="ph7 phv">
+&bull; Width: 120cm
+<br>
+&bull; height: 60cm
+<br>
+&bull; Length: 60cm
+<br>
 </div>
 
+<p>&nbsp;</p>
+<div class="ph4 phv">What's in the box?</div>
+<div class="ph5 phv">
+&bull; BELStation
+<br>
+&bull; Input Power (30A) Cord
+</div>
+<p>&nbsp;</p>
+<div class="ph4 phv">Delivery</div>
+<div class="ph5 phv">
+4 - 7 Working Days<br/>
+Assembly &rightarrow; Processing &rightarrow; Courier &rightarrow; Delivery
+</div>
+<p>&nbsp;</p>
+<div class="ph4 phv">Accepted Payment Methods</div>
+<div class="ph5 phv">
+Debit Card, Credit or Cheque Card, Instant EFT, Masterpass, Zapper, SnapScan & SCode
+</div>
+<p>&nbsp;</p>
+
+
+
+</div>
+<div class="bantwo prodinfo filt">
+<div class="ph4 phv rc">2 Reviews &nbsp; <font class="rated">★★★★<font class="unrated">☆</font></font> &nbsp; <a href="Review?red=BELStation&product=The%20BELStation&image=belstudio1.png" class="goto">Write a Review</a></div>
+<!--★★★★☆-->
+<div class="comment">
+<div class="ph4 fname">Juan &nbsp; <font class="rated">★★★★<font class="unrated">☆</font></font> (9/10)</div>
+<div class="ph5 fmessage">Been useful for my shop</div>
+</div>
+<div class="comment">
+<div class="ph4 fname">Solomon Kleynhans &nbsp; <font class="rated">★★★★★</font> (10/10)</div>
+<div class="ph5 fmessage">I have a desiel generator that costs more yet does not last as long when full. Slow hand clap guys</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
 </section>
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <div class="pfaq">
 <p>&nbsp;</p>
-<div class="bfq bfh" tabindex="2" onfocus="location='Support';">Contact support for any further inquiries</div>
+<div class="bfh">Frequently Asked Questions</div>
+<div class="bfq" tabindex="2">Will it power an entire supermarket?</div>
+<div class="qanswer">Yes, the wattage rating is sufficient enough.</div>
+<div class="bfq" tabindex="2">How long does it last?</div>
+<div class="qanswer">It lasts as long as an electricity metre box with a 50.0kWh reading.</div>
 
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 </div>
+
+
 <div id="delnot">Free Nationwide Delivery (South Africa)
 </div>
 <section id="footer"><p class="boarder">&nbsp;</p>
@@ -143,8 +208,6 @@
 <a href="Power_Tank">Power&nbsp;Tank</a><span>&bull;</span>
 <a href="BELCharge">BELCharge</a><span>&bull;</span>
 <a href="BELChrome">BELChrome</a><span>&bull;</span>
-
-
 <a href="BELMore">BELMore</a><span>&bull;</span>
 <a href="BELStudio">BELStudio</a><span>&bull;</span><a href="BELStation">BELStation</a><span>&bull;</span><a href="BELStation_100kWh">BELStation 100kWh</a><span>&bull;</span>
  
@@ -386,32 +449,19 @@ c-81 79 -169 168 -195 197 l-48 54 5 101 c4 99 13 178 22 205 2 8 15 12 31 10
 </div>
 <img class="seo" src="favicon.png" alt="Bleeding Edge Lab icon">
 <img class="seo" src="icon.png" alt="Bleeding Edge Lab logo">
-<h1 class="seo">Submit a review</h1>
+<h1 class="seo">The BELStation</h1>
 <h2 class="seo">Bleeding Edge Lab</h2>
 <h3 class="seo">Just Making Progress</h3>
 <h4 class="seo">Proudly South African</h4>
 <h5 class="seo">Black Owned</h5>
 <h6 class="seo">High Tech Innovation</h6>
-<b class="seo">Review our products</b>
+<b class="seo">BELStation</b>
 </div>
 </body>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="main.special.js"></script>
 <script type="text/javascript" src="main.cart.js"></script>
-
 <script>
-getE('#produkt').innerHTML = replaceAll(getQ('product'),'%20',' ');
-getE('#rmg').src = replaceAll(getQ('image'),'%20',' ');
-getE('#red').value = replaceAll(getQ('red'),'%20',' ');
-</script>
-<script>
-
-
-if(!localStorage.getItem('user'))
-{
-	//location = "Login";
-}
-
-getTrackingInfo();
+isIt();
 </script>
 </html>

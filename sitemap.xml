@@ -66,6 +66,12 @@
  
 </url>
 <url>
+  <loc>https://bleedingedgelab.co.za/BELStation_100kWh</loc>
+  <priority>0.8</priority>
+  <changefreq>daily</changefreq>
+ 
+</url>
+<url>
   <loc>https://bleedingedgelab.co.za/BELMore</loc>
   <priority>0.8</priority>
   <changefreq>daily</changefreq>
