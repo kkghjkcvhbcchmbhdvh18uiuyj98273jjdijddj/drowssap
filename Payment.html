@@ -90,7 +90,7 @@
 <section id="content" class="sub1">
 <div class="banner">
 <p>&nbsp;</p>
-<div class="hd">How will you be paying?<br/><i>For payments higher than R1000, we only accept EFT. </i></div>
+<div class="hd">How will you be paying?<br/><i>For payments higher than R100000, we only accept EFT. </i></div>
 <br/>
 <p>&nbsp;</p>
 <div id="summary" class="cartlist items"><div class="summarytotal">Total: R0.00</div></div>
@@ -100,7 +100,7 @@
 <button class="poy poy1" onclick="yap();">Pay via Visa Electron or Debit Card &rightarrow;</button>
 <button class="poy poy2" onclick="yap();">Pay via Cheque or Credit Card &rightarrow;</button>
 <button class="poy poy3" onclick="yap();">Pay via Masterpass, Zapper or SCode Voucher &rightarrow;</button>
-<button class="poy" onclick="this.nextSibling.style.display = 'block'; this.innerHTML=this.innerHTML.replace('&rightarrow;','&downarrow;');">Pay via EFT or Direct Deposit &rightarrow;</button><div id="invoice">
+<button class="poy" onclick="this.nextSibling.style.display = 'none'; this.innerHTML=this.innerHTML.replace('&rightarrow;','&downarrow;');">Pay via EFT or Direct Deposit &rightarrow;</button><div id="invoice">
 <p>&nbsp;</p>
 <div class="totg bib">Account Details</div>
 <div class="totg"><b>Bank:</b> TymeBank Limited</div>
@@ -414,7 +414,7 @@ if(!localStorage.getItem('user'))
 {
 	location = "/";
 } else {
-if(localStorage.getItem('total')>1000) {
+if(localStorage.getItem('total')>10000000) {
 getE('.poy1').onclick=""; 
 getE('.poy1').style.color="lightgrey"; 
 getE('.poy1').style.borderBottom="1px solid lightgrey"; 
