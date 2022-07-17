@@ -147,8 +147,8 @@ function items(ee,bb,tt)
  getE('#checkoutB').addEventListener('click',function(){ checkOutNow();} );
  
 			function checkOutNow() {
-				alert("We currently can't accept anymore orders, until further notice");
-				exit;
+				//alert("We currently can't accept anymore orders, until further notice");
+				//exit;
 	 if(localStorage.getItem('total')=="0.00" || !localStorage.getItem('total')) {  /**do nothing**/  }
 	else {
 		fixList();
